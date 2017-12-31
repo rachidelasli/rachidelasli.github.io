@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"kourassa2_atlas_", frames: [[1897,130,127,57],[1815,774,227,62],[1104,0,533,670],[0,0,550,670],[0,672,527,671],[529,672,523,669],[1815,838,150,80],[1815,920,150,80],[1639,0,256,256],[1639,258,256,256],[1639,516,256,256],[1897,0,128,128],[1815,1002,150,80],[1815,1084,150,80],[1054,672,512,512],[1995,234,43,40],[1897,189,138,43],[1897,234,96,47],[1568,774,245,245],[1568,1021,245,245],[1054,1186,245,245],[1301,1186,245,245],[552,0,550,670]]}
+		{name:"kourassa2_atlas_", frames: [[834,1267,127,57],[682,1185,227,62],[0,1344,533,670],[0,0,550,670],[535,1344,527,671],[552,0,523,669],[911,1185,150,80],[682,1249,150,80],[1064,1185,256,256],[1066,671,256,256],[1064,1443,256,256],[552,1185,128,128],[1066,929,150,80],[1066,1011,150,80],[552,671,512,512],[1066,1138,43,40],[1066,1093,138,43],[963,1267,96,47],[0,672,550,670]]}
 ];
 
 
@@ -137,37 +137,9 @@ lib.ssMetadata = [
 
 
 
-(lib.loader_0 = function() {
-	this.spriteSheet = ss["kourassa2_atlas_"];
-	this.gotoAndStop(18);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.loader_1 = function() {
-	this.spriteSheet = ss["kourassa2_atlas_"];
-	this.gotoAndStop(19);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.loader_2 = function() {
-	this.spriteSheet = ss["kourassa2_atlas_"];
-	this.gotoAndStop(20);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.loader_3 = function() {
-	this.spriteSheet = ss["kourassa2_atlas_"];
-	this.gotoAndStop(21);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.prp = function() {
 	this.spriteSheet = ss["kourassa2_atlas_"];
-	this.gotoAndStop(22);
+	this.gotoAndStop(18);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -276,28 +248,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,180,80);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,180,80);
-
-
-(lib.loader_gif = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Layer_1
-	this.instance = new lib.loader_0();
-	this.instance.parent = this;
-
-	this.instance_1 = new lib.loader_1();
-	this.instance_1.parent = this;
-
-	this.instance_2 = new lib.loader_2();
-	this.instance_2.parent = this;
-
-	this.instance_3 = new lib.loader_3();
-	this.instance_3.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1}]},5).to({state:[{t:this.instance_2}]},5).to({state:[{t:this.instance_3}]},5).wait(5));
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,245,245);
 
 
 (lib.an_CSS = function(options) {
@@ -470,14 +420,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 (lib.c60 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -493,14 +435,6 @@ p.nominalBounds = null;
 
 (lib.c59 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -518,14 +452,6 @@ p.nominalBounds = null;
 (lib.c58 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -541,14 +467,6 @@ p.nominalBounds = null;
 
 (lib.c57 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -566,14 +484,6 @@ p.nominalBounds = null;
 (lib.c56 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -589,14 +499,6 @@ p.nominalBounds = null;
 
 (lib.c55 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -614,14 +516,6 @@ p.nominalBounds = null;
 (lib.c54 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -637,14 +531,6 @@ p.nominalBounds = null;
 
 (lib.c53 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -662,14 +548,6 @@ p.nominalBounds = null;
 (lib.c52 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -685,14 +563,6 @@ p.nominalBounds = null;
 
 (lib.c51 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -710,14 +580,6 @@ p.nominalBounds = null;
 (lib.c50 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -733,14 +595,6 @@ p.nominalBounds = null;
 
 (lib.c49 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -758,14 +612,6 @@ p.nominalBounds = null;
 (lib.c48 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -781,14 +627,6 @@ p.nominalBounds = null;
 
 (lib.c47 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -806,14 +644,6 @@ p.nominalBounds = null;
 (lib.c46 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -829,14 +659,6 @@ p.nominalBounds = null;
 
 (lib.c45 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -854,14 +676,6 @@ p.nominalBounds = null;
 (lib.c44 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -877,14 +691,6 @@ p.nominalBounds = null;
 
 (lib.c43 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -902,14 +708,6 @@ p.nominalBounds = null;
 (lib.c42 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
-
 	// Layer_1
 	this.instance = new lib.c();
 	this.instance.parent = this;
@@ -925,14 +723,6 @@ p.nominalBounds = null;
 
 (lib.c41 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_2 = function() {
-		playSound("hmwav");
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(2).call(this.frame_2).wait(2));
 
 	// Layer_1
 	this.instance = new lib.c();
@@ -952,7 +742,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("cooconwav");
 	}
 
 	// actions tween:
@@ -976,7 +766,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("ciwav");
 	}
 
 	// actions tween:
@@ -1000,7 +790,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("cowav");
 	}
 
 	// actions tween:
@@ -1024,7 +814,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("cawav");
 	}
 
 	// actions tween:
@@ -1048,7 +838,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("hcwav");
 	}
 
 	// actions tween:
@@ -1072,7 +862,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("libasowav");
 	}
 
 	// actions tween:
@@ -1096,7 +886,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("liwav");
 	}
 
 	// actions tween:
@@ -1120,7 +910,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("lowav");
 	}
 
 	// actions tween:
@@ -1144,7 +934,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("lawav");
 	}
 
 	// actions tween:
@@ -1168,7 +958,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("hlwav");
 	}
 
 	// actions tween:
@@ -1192,7 +982,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("farasonwav");
 	}
 
 	// actions tween:
@@ -1216,7 +1006,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("fiwav");
 	}
 
 	// actions tween:
@@ -1240,7 +1030,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("fowav");
 	}
 
 	// actions tween:
@@ -1264,7 +1054,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("fawav");
 	}
 
 	// actions tween:
@@ -1288,7 +1078,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("hfwav");
 	}
 
 	// actions tween:
@@ -1312,7 +1102,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("sooronwav");
 	}
 
 	// actions tween:
@@ -1336,7 +1126,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("siiwav");
 	}
 
 	// actions tween:
@@ -1360,7 +1150,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("soowav");
 	}
 
 	// actions tween:
@@ -1384,7 +1174,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("saawav");
 	}
 
 	// actions tween:
@@ -1408,7 +1198,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("hswav");
 	}
 
 	// actions tween:
@@ -1432,7 +1222,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("baabonwav");
 	}
 
 	// actions tween:
@@ -1456,7 +1246,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("biiwav");
 	}
 
 	// actions tween:
@@ -1480,7 +1270,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("boowav");
 	}
 
 	// actions tween:
@@ -1504,7 +1294,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("baawav");
 	}
 
 	// actions tween:
@@ -1528,7 +1318,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("hmwav");
+		playSound("hbwav");
 	}
 
 	// actions tween:
@@ -1792,7 +1582,7 @@ p.nominalBounds = null;
 
 	// timeline functions:
 	this.frame_2 = function() {
-		playSound("doodenwav");
+		playSound("doodonwav");
 	}
 
 	// actions tween:
@@ -2116,10 +1906,6 @@ p.nominalBounds = new cjs.Rectangle(-155.4,5,709.5,670);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// action
-	this.instance = new lib.loader_gif();
-	this.instance.parent = this;
-	this.instance.setTransform(156.1,317,1,1,0,0,0,122.5,122.5);
-
 	this.text = new cjs.Text("2", "bold 23px 'Arial'");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 28;
@@ -2127,7 +1913,7 @@ p.nominalBounds = new cjs.Rectangle(-155.4,5,709.5,670);
 	this.text.parent = this;
 	this.text.setTransform(268.1,633.2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.text},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 
 	// Layer_1
 	this.pr = new lib._sv();
@@ -2148,11 +1934,11 @@ p.nominalBounds = new cjs.Rectangle(-155.4,5,709.5,670);
 	this.hm.setTransform(10.6,11.5);
 	new cjs.ButtonHelper(this.hm, 0, 1, 2, false, new lib._hm(), 3);
 
-	this.instance_1 = new lib._2();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(4,5);
+	this.instance = new lib._2();
+	this.instance.parent = this;
+	this.instance.setTransform(4,5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.hm},{t:this.sv},{t:this.pr}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.hm},{t:this.sv},{t:this.pr}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p2, new cjs.Rectangle(4,5,550,682.8), null);
 
@@ -2565,7 +2351,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,180,80);
 
 	this.instance_59 = new lib.c2();
 	this.instance_59.parent = this;
-	this.instance_59.setTransform(366.1,157,1,1,0,0,0,43.5,18.5);
+	this.instance_59.setTransform(322.6,138.5);
 	new cjs.ButtonHelper(this.instance_59, 0, 1, 2, false, new lib.c2(), 3);
 
 	this.instance_60 = new lib._5();
@@ -2654,15 +2440,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,180,80);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// Layer_3
-	this.instance = new lib.loader_gif();
-	this.instance.parent = this;
-	this.instance.setTransform(288.3,84.5,0.408,0.408,0,0,0,122.5,122.6);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(517.3,373.5,100,100);
+p.nominalBounds = null;
 // library properties:
 lib.properties = {
 	id: '8D4C0671D4D96B4689C38B4633B478C1',
@@ -2673,14 +2452,35 @@ lib.properties = {
 	opacity: 1.00,
 	manifest: [
 		{src:"images/kourassa2_atlas_.png", id:"kourassa2_atlas_"},
+		{src:"sounds/baawav.mp3", id:"baawav"},
+		{src:"sounds/baabonwav.mp3", id:"baabonwav"},
+		{src:"sounds/biiwav.mp3", id:"biiwav"},
+		{src:"sounds/boowav.mp3", id:"boowav"},
+		{src:"sounds/cawav.mp3", id:"cawav"},
+		{src:"sounds/ciwav.mp3", id:"ciwav"},
+		{src:"sounds/cowav.mp3", id:"cowav"},
+		{src:"sounds/cooconwav.mp3", id:"cooconwav"},
 		{src:"sounds/daawav.mp3", id:"daawav"},
 		{src:"sounds/daronwav.mp3", id:"daronwav"},
 		{src:"sounds/diiwav.mp3", id:"diiwav"},
 		{src:"sounds/doowav.mp3", id:"doowav"},
-		{src:"sounds/doodenwav.mp3", id:"doodenwav"},
+		{src:"sounds/doodonwav.mp3", id:"doodonwav"},
+		{src:"sounds/fawav.mp3", id:"fawav"},
+		{src:"sounds/farasonwav.mp3", id:"farasonwav"},
+		{src:"sounds/fiwav.mp3", id:"fiwav"},
+		{src:"sounds/fowav.mp3", id:"fowav"},
+		{src:"sounds/hbwav.mp3", id:"hbwav"},
+		{src:"sounds/hcwav.mp3", id:"hcwav"},
 		{src:"sounds/hdwav.mp3", id:"hdwav"},
+		{src:"sounds/hfwav.mp3", id:"hfwav"},
+		{src:"sounds/hlwav.mp3", id:"hlwav"},
 		{src:"sounds/hmwav.mp3", id:"hmwav"},
 		{src:"sounds/hrwav.mp3", id:"hrwav"},
+		{src:"sounds/hswav.mp3", id:"hswav"},
+		{src:"sounds/lawav.mp3", id:"lawav"},
+		{src:"sounds/liwav.mp3", id:"liwav"},
+		{src:"sounds/libasowav.mp3", id:"libasowav"},
+		{src:"sounds/lowav.mp3", id:"lowav"},
 		{src:"sounds/mawav.mp3", id:"mawav"},
 		{src:"sounds/maamaawav.mp3", id:"maamaawav"},
 		{src:"sounds/miwav.mp3", id:"miwav"},
@@ -2688,6 +2488,10 @@ lib.properties = {
 		{src:"sounds/ranwav.mp3", id:"ranwav"},
 		{src:"sounds/rinwav.mp3", id:"rinwav"},
 		{src:"sounds/ronwav.mp3", id:"ronwav"},
+		{src:"sounds/saawav.mp3", id:"saawav"},
+		{src:"sounds/siiwav.mp3", id:"siiwav"},
+		{src:"sounds/soowav.mp3", id:"soowav"},
+		{src:"sounds/sooronwav.mp3", id:"sooronwav"},
 		{src:"https://code.jquery.com/jquery-2.2.4.min.js", id:"lib/jquery-2.2.4.min.js"},
 		{src:"components/sdk/anwidget.js", id:"sdk/anwidget.js"},
 		{src:"components/ui/src/textinput.js", id:"an.TextInput"},
