@@ -1799,37 +1799,37 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 			
 			createjs.Sound.registerSounds(sounds, assetsPath);
 						
-						var firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+		//var firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 		
-		if (firefox && createjs)
+		//if (firefox && createjs)
 		
-		{
+		//{
 		
-		    createjs.Text.prototype._drawTextLine = function(ctx, text, y)
+		//    createjs.Text.prototype._drawTextLine = function(ctx, text, y)
 		
-		    {
+		//    {
 		
-		        // Adjust text position only if textBaseline is "top"
+		//        // Adjust text position only if textBaseline is "top"
 		
-		        if (this.textBaseline === "center")
+		//        if (this.textBaseline === "bottom")
 		
-		        {
+		//        {
 		
-		            var lineHeight = this.lineHeight || this.getMeasuredLineHeight();
+		//            var lineHeight = this.lineHeight || this.getMeasuredLineHeight();
 		
-		            y += lineHeight * 0.14;
+		//            y += lineHeight * 0.14;
 		
-		        }
+		//        }
 		
-		        // Chrome 17 will fail to draw the text if the last param is included but null, so we feed it a large value instead:
+		//        // Chrome 17 will fail to draw the text if the last param is included but null, so we feed it a large value instead:
 		
-		        if (this.outline) { ctx.strokeText(text, 0, y, this.maxWidth||0xFFFF); }
+		//        if (this.outline) { ctx.strokeText(text, 0, y, this.maxWidth||0xFFFF); }
 		
-		        else { ctx.fillText(text, 0, y, this.maxWidth||0xFFFF); }
+		//        else { ctx.fillText(text, 0, y, this.maxWidth||0xFFFF); }
 		
-		    };
+		//    };
 		
-		}
+		//}
 		
 		this.addChild(new lib.p0());
 	}
