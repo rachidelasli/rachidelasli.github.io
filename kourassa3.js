@@ -1557,7 +1557,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.btxt1 = new lib.btnTr();
 	this.btxt1.name = "btxt1";
 	this.btxt1.parent = this;
-	this.btxt1.setTransform(209.8,263.9,0.934,0.975,0,0,0,0.1,0);
+	this.btxt1.setTransform(263.8,263.9,0.934,0.975,0,0,0,0.1,0);
 	new cjs.ButtonHelper(this.btxt1, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.clav = new lib.clav();
@@ -1798,6 +1798,38 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 						]}}];
 			
 			createjs.Sound.registerSounds(sounds, assetsPath);
+						
+						var firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+		
+		if (firefox && createjs)
+		
+		{
+		
+		    createjs.Text.prototype._drawTextLine = function(ctx, text, y)
+		
+		    {
+		
+		        // Adjust text position only if textBaseline is "top"
+		
+		        if (this.textBaseline === "center")
+		
+		        {
+		
+		            var lineHeight = this.lineHeight || this.getMeasuredLineHeight();
+		
+		            y += lineHeight * 0.14;
+		
+		        }
+		
+		        // Chrome 17 will fail to draw the text if the last param is included but null, so we feed it a large value instead:
+		
+		        if (this.outline) { ctx.strokeText(text, 0, y, this.maxWidth||0xFFFF); }
+		
+		        else { ctx.fillText(text, 0, y, this.maxWidth||0xFFFF); }
+		
+		    };
+		
+		}
 		
 		this.addChild(new lib.p0());
 	}
