@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"kourassa3_atlas_", frames: [[1104,0,533,670],[1057,672,526,669],[529,672,526,670],[0,0,550,670],[0,672,527,671],[1057,1343,523,669],[388,1512,154,84],[723,1602,154,84],[0,1345,550,165],[544,1512,3,36],[552,1344,256,256],[0,1512,256,256],[258,1512,128,128],[552,0,550,670],[388,1602,333,43],[810,1344,150,80],[810,1426,150,80],[810,1508,150,80],[258,1642,100,80]]}
+		{name:"kourassa3_atlas_", frames: [[1104,0,533,670],[529,1343,526,669],[1058,672,526,670],[529,672,527,669],[0,0,550,670],[0,672,527,671],[0,1345,523,669],[1639,45,154,84],[1639,131,154,84],[1057,1344,550,165],[1741,463,3,36],[1586,672,256,256],[1586,930,256,256],[1586,1188,128,128],[552,0,550,670],[1639,0,333,43],[1639,217,150,80],[1639,299,150,80],[1639,381,150,80],[1639,463,100,80]]}
 ];
 
 
@@ -32,114 +32,121 @@ lib.ssMetadata = [
 
 
 
-(lib._2 = function() {
+(lib._008 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.p4 = function() {
+(lib._2 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._5 = function() {
+(lib.p4 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.brdnR = function() {
+(lib._5 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.brdnS = function() {
+(lib.brdnR = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clav_i = function() {
+(lib.brdnS = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clign = function() {
+(lib.clav_i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.hm1 = function() {
+(lib.clign = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.hm2 = function() {
+(lib.hm1 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.lp_i = function() {
+(lib.hm2 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.prp = function() {
+(lib.lp_i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.recherch = function() {
+(lib.prp = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rempRg = function() {
+(lib.recherch = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(15);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmpjR = function() {
+(lib.rempRg = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(16);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmprR = function() {
+(lib.rmpjR = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(17);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.svI = function() {
+(lib.rmprR = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(18);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.svI = function() {
+	this.spriteSheet = ss["kourassa3_atlas_"];
+	this.gotoAndStop(19);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -268,6 +275,52 @@ p.nominalBounds = new cjs.Rectangle(0,0,1,33);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,160,80);
+
+
+(lib.p8 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.hm.on("click", p0.bind(this));
+		function p0(){this.parent.addChild(new lib.p0()); this.parent.removeChild(this);}
+		
+		this.pr.on("click", p7.bind(this));
+		function p7(){this.parent.addChild(new lib.p7()); this.parent.removeChild(this);}
+		
+		this.sv.on("click", p9.bind(this));
+		function p9(){this.parent.addChild(new lib.p9()); this.parent.removeChild(this);}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+	// Layer_1
+	this.pr = new lib.sv();
+	this.pr.name = "pr";
+	this.pr.parent = this;
+	this.pr.setTransform(492.7,648.3,0.706,0.667,0,0,180,80,40.3);
+	new cjs.ButtonHelper(this.pr, 0, 1, 2, false, new lib.sv(), 3);
+
+	this.sv = new lib.sv();
+	this.sv.name = "sv";
+	this.sv.parent = this;
+	this.sv.setTransform(7.9,621.8,0.706,0.667);
+	new cjs.ButtonHelper(this.sv, 0, 1, 2, false, new lib.sv(), 3);
+
+	this.hm = new lib.hm();
+	this.hm.name = "hm";
+	this.hm.parent = this;
+	this.hm.setTransform(9.5,12.1,0.75,0.75);
+	new cjs.ButtonHelper(this.hm, 0, 1, 2, false, new lib.hm(), 3);
+
+	this.instance = new lib._008();
+	this.instance.parent = this;
+	this.instance.setTransform(4,5,1.044,1.001);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.hm},{t:this.sv},{t:this.pr}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.p8, new cjs.Rectangle(4,5,550,670), null);
 
 
 (lib.p2 = function(mode,startPosition,loop) {
@@ -405,7 +458,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 	this.text.lineHeight = 44;
 	this.text.lineWidth = 179;
 	this.text.parent = this;
-	this.text.setTransform(131.9,355.3);
+	this.text.setTransform(129.9,353.3);
 
 	this.ori = new lib.btnS();
 	this.ori.name = "ori";
@@ -418,7 +471,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 	this.text_1.lineHeight = 33;
 	this.text_1.lineWidth = 179;
 	this.text_1.parent = this;
-	this.text_1.setTransform(171.9,237.8);
+	this.text_1.setTransform(170.9,235.8);
 
 	this.prp = new lib.btnS();
 	this.prp.name = "prp";
@@ -431,7 +484,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 	this.text_2.lineHeight = 33;
 	this.text_2.lineWidth = 179;
 	this.text_2.parent = this;
-	this.text_2.setTransform(171.9,456.3);
+	this.text_2.setTransform(169.9,454.3);
 
 	this.idx = new lib.btnS();
 	this.idx.name = "idx";
@@ -914,7 +967,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		function p5(){this.parent.addChild(new lib.p5()); this.parent.removeChild(this);}
 		
 		this.gop5.on("click", p5.bind(this));
-		//function p4(){this.parent.addChild(new lib.p4()); this.parent.removeChild(this);}
+		
 		
 		/*
 		this.lp.on("click", p.bind(this));
@@ -932,9 +985,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	// Layer_1
 	this.text = new cjs.Text("أُراجِــــعُ :   ...............   5", "bold 18px 'Arial'", "#333333");
 	this.text.lineHeight = 22;
-	this.text.lineWidth = 184;
+	this.text.lineWidth = 198;
 	this.text.parent = this;
-	this.text.setTransform(187.1,92.1);
+	this.text.setTransform(180.1,92.1);
 
 	this.gop5 = new lib.btnTr();
 	this.gop5.name = "gop5";
@@ -1483,10 +1536,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		
 		this.pr.on("click", p6.bind(this));
 		function p6(){this.parent.addChild(new lib.p6()); this.removeChild(this); }
-		/*
+		
 		this.sv.on("click", p8.bind(this));
 		function p8(){this.addChild(new lib.p8()); this.removeChild(this);}
-		*/
 	}
 
 	// actions tween:
@@ -1499,7 +1551,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.txt5.lineHeight = 47;
 	this.txt5.lineWidth = 100;
 	this.txt5.parent = this;
-	this.txt5.setTransform(125.7,559.8,1.308,1.143);
+	this.txt5.setTransform(128.7,553.8,1.308,1.143);
 
 	this.txt4 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
 	this.txt4.name = "txt4";
@@ -1507,7 +1559,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.txt4.lineHeight = 47;
 	this.txt4.lineWidth = 100;
 	this.txt4.parent = this;
-	this.txt4.setTransform(274.8,559.8,1.308,1.143);
+	this.txt4.setTransform(276.8,553.8,1.308,1.143);
 
 	this.txt3 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
 	this.txt3.name = "txt3";
@@ -1515,7 +1567,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.txt3.lineHeight = 47;
 	this.txt3.lineWidth = 100;
 	this.txt3.parent = this;
-	this.txt3.setTransform(429.6,559.8,1.308,1.143);
+	this.txt3.setTransform(429.6,553.8,1.308,1.143);
 
 	this.txt2 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
 	this.txt2.name = "txt2";
@@ -1523,7 +1575,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.txt2.lineHeight = 47;
 	this.txt2.lineWidth = 100;
 	this.txt2.parent = this;
-	this.txt2.setTransform(128.5,280.4,1.308,1.143);
+	this.txt2.setTransform(128.5,276.4,1.308,1.143);
 
 	this.clign = new lib.clignM();
 	this.clign.name = "clign";
@@ -1533,13 +1585,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.btxt5 = new lib.btnTr();
 	this.btxt5.name = "btxt5";
 	this.btxt5.parent = this;
-	this.btxt5.setTransform(56.6,545.8,0.933,0.975,0,0,0,0.1,0.4);
+	this.btxt5.setTransform(60.6,544.8,0.933,0.975,0,0,0,0.1,0.4);
 	new cjs.ButtonHelper(this.btxt5, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.btxt4 = new lib.btnTr();
 	this.btxt4.name = "btxt4";
 	this.btxt4.parent = this;
-	this.btxt4.setTransform(203.1,544.4,0.933,0.975,0,0,0,0.4,0.4);
+	this.btxt4.setTransform(209.1,544.4,0.933,0.975,0,0,0,0.4,0.4);
 	new cjs.ButtonHelper(this.btxt4, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.btxt3 = new lib.btnTr();
@@ -1551,13 +1603,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.btxt2 = new lib.btnTr();
 	this.btxt2.name = "btxt2";
 	this.btxt2.parent = this;
-	this.btxt2.setTransform(57.8,264.3,0.933,0.975,0,0,0,0.1,0.4);
+	this.btxt2.setTransform(60.8,264.3,0.933,0.975,0,0,0,0.1,0.4);
 	new cjs.ButtonHelper(this.btxt2, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.btxt1 = new lib.btnTr();
 	this.btxt1.name = "btxt1";
 	this.btxt1.parent = this;
-	this.btxt1.setTransform(263.8,263.9,0.934,0.975,0,0,0,0.1,0);
+	this.btxt1.setTransform(206.8,263.9,0.934,0.975,0,0,0,0.1,0);
 	new cjs.ButtonHelper(this.btxt1, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.clav = new lib.clav();
@@ -1589,7 +1641,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.txt1.lineHeight = 47;
 	this.txt1.lineWidth = 100;
 	this.txt1.parent = this;
-	this.txt1.setTransform(277.7,280.4,1.308,1.143);
+	this.txt1.setTransform(277.7,276.4,1.308,1.143);
 
 	this.instance = new lib._007();
 	this.instance.parent = this;
@@ -1619,6 +1671,46 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.txt5 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
+	this.txt5.name = "txt5";
+	this.txt5.textAlign = "center";
+	this.txt5.lineHeight = 47;
+	this.txt5.lineWidth = 100;
+	this.txt5.parent = this;
+	this.txt5.setTransform(127.5,561.8,1.308,1.143);
+
+	this.txt4 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
+	this.txt4.name = "txt4";
+	this.txt4.textAlign = "center";
+	this.txt4.lineHeight = 47;
+	this.txt4.lineWidth = 100;
+	this.txt4.parent = this;
+	this.txt4.setTransform(271.5,562.3,1.308,1.143);
+
+	this.txt3 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
+	this.txt3.name = "txt3";
+	this.txt3.textAlign = "center";
+	this.txt3.lineHeight = 47;
+	this.txt3.lineWidth = 100;
+	this.txt3.parent = this;
+	this.txt3.setTransform(426.5,562.2,1.308,1.143);
+
+	this.txt2 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
+	this.txt2.name = "txt2";
+	this.txt2.textAlign = "center";
+	this.txt2.lineHeight = 47;
+	this.txt2.lineWidth = 100;
+	this.txt2.parent = this;
+	this.txt2.setTransform(127,315.8,1.308,1.143);
+
+	this.txt1 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
+	this.txt1.name = "txt1";
+	this.txt1.textAlign = "center";
+	this.txt1.lineHeight = 47;
+	this.txt1.lineWidth = 100;
+	this.txt1.parent = this;
+	this.txt1.setTransform(272,315.8,1.308,1.143);
+
 	this.clign = new lib.clignM();
 	this.clign.name = "clign";
 	this.clign.parent = this;
@@ -1633,7 +1725,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.btxt4 = new lib.btnTr();
 	this.btxt4.name = "btxt4";
 	this.btxt4.parent = this;
-	this.btxt4.setTransform(206.4,550.9,0.933,0.975,0,0,0,0.4,0.4);
+	this.btxt4.setTransform(203.4,550.9,0.933,0.975,0,0,0,0.4,0.4);
 	new cjs.ButtonHelper(this.btxt4, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.btxt3 = new lib.btnTr();
@@ -1645,13 +1737,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.btxt2 = new lib.btnTr();
 	this.btxt2.name = "btxt2";
 	this.btxt2.parent = this;
-	this.btxt2.setTransform(54.9,304.6,0.933,0.975,0,0,0,0.1,0.4);
+	this.btxt2.setTransform(57.9,304.6,0.933,0.975,0,0,0,0.1,0.4);
 	new cjs.ButtonHelper(this.btxt2, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.btxt1 = new lib.btnTr();
 	this.btxt1.name = "btxt1";
 	this.btxt1.parent = this;
-	this.btxt1.setTransform(205.6,304.9,0.934,0.975,0,0,0,0.1,0);
+	this.btxt1.setTransform(203.6,304.9,0.934,0.975,0,0,0,0.1,0);
 	new cjs.ButtonHelper(this.btxt1, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.clav = new lib.clav();
@@ -1677,51 +1769,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.sv.setTransform(4.9,625.7,0.706,0.666,0,0,0,0.1,0.1);
 	new cjs.ButtonHelper(this.sv, 0, 1, 2, false, new lib.sv(), 3);
 
-	this.txt5 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
-	this.txt5.name = "txt5";
-	this.txt5.textAlign = "center";
-	this.txt5.lineHeight = 47;
-	this.txt5.lineWidth = 100;
-	this.txt5.parent = this;
-	this.txt5.setTransform(129,569.6,1.308,1);
-
-	this.txt4 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
-	this.txt4.name = "txt4";
-	this.txt4.textAlign = "center";
-	this.txt4.lineHeight = 47;
-	this.txt4.lineWidth = 100;
-	this.txt4.parent = this;
-	this.txt4.setTransform(272,569.6,1.308,1);
-
-	this.txt3 = new cjs.Text("", "40px 'Arial'", "#ED1C4B");
-	this.txt3.name = "txt3";
-	this.txt3.textAlign = "center";
-	this.txt3.lineHeight = 47;
-	this.txt3.lineWidth = 100;
-	this.txt3.parent = this;
-	this.txt3.setTransform(426,569.6,1.308,1);
-
-	this.txt2 = new cjs.Text("", "40px 'Arial'", "#F24733");
-	this.txt2.name = "txt2";
-	this.txt2.textAlign = "center";
-	this.txt2.lineHeight = 47;
-	this.txt2.lineWidth = 100;
-	this.txt2.parent = this;
-	this.txt2.setTransform(129,321.6,1.308,1.068);
-
-	this.txt1 = new cjs.Text("", "40px 'Arial'", "#ED1C24");
-	this.txt1.name = "txt1";
-	this.txt1.textAlign = "center";
-	this.txt1.lineHeight = 47;
-	this.txt1.lineWidth = 100;
-	this.txt1.parent = this;
-	this.txt1.setTransform(278,320.7,1.308,1.143);
-
 	this.instance = new lib._006();
 	this.instance.parent = this;
 	this.instance.setTransform(5,5,1.046,1.001);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.sv},{t:this.pr},{t:this.hm},{t:this.clav},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.sv},{t:this.pr},{t:this.hm},{t:this.clav},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p6, new cjs.Rectangle(4.8,5,550.2,670.7), null);
 
@@ -1799,37 +1851,22 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 			
 			createjs.Sound.registerSounds(sounds, assetsPath);
 						
-		//var firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-		
-		//if (firefox && createjs)
-		
-		//{
-		
-		//    createjs.Text.prototype._drawTextLine = function(ctx, text, y)
-		
-		//    {
-		
-		//        // Adjust text position only if textBaseline is "top"
-		
-		//        if (this.textBaseline === "bottom")
-		
-		//        {
-		
-		//            var lineHeight = this.lineHeight || this.getMeasuredLineHeight();
-		
-		//            y += lineHeight * 0.14;
-		
-		//        }
-		
-		//        // Chrome 17 will fail to draw the text if the last param is included but null, so we feed it a large value instead:
-		
-		//        if (this.outline) { ctx.strokeText(text, 0, y, this.maxWidth||0xFFFF); }
-		
-		//        else { ctx.fillText(text, 0, y, this.maxWidth||0xFFFF); }
-		
-		//    };
-		
-		//}
+		var firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+		if (firefox && createjs)
+		{
+		  createjs.Text.prototype._drawTextLine = function(ctx, text, y)
+		  {
+		  // Adjust text position only if textBaseline is "top"
+		  if (this.textBaseline === "top")
+		  {
+		  var lineHeight = this.lineHeight || this.getMeasuredLineHeight();
+		  y += lineHeight * 0.1;
+		  }
+		  // Chrome 17 will fail to draw the text if the last param is included but null, so we feed it a large value instead:
+		  if (this.outline) { ctx.strokeText(text, 0, y, this.maxWidth||0xFFFF); }
+		  else { ctx.fillText(text, 0, y, this.maxWidth||0xFFFF); }
+		  };
+		}
 		
 		this.addChild(new lib.p0());
 	}
@@ -1845,10 +1882,10 @@ lib.properties = {
 	width: 558,
 	height: 678,
 	fps: 24,
-	color: "#CCCCCC",
+	color: "#000066",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/kourassa3_atlas_.png", id:"kourassa3_atlas_"}
+		{src:"images/kourassa3_atlas_.png?1516699730009", id:"kourassa3_atlas_"}
 	],
 	preloads: []
 };
