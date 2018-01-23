@@ -1885,7 +1885,7 @@ lib.properties = {
 	color: "#000066",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/kourassa3_atlas_.png?1516699730009", id:"kourassa3_atlas_"}
+		{src:"images/kourassa3_atlas_.png", id:"kourassa3_atlas_"}
 	],
 	preloads: []
 };
