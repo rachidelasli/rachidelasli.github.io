@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"kourassa3_atlas_", frames: [[1104,0,533,670],[3216,2280,400,400],[525,672,400,400],[927,672,400,400],[525,1074,400,400],[927,1074,400,400],[2696,1074,400,400],[3098,1074,400,400],[3500,1074,400,400],[1329,1075,400,400],[1731,1075,400,400],[2133,1342,400,400],[2814,2682,400,400],[3216,2682,400,400],[3618,2682,400,400],[1206,2683,400,400],[1608,2683,400,400],[2010,2950,400,400],[0,2951,400,400],[402,3084,400,400],[3618,2280,400,400],[1206,2281,400,400],[1608,2281,400,400],[2010,2548,400,400],[0,2549,400,400],[402,2682,400,400],[804,2682,400,400],[2412,2682,400,400],[0,1343,400,400],[402,1476,400,400],[804,1476,400,400],[2535,1476,400,400],[2937,1476,400,400],[3339,1476,400,400],[1206,1477,400,400],[1608,1477,400,400],[2010,1744,400,400],[0,1745,400,400],[402,1878,400,400],[804,1878,400,400],[2412,1878,400,400],[2814,1878,400,400],[3216,1878,400,400],[3618,1878,400,400],[1206,1879,400,400],[1608,1879,400,400],[2010,2146,400,400],[0,2147,400,400],[402,2280,400,400],[804,2280,400,400],[2412,2280,400,400],[2814,2280,400,400],[804,3084,400,400],[2412,3084,400,400],[2814,3084,400,400],[3216,3084,400,400],[3618,3084,400,400],[1206,3085,400,400],[1608,3085,400,400],[2010,3352,400,400],[2696,672,400,400],[3098,672,400,400],[3500,672,400,400],[1329,673,400,400],[1731,673,400,400],[2168,671,526,669],[2697,0,526,670],[2168,0,527,669],[3225,0,526,670],[0,0,550,670],[1639,0,527,671],[0,672,523,669],[3902,776,154,84],[3902,862,154,84],[3902,948,154,84],[0,3486,550,165],[552,3486,550,165],[3753,516,150,150],[4011,0,3,36],[3753,0,256,256],[3753,258,256,256],[3741,1476,256,256],[3905,516,128,128],[552,0,550,670],[3741,1734,333,43],[3902,1034,150,80],[3902,1116,150,80],[3902,1198,150,80],[3902,1280,100,80],[3905,646,128,128]]}
+		{name:"kourassa3_atlas_", frames: [[1656,0,533,670],[525,672,400,400],[927,672,400,400],[1329,672,400,400],[1731,672,400,400],[2719,672,400,400],[3121,672,400,400],[3523,672,400,400],[525,1074,400,400],[804,3084,400,400],[1206,3084,400,400],[1608,3084,400,400],[2412,3084,400,400],[2814,3084,400,400],[3216,3084,400,400],[3618,3084,400,400],[2010,3352,400,400],[927,1074,400,400],[1329,1074,400,400],[1731,1074,400,400],[2719,1074,400,400],[3121,1074,400,400],[3523,1074,400,400],[2133,1342,400,400],[0,1343,400,400],[0,1745,400,400],[402,1878,400,400],[804,1878,400,400],[1206,1878,400,400],[1608,1878,400,400],[2412,1878,400,400],[2814,1878,400,400],[3216,1878,400,400],[402,1476,400,400],[804,1476,400,400],[1206,1476,400,400],[1608,1476,400,400],[2535,1476,400,400],[2937,1476,400,400],[3339,1476,400,400],[2010,1744,400,400],[3618,1878,400,400],[2010,2146,400,400],[0,2147,400,400],[402,2280,400,400],[804,2280,400,400],[1206,2280,400,400],[1608,2280,400,400],[2412,2280,400,400],[2814,2280,400,400],[3216,2280,400,400],[3618,2280,400,400],[2010,2548,400,400],[0,2549,400,400],[402,2682,400,400],[804,2682,400,400],[1206,2682,400,400],[1608,2682,400,400],[2412,2682,400,400],[2814,2682,400,400],[3216,2682,400,400],[3618,2682,400,400],[2010,2950,400,400],[0,2951,400,400],[402,3084,400,400],[2191,671,526,669],[2720,0,526,670],[2191,0,527,669],[3248,0,526,670],[0,0,550,670],[0,672,523,669],[4027,1280,67,39],[3925,776,154,84],[3925,862,154,84],[3925,948,154,84],[0,3486,550,165],[552,3486,550,165],[3776,516,150,150],[4034,0,3,36],[3776,0,256,256],[3776,258,256,256],[3741,1476,256,256],[3928,516,128,128],[1104,0,550,670],[552,0,550,670],[3925,1034,150,80],[3925,1116,150,80],[3925,1198,150,80],[3925,1280,100,80],[3928,646,128,128]]}
 ];
 
 
@@ -501,14 +501,14 @@ lib.ssMetadata = [
 
 
 
-(lib._3 = function() {
+(lib._5 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(70);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib._5 = function() {
+(lib.Bitmap1 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(71);
 }).prototype = p = new cjs.Sprite();
@@ -592,14 +592,14 @@ lib.ssMetadata = [
 
 
 
-(lib.prp = function() {
+(lib.p3i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(83);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.recherch = function() {
+(lib.prp = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(84);
 }).prototype = p = new cjs.Sprite();
@@ -3037,9 +3037,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		this.stop();
-		//var st = document.getElementById("ch") ;
-		
+		var pg = new Array(new lib.p0(),new lib.p1(),new lib.p2(),new lib.p3(),new lib.p3(),new lib.p5() , new lib.p6(),
+			new lib.p7(),new lib.p8(),new lib.p9());
+			
 		this.hm.on("click", p0.bind(this));
 		function p0(){this.parent.addChild(new lib.p0()); this.parent.removeChild(this); }
 		
@@ -3054,13 +3054,19 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		this.gop9.on("click", p9.bind(this));
 		function p9(){this.parent.addChild(new lib.p9()); this.parent.removeChild(this);}
 		
+		this.gop1.on("click", p1.bind(this));
+		function p1(){this.parent.addChild(new lib.p1()); this.parent.removeChild(this);}
+		
+		this.gop4.on("click", p1.bind(this));
+		
+		
+		this.gop2.on("click", p2.bind(this));
 		
 		
 		this.lp.on("click", p.bind(this));
 		
 		function p(){
-		var pg = new Array(new lib.p0(),new lib.p1(),new lib.p2(),new lib.p3(),new lib.p3(),new lib.p5() , new lib.p6(),
-			new lib.p7(),new lib.p8(),new lib.p9());
+		
 		t= this.txt.text;
 		this.parent.addChild(pg[t]); this.parent.removeChild(this);}
 	}
@@ -3068,117 +3074,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// Layer_1
-	this.instance = new lib.clavN_1();
+	// Layer_2
+	this.instance = new lib.clignM();
 	this.instance.parent = this;
-	this.instance.setTransform(6.1,8.1,0.684,0.767,0,0,0,0.1,0.1);
-
-	this.text = new cjs.Text("أُراجِــــعُ :   ...............   5", "bold 18px 'Arial'", "#333333");
-	this.text.lineHeight = 22;
-	this.text.lineWidth = 198;
-	this.text.parent = this;
-	this.text.setTransform(180.1,92.1);
-
-	this.gop5 = new lib.btnTr();
-	this.gop5.name = "gop5";
-	this.gop5.parent = this;
-	this.gop5.setTransform(174.5,105,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop5, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_1 = new lib.btnTr();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(65.5,540.8,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_2 = new lib.btnTr();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(65.5,491.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_2, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_3 = new lib.btnTr();
-	this.instance_3.parent = this;
-	this.instance_3.setTransform(65.5,442.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_3, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_4 = new lib.btnTr();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(65.5,394.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_4, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_5 = new lib.btnTr();
-	this.instance_5.parent = this;
-	this.instance_5.setTransform(65.5,346.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_5, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_6 = new lib.btnTr();
-	this.instance_6.parent = this;
-	this.instance_6.setTransform(65.5,298.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_6, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_7 = new lib.btnTr();
-	this.instance_7.parent = this;
-	this.instance_7.setTransform(65.5,250.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_7, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_8 = new lib.btnTr();
-	this.instance_8.parent = this;
-	this.instance_8.setTransform(65.5,202.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_8, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_9 = new lib.btnTr();
-	this.instance_9.parent = this;
-	this.instance_9.setTransform(65.5,155,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_9, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_10 = new lib.btnTr();
-	this.instance_10.parent = this;
-	this.instance_10.setTransform(293.1,539.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_10, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_11 = new lib.btnTr();
-	this.instance_11.parent = this;
-	this.instance_11.setTransform(293.1,490.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_11, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_12 = new lib.btnTr();
-	this.instance_12.parent = this;
-	this.instance_12.setTransform(293.1,441.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_12, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_13 = new lib.btnTr();
-	this.instance_13.parent = this;
-	this.instance_13.setTransform(293.1,393.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_13, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_14 = new lib.btnTr();
-	this.instance_14.parent = this;
-	this.instance_14.setTransform(293.1,345.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_14, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_15 = new lib.btnTr();
-	this.instance_15.parent = this;
-	this.instance_15.setTransform(293.1,297.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_15, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_16 = new lib.btnTr();
-	this.instance_16.parent = this;
-	this.instance_16.setTransform(293.1,249.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_16, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_17 = new lib.btnTr();
-	this.instance_17.parent = this;
-	this.instance_17.setTransform(293.1,201.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.instance_17, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9 = new lib.btnTr();
-	this.gop9.name = "gop9";
-	this.gop9.parent = this;
-	this.gop9.setTransform(293.1,154.1,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.instance_18 = new lib.clignM();
-	this.instance_18.parent = this;
-	this.instance_18.setTransform(235.5,17,3,0.694,0,0,0,0.2,0);
+	this.instance.setTransform(263.9,134.8,3,0.694,0,0,0,0.2,0);
 
 	this.txt = new cjs.Text("", "bold 25px 'Arial'", "#009966");
 	this.txt.name = "txt";
@@ -3186,48 +3085,167 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.txt.lineHeight = 30;
 	this.txt.lineWidth = 66;
 	this.txt.parent = this;
-	this.txt.setTransform(205,16);
-
-	this.text_1 = new cjs.Text("الْبَحْثُ عَنْ رَقْمِ الصَّفْحَةِ", "bold 20px 'Arial'");
-	this.text_1.textAlign = "center";
-	this.text_1.lineHeight = 24;
-	this.text_1.lineWidth = 203;
-	this.text_1.parent = this;
-	this.text_1.setTransform(345.5,21);
+	this.txt.setTransform(236.7,128.9);
 
 	this.lp = new lib.lp();
 	this.lp.name = "lp";
 	this.lp.parent = this;
-	this.lp.setTransform(133.1,13);
+	this.lp.setTransform(164.1,129.7);
 	new cjs.ButtonHelper(this.lp, 0, 1, 2, false, new lib.lp(), 3);
 
-	this.instance_19 = new lib.recherch();
+	this.instance_1 = new lib.Bitmap1();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(201,127,1.045,0.949);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.lp},{t:this.txt},{t:this.instance}]}).wait(1));
+
+	// Layer_1
+	this.gop1 = new lib.btnTr();
+	this.gop1.name = "gop1";
+	this.gop1.parent = this;
+	this.gop1.setTransform(293.2,66,1.393,0.475,0,0,0,0.1,40.2);
+	new cjs.ButtonHelper(this.gop1, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.gop2 = new lib.btnTr();
+	this.gop2.name = "gop2";
+	this.gop2.parent = this;
+	this.gop2.setTransform(293.2,106.5,1.393,0.475,0,0,0,0.1,40.2);
+	new cjs.ButtonHelper(this.gop2, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.gop4 = new lib.btnTr();
+	this.gop4.name = "gop4";
+	this.gop4.parent = this;
+	this.gop4.setTransform(293.2,149.7,1.393,0.475,0,0,0,0.1,40.2);
+	new cjs.ButtonHelper(this.gop4, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#CCCCCC").s("#000000").ss(3,1,1).rr(-65,-22.5,130,45,8);
+	this.shape.setTransform(217.5,146.2);
+
+	this.instance_2 = new lib.clavN_1();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(11.6,77.5,0.804,0.767,0,0,0,0.3,0.1);
+
+	this.gop5 = new lib.btnTr();
+	this.gop5.name = "gop5";
+	this.gop5.parent = this;
+	this.gop5.setTransform(292.1,191.7,1.393,0.475,0,0,0,0,40.1);
+	new cjs.ButtonHelper(this.gop5, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_3 = new lib.btnTr();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(65.5,621.8,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_3, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_4 = new lib.btnTr();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(65.5,572.9,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_4, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_5 = new lib.btnTr();
+	this.instance_5.parent = this;
+	this.instance_5.setTransform(65.5,523.9,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_5, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_6 = new lib.btnTr();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(65.5,475.9,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_6, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_7 = new lib.btnTr();
+	this.instance_7.parent = this;
+	this.instance_7.setTransform(65.5,427.9,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_7, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_8 = new lib.btnTr();
+	this.instance_8.parent = this;
+	this.instance_8.setTransform(65.5,379.9,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_8, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_9 = new lib.btnTr();
+	this.instance_9.parent = this;
+	this.instance_9.setTransform(65.5,331.9,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_9, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_10 = new lib.btnTr();
+	this.instance_10.parent = this;
+	this.instance_10.setTransform(65.5,283.9,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_10, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_11 = new lib.btnTr();
+	this.instance_11.parent = this;
+	this.instance_11.setTransform(65.5,236,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_11, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_12 = new lib.btnTr();
+	this.instance_12.parent = this;
+	this.instance_12.setTransform(293.1,622.2,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_12, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_13 = new lib.btnTr();
+	this.instance_13.parent = this;
+	this.instance_13.setTransform(293.1,573.3,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_13, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_14 = new lib.btnTr();
+	this.instance_14.parent = this;
+	this.instance_14.setTransform(293.1,524.3,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_14, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_15 = new lib.btnTr();
+	this.instance_15.parent = this;
+	this.instance_15.setTransform(293.1,476.3,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_15, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_16 = new lib.btnTr();
+	this.instance_16.parent = this;
+	this.instance_16.setTransform(293.1,428.3,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_16, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_17 = new lib.btnTr();
+	this.instance_17.parent = this;
+	this.instance_17.setTransform(293.1,380.3,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_17, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_18 = new lib.btnTr();
+	this.instance_18.parent = this;
+	this.instance_18.setTransform(293.1,332.3,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_18, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.instance_19 = new lib.btnTr();
 	this.instance_19.parent = this;
-	this.instance_19.setTransform(123,8);
+	this.instance_19.setTransform(293.1,284.3,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.instance_19, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.gop9 = new lib.btnTr();
+	this.gop9.name = "gop9";
+	this.gop9.parent = this;
+	this.gop9.setTransform(293.1,236.4,1.393,0.55,0,0,0,0,40);
+	new cjs.ButtonHelper(this.gop9, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.pr = new lib.sv();
 	this.pr.name = "pr";
 	this.pr.parent = this;
-	this.pr.setTransform(497.4,650.1,0.706,0.667,0,0,180,80,40.3);
+	this.pr.setTransform(506.8,650.1,0.588,0.667,0,0,180,80,40.3);
 	new cjs.ButtonHelper(this.pr, 0, 1, 2, false, new lib.sv(), 3);
 
 	this.sv = new lib.sv();
 	this.sv.name = "sv";
 	this.sv.parent = this;
-	this.sv.setTransform(6.1,623.2,0.706,0.667);
+	this.sv.setTransform(6.1,623.2,0.588,0.667,0,0,0,0.1,0);
 	new cjs.ButtonHelper(this.sv, 0, 1, 2, false, new lib.sv(), 3);
 
 	this.hm = new lib.hm();
 	this.hm.name = "hm";
 	this.hm.parent = this;
-	this.hm.setTransform(467,12,0.75,0.75,0,0,0,0,0.1);
+	this.hm.setTransform(4,5.1,0.625,0.625,0,0,0,0,0.1);
 	new cjs.ButtonHelper(this.hm, 0, 1, 2, false, new lib.hm(), 3);
 
-	this.instance_20 = new lib._3();
+	this.instance_20 = new lib.p3i();
 	this.instance_20.parent = this;
-	this.instance_20.setTransform(4,5,1.044,0.999);
+	this.instance_20.setTransform(4,5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_20},{t:this.hm},{t:this.sv},{t:this.pr},{t:this.instance_19},{t:this.lp},{t:this.text_1},{t:this.txt},{t:this.instance_18},{t:this.gop9},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.gop5},{t:this.text},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_20},{t:this.hm},{t:this.sv},{t:this.pr},{t:this.gop9},{t:this.instance_19},{t:this.instance_18},{t:this.instance_17},{t:this.instance_16},{t:this.instance_15},{t:this.instance_14},{t:this.instance_13},{t:this.instance_12},{t:this.instance_11},{t:this.instance_10},{t:this.instance_9},{t:this.instance_8},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.gop5},{t:this.instance_2},{t:this.shape},{t:this.gop4},{t:this.gop2},{t:this.gop1}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p3, new cjs.Rectangle(4,5,550,670), null);
 
@@ -3239,7 +3257,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	// timeline functions:
 	this.frame_0 = function() {
 		createjs.Touch.enable(stage);
-		this.textBaseline = "alphabetic";
 		
 		var assetsPath = "./sounds/";
 			var sounds = [{src:"spriteAudio.ogg", data: { audioSprite: [
@@ -3324,15 +3341,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		  else { ctx.fillText(text, 0, y, this.maxWidth||0xFFFF); }
 		  };
 		}
-		
 		this.addChild(new lib.p0());
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
+	// Layer_3
+	this.instance = new lib.p3();
+	this.instance.parent = this;
+	this.instance.setTransform(275,335,1,1,0,0,0,275,335);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = null;
+p.nominalBounds = new cjs.Rectangle(283,344,550,670);
 // library properties:
 lib.properties = {
 	id: '8D4C0671D4D96B4689C38B4633B478C1',
