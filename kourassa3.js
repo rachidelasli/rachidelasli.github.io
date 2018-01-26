@@ -2920,45 +2920,45 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
-	this.txt5 = new cjs.Text("", "35px 'Arial'", "#3300CC");
+	this.txt5 = new cjs.Text("د", "40px 'Arial'", "#3300CC");
 	this.txt5.name = "txt5";
 	this.txt5.textAlign = "center";
-	this.txt5.lineHeight = 41;
+	this.txt5.lineHeight = 47;
 	this.txt5.lineWidth = 100;
 	this.txt5.parent = this;
-	this.txt5.setTransform(129.8,569);
+	this.txt5.setTransform(129.6,564);
 
-	this.txt4 = new cjs.Text("", "35px 'Arial'", "#3300CC");
+	this.txt4 = new cjs.Text("د", "40px 'Arial'", "#3300CC");
 	this.txt4.name = "txt4";
 	this.txt4.textAlign = "center";
-	this.txt4.lineHeight = 41;
+	this.txt4.lineHeight = 47;
 	this.txt4.lineWidth = 100;
 	this.txt4.parent = this;
-	this.txt4.setTransform(268.5,569);
+	this.txt4.setTransform(272,564);
 
-	this.txt3 = new cjs.Text("", "35px 'Arial'", "#3300CC");
+	this.txt3 = new cjs.Text("د", "40px 'Arial'", "#3300CC");
 	this.txt3.name = "txt3";
 	this.txt3.textAlign = "center";
-	this.txt3.lineHeight = 41;
+	this.txt3.lineHeight = 47;
 	this.txt3.lineWidth = 100;
 	this.txt3.parent = this;
-	this.txt3.setTransform(423,569);
+	this.txt3.setTransform(421.5,564.5);
 
-	this.txt2 = new cjs.Text("", "35px 'Arial'", "#3300CC");
+	this.txt2 = new cjs.Text("د", "40px 'Arial'", "#3300CC");
 	this.txt2.name = "txt2";
 	this.txt2.textAlign = "center";
-	this.txt2.lineHeight = 41;
+	this.txt2.lineHeight = 47;
 	this.txt2.lineWidth = 100;
 	this.txt2.parent = this;
-	this.txt2.setTransform(126.8,322.3);
+	this.txt2.setTransform(129.8,317.3);
 
-	this.txt1 = new cjs.Text("", "35px 'Arial'", "#3300CC");
+	this.txt1 = new cjs.Text("د", "40px 'Arial'", "#3300CC");
 	this.txt1.name = "txt1";
 	this.txt1.textAlign = "center";
-	this.txt1.lineHeight = 41;
+	this.txt1.lineHeight = 47;
 	this.txt1.lineWidth = 100;
 	this.txt1.parent = this;
-	this.txt1.setTransform(272,322.3);
+	this.txt1.setTransform(272,317.3);
 
 	this.rpr = new lib.rpr();
 	this.rpr.name = "rpr";
