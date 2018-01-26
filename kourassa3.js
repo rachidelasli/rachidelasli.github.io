@@ -2942,7 +2942,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.txt3.lineHeight = 47;
 	this.txt3.lineWidth = 100;
 	this.txt3.parent = this;
-	this.txt3.setTransform(421.5,564.5);
+	this.txt3.setTransform(421.5,565.5);
 
 	this.txt2 = new cjs.Text("", "40px 'Arial'", "#3300CC");
 	this.txt2.name = "txt2";
@@ -3238,6 +3238,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		createjs.Touch.enable(stage);
+		this.textBaseline = "alphabetic";
+		
 		var assetsPath = "./sounds/";
 			var sounds = [{src:"spriteAudio.ogg", data: { audioSprite: [
 		{id:"s1", startTime:0, duration:1210},
@@ -3314,7 +3317,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		  if (this.textBaseline === "top")
 		  {
 		  var lineHeight = this.lineHeight || this.getMeasuredLineHeight();
-		  y += lineHeight * 0.12;
+		  y += lineHeight * 0.11;
 		  }
 		  // Chrome 17 will fail to draw the text if the last param is included but null, so we feed it a large value instead:
 		  if (this.outline) { ctx.strokeText(text, 0, y, this.maxWidth||0xFFFF); }
