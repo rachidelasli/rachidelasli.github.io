@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"kourassa3_atlas_", frames: [[0,2688,533,670],[552,1185,400,400],[2562,804,400,400],[2674,402,400,400],[2562,1608,400,400],[954,1185,400,400],[2562,1206,400,400],[2269,2412,400,400],[2685,0,400,400],[2269,2010,400,400],[1986,3216,400,400],[1758,1206,400,400],[1758,1608,400,400],[1066,671,400,400],[1077,0,400,400],[1867,2010,400,400],[1867,2412,400,400],[2160,804,400,400],[2272,402,400,400],[2283,0,400,400],[2160,1206,400,400],[2160,1608,400,400],[1986,2814,400,400],[3489,0,400,400],[3366,1206,400,400],[3366,1608,400,400],[2790,3216,400,400],[2790,3618,400,400],[3192,2814,400,400],[3475,2010,400,400],[3475,2412,400,400],[954,1587,400,400],[954,1989,400,400],[1063,2391,400,400],[1063,2793,400,400],[1356,1073,400,400],[1468,402,400,400],[1479,0,400,400],[1356,1475,400,400],[1356,1877,400,400],[1465,2279,400,400],[1465,2681,400,400],[1584,3083,400,400],[1584,3485,400,400],[1758,804,400,400],[1870,402,400,400],[1881,0,400,400],[1986,3618,400,400],[2388,2814,400,400],[2671,2010,400,400],[2671,2412,400,400],[2964,804,400,400],[3076,402,400,400],[3087,0,400,400],[2964,1206,400,400],[2964,1608,400,400],[2388,3216,400,400],[2388,3618,400,400],[2790,2814,400,400],[3073,2010,400,400],[3073,2412,400,400],[3366,804,400,400],[3478,402,400,400],[552,1587,400,400],[552,1989,400,400],[535,2688,526,669],[0,3360,527,669],[529,3360,526,670],[1057,3359,525,669],[0,0,550,670],[552,0,523,669],[962,2391,45,133],[966,2526,45,133],[1009,2391,45,133],[1066,1073,154,84],[810,2543,154,84],[1584,3887,154,84],[3192,3216,550,165],[3192,3383,550,165],[810,2391,150,150],[1458,2279,3,36],[552,671,512,512],[1468,804,256,256],[1077,402,256,256],[552,2391,256,256],[1335,402,128,128],[0,672,550,670],[0,1344,550,670],[0,2016,550,670],[1222,1144,67,39],[1584,3973,150,80],[1736,3973,150,80],[1222,1073,98,69],[1740,3887,150,80],[1356,2279,100,80],[1335,532,128,128]]}
+		{name:"kourassa3_atlas_", frames: [[0,2688,533,670],[552,1185,400,400],[1758,804,400,400],[1986,3618,400,400],[3475,2412,400,400],[552,1587,400,400],[2562,1206,400,400],[2562,1608,400,400],[1986,3216,400,400],[2388,2814,400,400],[2671,2010,400,400],[2671,2412,400,400],[2964,804,400,400],[3076,402,400,400],[3087,0,400,400],[2964,1206,400,400],[2964,1608,400,400],[2388,3216,400,400],[2388,3618,400,400],[2790,2814,400,400],[3073,2010,400,400],[3073,2412,400,400],[3366,804,400,400],[3478,402,400,400],[3489,0,400,400],[3366,1206,400,400],[3366,1608,400,400],[2790,3216,400,400],[2790,3618,400,400],[3192,2814,400,400],[3475,2010,400,400],[552,1989,400,400],[954,1185,400,400],[1066,671,400,400],[1077,0,400,400],[954,1587,400,400],[954,1989,400,400],[1063,2391,400,400],[1063,2793,400,400],[1356,1073,400,400],[1468,402,400,400],[1479,0,400,400],[1356,1475,400,400],[1356,1877,400,400],[1465,2279,400,400],[1465,2681,400,400],[1584,3083,400,400],[1584,3485,400,400],[1870,402,400,400],[1881,0,400,400],[1758,1206,400,400],[1758,1608,400,400],[1867,2010,400,400],[1867,2412,400,400],[2160,804,400,400],[2272,402,400,400],[2283,0,400,400],[2160,1206,400,400],[2160,1608,400,400],[1986,2814,400,400],[2269,2010,400,400],[2269,2412,400,400],[2562,804,400,400],[2674,402,400,400],[2685,0,400,400],[535,2688,526,669],[0,3360,527,669],[529,3360,526,670],[1057,3359,525,669],[0,0,550,670],[552,0,523,669],[962,2391,45,133],[966,2526,45,133],[1009,2391,45,133],[1066,1073,154,84],[810,2543,154,84],[1584,3887,154,84],[3192,3216,550,165],[3192,3383,550,165],[810,2391,150,150],[1458,2279,3,36],[552,671,512,512],[1468,804,256,256],[1077,402,256,256],[552,2391,256,256],[1335,402,128,128],[0,672,550,670],[0,1344,550,670],[0,2016,550,670],[1222,1144,67,39],[1584,3973,150,80],[1736,3973,150,80],[1222,1073,98,69],[1740,3887,150,80],[1356,2279,100,80],[1335,532,128,128]]}
 ];
 
 
@@ -1127,53 +1127,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,1,33);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,160,80);
-
-
-(lib.p10 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_0 = function() {
-		this.hm.on("click", p0.bind(this));
-		function p0(){this.removeAllChildren();this.parent.addChild(new lib.p0()); }
-		
-		this.pr.on("click", p9.bind(this));
-		function p9(){this.removeAllChildren();this.parent.addChild(new lib.p9()); }
-		/*
-		this.sv.on("click", p11.bind(this));
-		function p11(){this.removeAllChildren(); this.parent.addChild(new lib.p11());}
-		*/
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
-
-	// Layer_1
-	this.pr = new lib.sv();
-	this.pr.name = "pr";
-	this.pr.parent = this;
-	this.pr.setTransform(496.7,651.3,0.706,0.667,0,0,180,80,40.3);
-	new cjs.ButtonHelper(this.pr, 0, 1, 2, false, new lib.sv(), 3);
-
-	this.sv = new lib.sv();
-	this.sv.name = "sv";
-	this.sv.parent = this;
-	this.sv.setTransform(4.9,623.8,0.706,0.667);
-	new cjs.ButtonHelper(this.sv, 0, 1, 2, false, new lib.sv(), 3);
-
-	this.hm = new lib.hm();
-	this.hm.name = "hm";
-	this.hm.parent = this;
-	this.hm.setTransform(10.5,10.1,0.75,0.75);
-	new cjs.ButtonHelper(this.hm, 0, 1, 2, false, new lib.hm(), 3);
-
-	this.instance = new lib._010();
-	this.instance.parent = this;
-	this.instance.setTransform(4,5,1.048,1.001);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.hm},{t:this.sv},{t:this.pr}]}).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.p10, new cjs.Rectangle(4,5,550,670), null);
 
 
 (lib.p8 = function(mode,startPosition,loop) {
@@ -2931,6 +2884,122 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.حَ},{t:this.حِ},{t:this.حُ},{t:this.حً},{t:this.حٍ},{t:this.حٌ},{t:this.حْ},{t:this.حّ},{t:this.حـ},{t:this.حا},{t:this.حو},{t:this.حي},{t:this.حى},{t:this.instance},{t:this.حب},{t:this.حت},{t:this.حث},{t:this.حج},{t:this.حح},{t:this.حخ},{t:this.حد},{t:this.حذ},{t:this.حر},{t:this.حز},{t:this.حس},{t:this.حش},{t:this.حص},{t:this.حض},{t:this.حط},{t:this.حظ},{t:this.حع},{t:this.حغ},{t:this.حف},{t:this.حق},{t:this.حك},{t:this.حل},{t:this.حم},{t:this.حن},{t:this.حه},{t:this.inter},{t:this.excla},{t:this.supr},{t:this.حآ},{t:this.حة},{t:this.حأ},{t:this.حئ},{t:this.حؤ},{t:this.حء},{t:this.esp},{t:this.pnt},{t:this.vir},{t:this.tir},{t:this.slsh},{t:this.thsf},{t:this.thso}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.clav, new cjs.Rectangle(0,0,550,165), null);
+
+
+(lib.p10 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.hm.on("click", p0.bind(this));
+		function p0(){this.removeAllChildren();this.parent.addChild(new lib.p0()); }
+		
+		this.pr.on("click", p9.bind(this));
+		function p9(){this.removeAllChildren();this.parent.addChild(new lib.p9()); }
+		/*
+		this.sv.on("click", p11.bind(this));
+		function p11(){this.removeAllChildren(); this.parent.addChild(new lib.p11());}
+		*/
+		
+		this.verif.on("click" , verif.bind(this));
+		function verif(){
+			
+				if(this.txt.text == "5"){ this.txt.color = 'green';}
+				else{this.txt.color = 'red';}
+				
+				if(this.txt.text == "" ){
+				
+		        }		
+				else if(this.txt.color=='red'){
+					playSound("s9002");
+				}
+				else{playSound("s9001");}
+			}
+			
+			this.repre.on("click" , repre.bind(this));
+			function repre(){
+				this.txt.color ='blue';
+				this.txt.text="";
+				}
+				
+			this.rep.on("click" , rep.bind(this));
+			function rep(){
+			this.txt.color ='green';
+			this.txt.text="5";
+			}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+	// Layer_1
+	this.rep = new lib.btnchkTr();
+	this.rep.name = "rep";
+	this.rep.parent = this;
+	this.rep.setTransform(29.5,440.2,1,0.75,0,0,0,22.5,66.7);
+	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.repre = new lib.btnchkTr();
+	this.repre.name = "repre";
+	this.repre.parent = this;
+	this.repre.setTransform(29.5,339.7,1,0.75,0,0,0,22.5,66.7);
+	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.verif = new lib.btnchkTr();
+	this.verif.name = "verif";
+	this.verif.parent = this;
+	this.verif.setTransform(29.5,240.1,1,0.75,0,0,0,22.5,66.8);
+	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.instance = new lib.Bitmap3();
+	this.instance.parent = this;
+	this.instance.setTransform(7,390,1,0.75);
+
+	this.instance_1 = new lib.Bitmap2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(7,290,1,0.75);
+
+	this.instance_2 = new lib.Bitmap1();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(7,190,1,0.75);
+
+	this.instance_3 = new lib.clavN_1();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(94.4,556.4,0.999,0.681,0,0,0,84.2,81.6);
+
+	this.txt = new cjs.Text("", "40px 'Arial'", "#3300CC");
+	this.txt.name = "txt";
+	this.txt.textAlign = "center";
+	this.txt.lineHeight = 47;
+	this.txt.lineWidth = 72;
+	this.txt.parent = this;
+	this.txt.setTransform(241,472.6);
+
+	this.pr = new lib.sv();
+	this.pr.name = "pr";
+	this.pr.parent = this;
+	this.pr.setTransform(496.7,651.3,0.706,0.667,0,0,180,80,40.3);
+	new cjs.ButtonHelper(this.pr, 0, 1, 2, false, new lib.sv(), 3);
+
+	this.sv = new lib.sv();
+	this.sv.name = "sv";
+	this.sv.parent = this;
+	this.sv.setTransform(4.9,623.8,0.706,0.667);
+	new cjs.ButtonHelper(this.sv, 0, 1, 2, false, new lib.sv(), 3);
+
+	this.hm = new lib.hm();
+	this.hm.name = "hm";
+	this.hm.parent = this;
+	this.hm.setTransform(10.5,10.1,0.75,0.75);
+	new cjs.ButtonHelper(this.hm, 0, 1, 2, false, new lib.hm(), 3);
+
+	this.instance_4 = new lib._010();
+	this.instance_4.parent = this;
+	this.instance_4.setTransform(4,5,1.048,1.001);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.hm},{t:this.sv},{t:this.pr},{t:this.txt},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.p10, new cjs.Rectangle(4,5,550,670), null);
 
 
 (lib.p7 = function(mode,startPosition,loop) {
