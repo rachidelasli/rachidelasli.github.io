@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"kourassa3_atlas_", frames: [[0,2688,533,670],[552,1185,400,400],[552,1587,400,400],[3475,2010,400,400],[3475,2412,400,400],[2283,0,400,400],[2160,1206,400,400],[2160,1608,400,400],[1986,2814,400,400],[2269,2010,400,400],[2269,2412,400,400],[2562,804,400,400],[2674,402,400,400],[2685,0,400,400],[2562,1206,400,400],[2562,1608,400,400],[1986,3216,400,400],[1986,3618,400,400],[2388,2814,400,400],[2671,2010,400,400],[2671,2412,400,400],[2964,804,400,400],[3076,402,400,400],[3087,0,400,400],[2964,1206,400,400],[2964,1608,400,400],[2388,3216,400,400],[2388,3618,400,400],[2790,2814,400,400],[3073,2010,400,400],[3073,2412,400,400],[3366,804,400,400],[3478,402,400,400],[3489,0,400,400],[3366,1206,400,400],[3366,1608,400,400],[2790,3216,400,400],[2790,3618,400,400],[3192,2814,400,400],[552,1989,400,400],[954,1185,400,400],[1066,671,400,400],[1077,0,400,400],[954,1587,400,400],[954,1989,400,400],[1063,2391,400,400],[1063,2793,400,400],[1356,1073,400,400],[1468,402,400,400],[1479,0,400,400],[1356,1475,400,400],[1356,1877,400,400],[1465,2279,400,400],[1465,2681,400,400],[1584,3083,400,400],[1584,3485,400,400],[1758,804,400,400],[1870,402,400,400],[1881,0,400,400],[1758,1206,400,400],[1758,1608,400,400],[1867,2010,400,400],[1867,2412,400,400],[2160,804,400,400],[2272,402,400,400],[535,2688,526,669],[0,3360,527,669],[529,3360,526,670],[1057,3359,525,669],[0,0,550,670],[552,0,523,669],[1222,1144,67,39],[1066,1073,154,84],[810,2543,154,84],[1584,3887,154,84],[3192,3216,550,165],[3192,3383,550,165],[810,2391,150,150],[1458,2279,3,36],[552,671,512,512],[1468,804,256,256],[1077,402,256,256],[552,2391,256,256],[1335,402,128,128],[0,672,550,670],[0,2016,550,670],[0,1344,550,670],[1584,3973,150,80],[1736,3973,150,80],[1222,1073,98,69],[1740,3887,150,80],[1356,2279,100,80],[1335,532,128,128]]}
+		{name:"kourassa3_atlas_", frames: [[0,2688,533,670],[552,1185,400,400],[2562,804,400,400],[2674,402,400,400],[2562,1608,400,400],[954,1185,400,400],[2562,1206,400,400],[2269,2412,400,400],[2685,0,400,400],[2269,2010,400,400],[1986,3216,400,400],[1758,1206,400,400],[1758,1608,400,400],[1066,671,400,400],[1077,0,400,400],[1867,2010,400,400],[1867,2412,400,400],[2160,804,400,400],[2272,402,400,400],[2283,0,400,400],[2160,1206,400,400],[2160,1608,400,400],[1986,2814,400,400],[3489,0,400,400],[3366,1206,400,400],[3366,1608,400,400],[2790,3216,400,400],[2790,3618,400,400],[3192,2814,400,400],[3475,2010,400,400],[3475,2412,400,400],[954,1587,400,400],[954,1989,400,400],[1063,2391,400,400],[1063,2793,400,400],[1356,1073,400,400],[1468,402,400,400],[1479,0,400,400],[1356,1475,400,400],[1356,1877,400,400],[1465,2279,400,400],[1465,2681,400,400],[1584,3083,400,400],[1584,3485,400,400],[1758,804,400,400],[1870,402,400,400],[1881,0,400,400],[1986,3618,400,400],[2388,2814,400,400],[2671,2010,400,400],[2671,2412,400,400],[2964,804,400,400],[3076,402,400,400],[3087,0,400,400],[2964,1206,400,400],[2964,1608,400,400],[2388,3216,400,400],[2388,3618,400,400],[2790,2814,400,400],[3073,2010,400,400],[3073,2412,400,400],[3366,804,400,400],[3478,402,400,400],[552,1587,400,400],[552,1989,400,400],[535,2688,526,669],[0,3360,527,669],[529,3360,526,670],[1057,3359,525,669],[0,0,550,670],[552,0,523,669],[962,2391,45,133],[966,2526,45,133],[1009,2391,45,133],[1066,1073,154,84],[810,2543,154,84],[1584,3887,154,84],[3192,3216,550,165],[3192,3383,550,165],[810,2391,150,150],[1458,2279,3,36],[552,671,512,512],[1468,804,256,256],[1077,402,256,256],[552,2391,256,256],[1335,402,128,128],[0,672,550,670],[0,1344,550,670],[0,2016,550,670],[1222,1144,67,39],[1584,3973,150,80],[1736,3973,150,80],[1222,1073,98,69],[1740,3887,150,80],[1356,2279,100,80],[1335,532,128,128]]}
 ];
 
 
@@ -515,149 +515,170 @@ lib.ssMetadata = [
 
 
 
-(lib.brdnR = function() {
+(lib.Bitmap2 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(72);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.brdnS = function() {
+(lib.Bitmap3 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(73);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.brdrR = function() {
+(lib.brdnR = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(74);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clav_i = function() {
+(lib.brdnS = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(75);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clavL = function() {
+(lib.brdrR = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(76);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clavN = function() {
+(lib.clav_i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(77);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clign = function() {
+(lib.clavL = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(78);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clvierico = function() {
+(lib.clavN = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(79);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.hand = function() {
+(lib.clign = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(80);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.hm1 = function() {
+(lib.clvierico = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(81);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.hm2 = function() {
+(lib.hand = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(82);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.lp_i = function() {
+(lib.hm1 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(83);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.p3i = function() {
+(lib.hm2 = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(84);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.p7i = function() {
+(lib.lp_i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(85);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.prp = function() {
+(lib.p3i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(86);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rempRg = function() {
+(lib.p7i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(87);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmpjR = function() {
+(lib.prp = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(88);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmplblnc = function() {
+(lib.rempblnc = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(89);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmprR = function() {
+(lib.rempRg = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(90);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.svI = function() {
+(lib.rmpjR = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(91);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.voix = function() {
+(lib.rmplblnc = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(92);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.rmprR = function() {
+	this.spriteSheet = ss["kourassa3_atlas_"];
+	this.gotoAndStop(93);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.svI = function() {
+	this.spriteSheet = ss["kourassa3_atlas_"];
+	this.gotoAndStop(94);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.voix = function() {
+	this.spriteSheet = ss["kourassa3_atlas_"];
+	this.gotoAndStop(95);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -921,6 +942,19 @@ p.nominalBounds = new cjs.Rectangle(0,0,400,400);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.brd, new cjs.Rectangle(0,0,320.6,249), null);
+
+
+(lib.Symbol1 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#3300CC").s().rr(-22.5,-66.5,45,133,19);
+	this.shape.setTransform(22.5,66.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.Symbol1, new cjs.Rectangle(0,0,45,133), null);
 
 
 (lib.sv = function(mode,startPosition,loop) {
@@ -1352,6 +1386,21 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 
 
+(lib.btnchkTr = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer_1
+	this.instance = new lib.Symbol1();
+	this.instance.parent = this;
+	this.instance.setTransform(22.5,66.5,1,1,0,0,0,22.5,66.5);
+	this.instance.alpha = 0.012;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0.25},0).wait(1).to({alpha:0.02},0).wait(1).to({alpha:1},0).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,45,133);
+
+
 (lib.p9 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -1391,6 +1440,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.instance = new lib.hand();
+	this.instance.parent = this;
+	this.instance.setTransform(353,540,0.125,0.125);
+
+	this.instance_1 = new lib.hand();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(352,452,0.125,0.125);
+
+	this.instance_2 = new lib.hand();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(351,369,0.125,0.125);
+
 	this.pr = new lib.sv();
 	this.pr.name = "pr";
 	this.pr.parent = this;
@@ -1437,26 +1498,26 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.btn3 = new lib.btnTr();
 	this.btn3.name = "btn3";
 	this.btn3.parent = this;
-	this.btn3.setTransform(488.6,556.9,0.813,0.419,0,0,0,150.2,40);
+	this.btn3.setTransform(489.7,556.9,0.9,0.419,0,0,0,150.2,40);
 	new cjs.ButtonHelper(this.btn3, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.btn2 = new lib.btnTr();
 	this.btn2.name = "btn2";
 	this.btn2.parent = this;
-	this.btn2.setTransform(488.6,467.9,0.813,0.419,0,0,0,150.2,40);
+	this.btn2.setTransform(488.7,467.9,0.9,0.419,0,0,0,150.3,40);
 	new cjs.ButtonHelper(this.btn2, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.btn1 = new lib.btnTr();
 	this.btn1.name = "btn1";
 	this.btn1.parent = this;
-	this.btn1.setTransform(488.6,385.5,0.813,0.419,0,0,0,150.2,40);
+	this.btn1.setTransform(488.2,385.5,0.9,0.419,0,0,0,150.3,40);
 	new cjs.ButtonHelper(this.btn1, 0, 1, 2, false, new lib.btnTr(), 3);
 
-	this.instance = new lib._009();
-	this.instance.parent = this;
-	this.instance.setTransform(4,5,1.046,1);
+	this.instance_3 = new lib._009();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(4,5,1.046,1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.btn1},{t:this.btn2},{t:this.btn3},{t:this.n1},{t:this.n2},{t:this.n3},{t:this.n4},{t:this.brd},{t:this.hm},{t:this.sv},{t:this.pr}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.btn1},{t:this.btn2},{t:this.btn3},{t:this.n1},{t:this.n2},{t:this.n3},{t:this.n4},{t:this.brd},{t:this.hm},{t:this.sv},{t:this.pr},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p9, new cjs.Rectangle(4,5,550,670), null);
 
@@ -2098,9 +2159,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		word = letter.substr(1,1);
 			for(var i = 0 ; i< txt.length ; i++){
 			    if (txtactif== i+1){
-				if(letter == "supr"){ vtxt= txt[i].text;txt[i].text = vtxt.substr(0, vtxt.length - 1)}
-				else if (letter == "esp") { txt[i].text += " ";}	
-			    else {txt[i].text += word ;}
+				if(letter == "supr"){ vtxt= txt[i].text;txt[i].text = vtxt.substr(0, vtxt.length - 1);txt[i].color='blue';}
+				else if (letter == "esp") { txt[i].text += " "; txt[i].color='blue';}	
+			    else {txt[i].text += word ; txt[i].color='blue';}
 			}
 		}
 			
@@ -2889,12 +2950,78 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		
 		this.clv.on("click", clv.bind(this));
 		function clv(){this.clavL.y=0;}
+		
+		
+		this.verif.on("click" , verif.bind(this));
+		function verif(){
+			if(this.txt1.text == "صُ" || this.txt1.text == "صُـ" || this.txt1.text == "صـُ" ){ this.txt1.color = 'green';}
+				else{this.txt1.color = 'red';}
+			
+				if(this.txt2.text == "ذُ"){ this.txt2.color = 'green';}
+				else{this.txt2.color = 'red';}
+				
+				if(this.txt3.text == "طَ" || this.txt3.text == "طَـ"){ this.txt3.color = 'green';}
+				else{this.txt3.color = 'red';}
+				
+				if(this.txt4.text == "زِ"){ this.txt4.color = 'green';}
+				else{this.txt4.color = 'red';}
+				
+				if(this.txt5.text == "ضِ" || this.txt5.text == "ضِـ"){ this.txt5.color = 'green';}
+				else{this.txt5.color = 'red';}
+				if(this.txt1.color=='red' || this.txt2.color=='red' ||this.txt3.color=='red' ||this.txt4.color=='red' ||this.txt5.color=='red'){
+					playSound("s9002");
+				}
+				else{playSound("s9001");}
+			}
+			
+			this.repre.on("click" , repre.bind(this));
+			
+			function repre(){
+				this.txt1.color ='blue';this.txt2.color ='blue' ;this.txt3.color ='blue' ;this.txt4.color ='blue' ;this.txt5.color ='blue';
+				this.txt1.text="";this.txt2.text="";this.txt3.text="";this.txt4.text="";this.txt5.text="";
+				}
+				
+			this.rep.on("click" , rep.bind(this));
+			function rep(){
+			this.txt1.color ='green';this.txt2.color ='green' ;this.txt3.color ='green' ;this.txt4.color ='green' ;this.txt5.color ='green';
+			this.txt1.text="صُـ";this.txt2.text="ذُ";this.txt3.text="طَـ";this.txt4.text="زِ";this.txt5.text="ضِـ";
+			}
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.rep = new lib.btnchkTr();
+	this.rep.name = "rep";
+	this.rep.parent = this;
+	this.rep.setTransform(29.5,500.5,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.repre = new lib.btnchkTr();
+	this.repre.name = "repre";
+	this.repre.parent = this;
+	this.repre.setTransform(29.5,366.5,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.verif = new lib.btnchkTr();
+	this.verif.name = "verif";
+	this.verif.parent = this;
+	this.verif.setTransform(29.5,233.5,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.instance = new lib.Bitmap3();
+	this.instance.parent = this;
+	this.instance.setTransform(7,433);
+
+	this.instance_1 = new lib.Bitmap2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(7,300);
+
+	this.instance_2 = new lib.Bitmap1();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(7,167);
+
 	this.clavL = new lib.clavL_1();
 	this.clavL.name = "clavL";
 	this.clavL.parent = this;
@@ -3004,11 +3131,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.sv.setTransform(4.9,625.7,0.706,0.666,0,0,0,0.1,0.1);
 	new cjs.ButtonHelper(this.sv, 0, 1, 2, false, new lib.sv(), 3);
 
-	this.instance = new lib.p7i();
-	this.instance.parent = this;
-	this.instance.setTransform(4,5);
+	this.instance_3 = new lib.p7i();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(4,5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.sv},{t:this.pr},{t:this.hm},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.clv},{t:this.clavL}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.sv},{t:this.pr},{t:this.hm},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p7, new cjs.Rectangle(-4,-147.6,558.1,823.3), null);
 
@@ -3029,23 +3156,48 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		
 		this.clv.on("click", clv.bind(this));
 		function clv(){this.clavL.y=0;}
+		
+		
+		this.verif.on("click" , verif.bind(this));
+		function verif(){
+			if(this.txt1.text == "ما"){ this.txt1.color = 'green';}
+				else{this.txt1.color = 'red';}
+			
+				if(this.txt2.text == "رُ"){ this.txt2.color = 'green';}
+				else{this.txt2.color = 'red';}
+				
+				if(this.txt3.text == "با"){ this.txt3.color = 'green';}
+				else{this.txt3.color = 'red';}
+				
+				if(this.txt4.text == "سو"){ this.txt4.color = 'green';}
+				else{this.txt4.color = 'red';}
+				
+				if(this.txt5.text == "في" || this.txt5.text == "فيـ"){ this.txt5.color = 'green';}
+				else{this.txt5.color = 'red';}
+				if(this.txt1.color=='red' || this.txt2.color=='red' ||this.txt3.color=='red' ||this.txt4.color=='red' ||this.txt5.color=='red'){
+					playSound("s9002");
+				}
+				else{playSound("s9001");}
+			}
+			
+			this.repre.on("click" , repre.bind(this));
+			
+			function repre(){
+				this.txt1.color ='blue';this.txt2.color ='blue' ;this.txt3.color ='blue' ;this.txt4.color ='blue' ;this.txt5.color ='blue';
+				this.txt1.text="";this.txt2.text="";this.txt3.text="";this.txt4.text="";this.txt5.text="";
+				}
+				
+			this.rep.on("click" , rep.bind(this));
+			function rep(){
+			this.txt1.color ='green';this.txt2.color ='green' ;this.txt3.color ='green' ;this.txt4.color ='green' ;this.txt5.color ='green';
+			this.txt1.text="ما";this.txt2.text="رُ";this.txt3.text="با";this.txt4.text="سو";this.txt5.text="فيـ";
+			}
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// Layer_1
-	this.clavL = new lib.clavL_1();
-	this.clavL.name = "clavL";
-	this.clavL.parent = this;
-	this.clavL.setTransform(3.2,-146.1,1.001,0.848,0,0,0,0.1,59);
-
-	this.clv = new lib.clv();
-	this.clv.name = "clv";
-	this.clv.parent = this;
-	this.clv.setTransform(289.8,40.1,0.878,0.778,0,0,0,49,42.1);
-	new cjs.ButtonHelper(this.clv, 0, 1, 2, false, new lib.clv(), 3);
-
+	// Layer_3
 	this.txt5 = new cjs.Text("", "40px 'Arial'", "#3300CC");
 	this.txt5.name = "txt5";
 	this.txt5.textAlign = "center";
@@ -3086,6 +3238,54 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.txt1.parent = this;
 	this.txt1.setTransform(272,318.3);
 
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqbTTIT/AAAqLzIIT/AA");
+	this.shape.setTransform(275.3,471.4);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5}]}).wait(1));
+
+	// Layer_1
+	this.rep = new lib.btnchkTr();
+	this.rep.name = "rep";
+	this.rep.parent = this;
+	this.rep.setTransform(29.5,500.5,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.repre = new lib.btnchkTr();
+	this.repre.name = "repre";
+	this.repre.parent = this;
+	this.repre.setTransform(29.5,366.5,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.verif = new lib.btnchkTr();
+	this.verif.name = "verif";
+	this.verif.parent = this;
+	this.verif.setTransform(29.5,233.5,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.instance = new lib.Bitmap3();
+	this.instance.parent = this;
+	this.instance.setTransform(7,433);
+
+	this.instance_1 = new lib.Bitmap2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(7,300);
+
+	this.instance_2 = new lib.Bitmap1();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(7,167);
+
+	this.clavL = new lib.clavL_1();
+	this.clavL.name = "clavL";
+	this.clavL.parent = this;
+	this.clavL.setTransform(3.2,-146.1,1.001,0.848,0,0,0,0.1,59);
+
+	this.clv = new lib.clv();
+	this.clv.name = "clv";
+	this.clv.parent = this;
+	this.clv.setTransform(289.8,40.1,0.878,0.778,0,0,0,49,42.1);
+	new cjs.ButtonHelper(this.clv, 0, 1, 2, false, new lib.clv(), 3);
+
 	this.rpr = new lib.rpr();
 	this.rpr.name = "rpr";
 	this.rpr.parent = this;
@@ -3094,7 +3294,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.clign = new lib.clignM();
 	this.clign.name = "clign";
 	this.clign.parent = this;
-	this.clign.setTransform(214.5,328.4,3,1);
+	this.clign.setTransform(211.5,304.4,3,1);
 
 	this.btxt5 = new lib.btnTr();
 	this.btxt5.name = "btxt5";
@@ -3144,11 +3344,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.sv.setTransform(4.9,625.7,0.706,0.666,0,0,0,0.1,0.1);
 	new cjs.ButtonHelper(this.sv, 0, 1, 2, false, new lib.sv(), 3);
 
-	this.instance = new lib._006();
-	this.instance.parent = this;
-	this.instance.setTransform(4,5,1.046,1.001);
+	this.instance_3 = new lib._006();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(4,5,1.046,1.001);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.sv},{t:this.pr},{t:this.hm},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.clv},{t:this.clavL}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.sv},{t:this.pr},{t:this.hm},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p6, new cjs.Rectangle(-4,-147.6,558.1,823.3), null);
 
@@ -3219,7 +3419,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 	this.lp.setTransform(164.1,129.7);
 	new cjs.ButtonHelper(this.lp, 0, 1, 2, false, new lib.lp(), 3);
 
-	this.instance_1 = new lib.Bitmap1();
+	this.instance_1 = new lib.rempblnc();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(201,127,1.045,0.949);
 
@@ -3386,6 +3586,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 		
 		var assetsPath = "./sounds/";
 			var sounds = [{src:"spriteAudio.ogg", data: { audioSprite: [
+		{id:"s9001", startTime:58330, duration:1867}, 
+		{id:"s9002", startTime:60196, duration:1735}, 
 		{id:"s1", startTime:0, duration:1210},
 		{id:"s2", startTime:1223, duration:1088},
 		{id:"s3", startTime:2352, duration: 1177},
@@ -3484,7 +3686,7 @@ lib.properties = {
 	color: "#000066",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/kourassa3_atlas_.png?1516987860601", id:"kourassa3_atlas_"}
+		{src:"images/kourassa3_atlas_.png", id:"kourassa3_atlas_"}
 	],
 	preloads: []
 };
