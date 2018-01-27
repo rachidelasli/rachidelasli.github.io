@@ -2968,7 +2968,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 				
 				if(this.txt5.text == "ضِ" || this.txt5.text == "ضِـ"){ this.txt5.color = 'green';}
 				else{this.txt5.color = 'red';}
-				if(this.txt1.color=='red' || this.txt2.color=='red' ||this.txt3.color=='red' ||this.txt4.color=='red' ||this.txt5.color=='red'){
+				
+				if(this.txt1.text == "" || this.txt2.text == "" ||this.txt3.text == "" ||this.txt4.text == "" ||this.txt5.text == ""){
+				
+		        }		
+				else if(this.txt1.color=='red' || this.txt2.color=='red' ||this.txt3.color=='red' ||this.txt4.color=='red' ||this.txt5.color=='red'){
 					playSound("s9002");
 				}
 				else{playSound("s9001");}
@@ -3174,7 +3178,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 				
 				if(this.txt5.text == "في" || this.txt5.text == "فيـ"){ this.txt5.color = 'green';}
 				else{this.txt5.color = 'red';}
-				if(this.txt1.color=='red' || this.txt2.color=='red' ||this.txt3.color=='red' ||this.txt4.color=='red' ||this.txt5.color=='red'){
+				
+				if(this.txt1.text == "" || this.txt2.text == "" ||this.txt3.text == "" ||this.txt4.text == "" ||this.txt5.text == ""){
+				
+		        }
+				else if(this.txt1.color=='red' || this.txt2.color=='red' ||this.txt3.color=='red' ||this.txt4.color=='red' ||this.txt5.color=='red'){
 					playSound("s9002");
 				}
 				else{playSound("s9001");}
@@ -3582,7 +3590,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		createjs.Touch.enable(stage);
+		//createjs.Touch.enable(stage);
 		
 		var assetsPath = "./sounds/";
 			var sounds = [{src:"spriteAudio.ogg", data: { audioSprite: [
