@@ -73,6 +73,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// timeline functions:
 	this.frame_0 = function() {
+		createjs.Touch.enable(stage);
 		stage.enableMouseOver(10);
 		stage.mouseMoveOutside = true;
 		var clips = new Array(this.mc1,this.mc2);
@@ -84,6 +85,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 		
 		
 		function drag(evt){
+			
 		var p=this.globalToLocal(evt.stageX, evt.stageY);
 		evt.currentTarget.x =  p.x;
 		evt.currentTarget.y =  p.y;
