@@ -1,0 +1,7 @@
+# On interdit l'accès au fichier pour tout le monde...
+
+Deny from http://127.0.0.1:8090/sounds/spriteAudio.ogg
+
+#... sauf pour le serveur lui-même
+
+#Allow from 127.0.0.1
