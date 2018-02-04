@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"kourassa3_atlas_", frames: [[552,672,533,670],[3200,0,400,400],[3602,0,400,400],[2538,3485,400,400],[2940,3618,400,400],[3342,3618,400,400],[1331,3486,400,400],[1733,3486,400,400],[929,3623,400,400],[2293,916,400,400],[2136,1877,400,400],[2136,2279,400,400],[2286,1475,400,400],[2538,1877,400,400],[2538,2279,400,400],[1332,2682,400,400],[1734,2682,400,400],[2136,2681,400,400],[2538,2681,400,400],[930,2819,400,400],[929,3221,400,400],[1332,3084,400,400],[1734,3084,400,400],[2136,3083,400,400],[2538,3083,400,400],[2695,916,400,400],[2688,1318,400,400],[3097,804,400,400],[3499,804,400,400],[3097,1206,400,400],[3499,1206,400,400],[3090,1608,400,400],[3492,1608,400,400],[2940,2010,400,400],[2940,2412,400,400],[3342,2010,400,400],[2940,2814,400,400],[3342,2412,400,400],[3342,2814,400,400],[2940,3216,400,400],[3342,3216,400,400],[2136,3485,400,400],[2686,514,400,400],[3200,402,400,400],[3602,402,400,400],[528,2016,400,400],[528,2418,400,400],[527,2820,400,400],[930,2015,400,400],[930,2417,400,400],[527,3222,400,400],[525,3624,400,400],[1087,672,400,400],[1489,671,400,400],[1087,1074,400,400],[1489,1073,400,400],[1080,1476,400,400],[1891,671,400,400],[1891,1073,400,400],[1332,1878,400,400],[1332,2280,400,400],[1482,1476,400,400],[1884,1475,400,400],[1734,1878,400,400],[1734,2280,400,400],[552,1344,526,669],[1104,0,527,669],[0,2016,526,670],[1633,0,525,669],[2160,0,524,668],[0,0,550,670],[0,3358,523,669],[4004,0,45,133],[4051,0,45,133],[3901,804,45,133],[3744,2784,154,84],[2840,1720,154,84],[2293,1318,389,148],[1331,3888,550,165],[2688,1720,150,150],[1080,1344,3,36],[2686,0,512,512],[3744,2010,256,256],[3744,2268,256,256],[3744,2526,256,256],[1080,1878,128,128],[0,672,550,670],[0,2688,525,668],[552,0,550,670],[0,1344,550,670],[0,4055,67,39],[3744,2870,150,80],[3744,2952,150,80],[2840,1806,98,69],[3744,3034,150,80],[3088,514,100,80],[1883,3888,128,128]]}
+		{name:"kourassa3_atlas_", frames: [[1104,672,533,670],[1608,7506,400,400],[402,7510,400,400],[0,7622,400,400],[1639,672,400,400],[1639,1074,400,400],[1585,1476,400,400],[1585,1878,400,400],[1584,2280,400,400],[1584,2682,400,400],[514,2686,400,400],[1578,3084,400,400],[514,3088,400,400],[0,3200,400,400],[916,3356,400,400],[1318,3486,400,400],[402,3490,400,400],[0,3602,400,400],[804,3758,400,400],[1206,3888,400,400],[1608,3888,400,400],[402,3892,400,400],[0,4004,400,400],[804,4160,400,400],[1206,4290,400,400],[1608,4290,400,400],[402,4294,400,400],[0,4406,400,400],[804,4562,400,400],[1206,4692,400,400],[1608,4692,400,400],[402,4696,400,400],[0,4808,400,400],[804,4964,400,400],[1206,5094,400,400],[1608,5094,400,400],[402,5098,400,400],[0,5210,400,400],[804,5366,400,400],[1206,5496,400,400],[1608,5496,400,400],[402,5500,400,400],[0,5612,400,400],[804,5768,400,400],[1206,5898,400,400],[1608,5898,400,400],[402,5902,400,400],[0,6014,400,400],[804,6170,400,400],[1206,6300,400,400],[1608,6300,400,400],[402,6304,400,400],[0,6416,400,400],[804,6572,400,400],[1206,6702,400,400],[1608,6702,400,400],[402,6706,400,400],[0,6818,400,400],[804,6974,400,400],[1206,7104,400,400],[1608,7104,400,400],[402,7108,400,400],[0,7220,400,400],[804,7376,400,400],[1206,7506,400,400],[1057,1344,526,669],[0,1344,527,669],[529,1344,526,670],[0,2015,525,669],[527,2016,524,668],[0,0,550,670],[1053,2685,523,669],[1987,1476,45,133],[1987,1611,45,133],[1987,1746,45,133],[1318,3356,154,84],[1720,3744,154,84],[1656,516,389,148],[804,7908,550,165],[1356,7908,150,150],[2016,260,3,36],[0,2686,512,512],[1656,0,256,256],[1656,258,256,256],[1720,3486,256,256],[1914,0,128,128],[552,0,550,670],[1104,0,550,670],[1057,2015,525,668],[0,672,550,670],[552,672,550,670],[1914,413,67,39],[1876,3744,150,80],[804,7778,150,80],[1914,342,98,69],[956,7778,150,80],[1914,260,100,80],[1914,130,128,128]]}
 ];
 
 
@@ -613,79 +613,86 @@ lib.ssMetadata = [
 
 
 
-(lib.p3i = function() {
+(lib.p12i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(86);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.p4i = function() {
+(lib.p3i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(87);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.p7i = function() {
+(lib.p4i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(88);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.prp = function() {
+(lib.p7i = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(89);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rempblnc = function() {
+(lib.prp = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(90);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rempRg = function() {
+(lib.rempblnc = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(91);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmpjR = function() {
+(lib.rempRg = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(92);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmplblnc = function() {
+(lib.rmpjR = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(93);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmprR = function() {
+(lib.rmplblnc = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(94);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.svI = function() {
+(lib.rmprR = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(95);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.voix = function() {
+(lib.svI = function() {
 	this.spriteSheet = ss["kourassa3_atlas_"];
 	this.gotoAndStop(96);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.voix = function() {
+	this.spriteSheet = ss["kourassa3_atlas_"];
+	this.gotoAndStop(97);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -1309,7 +1316,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 		
 		
 		var pg = new Array(new lib.p0(),new lib.p1(),new lib.p2(),new lib.p3(),new lib.p4(),new lib.p5() , new lib.p6(),
-			new lib.p7(),new lib.p8(),new lib.p9(), new lib.p10(),new lib.p11());
+			new lib.p7(),new lib.p8(),new lib.p9(), new lib.p10(),new lib.p11(),new lib.p12());
 		
 		this.hm.on("click", gop0.bind(this));
 		function gop0(){
@@ -1356,12 +1363,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 	this.hm = new lib.hm();
 	this.hm.name = "hm";
 	this.hm.parent = this;
-	this.hm.setTransform(439.5,622.5,0.562,0.562,0,0,0,0.1,0.2);
+	this.hm.setTransform(425.5,621.5,0.562,0.562,0,0,0,0.1,0.2);
 	new cjs.ButtonHelper(this.hm, 0, 1, 2, false, new lib.hm(), 3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.hm},{t:this.sv},{t:this.pr}]}).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.nav, new cjs.Rectangle(0.9,622.4,549.6,45), null);
+}).prototype = getMCSymbolPrototype(lib.nav, new cjs.Rectangle(0.9,621.4,549.6,46), null);
 
 
 (lib.btnTr = function(mode,startPosition,loop) {
@@ -1399,6 +1406,176 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,45,133);
+
+
+(lib.p12 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		createjs.Touch.enable(stage);
+		stage.enableMouseOver(10);
+		stage.mouseMoveOutside = true;
+		
+		var harf = new Array("/ مُـ","/ مُدُ","/ ـدُ","نٌ","/ نَـ","/ نَسْـ","/ ـسْـ","ـرٌ","/ مَـ","/ مَنا","/ نا","رٌ");
+		var hy = new Array(251,251,251,251,388,388,388,388,530,530,530,530);
+		var hx = new Array(327,238,149,59,327,238,149,59,327,238,149,59);
+		var clr = new Array("#FF0099","#3399CC","#CC3300","#CC00FF","#FF0099","#3399CC","#CC3300","#CC00FF","#FF0099","#3399CC","#CC3300","#CC00FF");
+		var cnts= new Array();
+		var txts= new Array();
+		var shps = new Array();
+		
+		
+			var graphics = new createjs.Graphics().beginFill("#099").drawRect(0, 0, 70, 49);
+		 
+		for(var i =0 ; i < harf.length ;i++){
+		var shape = new createjs.Shape(graphics);
+		 shape.alpha=0.5;
+			shps[i]=shape;
+		}
+		
+		for(var i =0 ; i < harf.length ;i++){
+			txt = new createjs.Text(harf[i], "40px Arial", "#000");
+			txts[i] = txt;
+			txts[i].x += 10;
+			txts[i].color = clr[i];
+		}
+		txts[3].x+=10;txts[7].x+=10; txts[11].x+=10; txts[5].x-=5;txts[6].x-=5;
+		
+		for(var i =0 ; i < harf.length ;i++){
+			cnt = new createjs.Container();
+			cnts[i] = cnt;
+			cnts[i].x = hx[i];cnts[i].y=hy[i]; cnts[i].regX=39; cnts[i].regY=25;
+		}
+		
+			
+		for(var i =0 ; i < harf.length ;i++){
+		    cnts[i].addChild(shps[i],txts[i]);
+		}
+			
+		for(var i =0 ; i < harf.length ;i++){
+		    this.addChild(cnts[i]);
+		}
+		
+		
+		for(var i = 0 ; i< cnts.length;i++){
+		cnts[i].cursor="pointer";
+		cnts[i].addEventListener("pressmove", drag.bind(this));
+		}
+		function drag(evt){	
+		var p=this.globalToLocal(evt.stageX, evt.stageY);
+		evt.currentTarget.x =  p.x;
+		evt.currentTarget.y =  p.y;	
+			
+		}
+		
+		
+		
+		
+		function intersect(obj1, obj2){
+		   obj1.getBounds();
+		
+		
+		  var pt = obj1.globalToLocal(obj2.x, obj2.y);
+		  
+		  var h1 = -(obj1.height / 2 + obj2.height);
+		  var h2 = obj2.width / 2;
+		  var w1 = -(obj1.width / 2 + obj2.width);
+		  var w2 = obj2.width / 2;
+		 
+		  
+		  if(pt.x > w2 || pt.x < w1) return false;
+		  if(pt.y > h2 || pt.y < h1) return false;
+		  
+		  return true;
+		}
+		
+		
+		
+		
+		//-------------------------------
+		
+		function checkCollision(mc1, mc2) {
+		
+		    m1x = mc1.x;
+		    m1y = mc1.y;
+		    m1w = mc1.nominalBounds.width;
+		    m1h = mc1.nominalBounds.height;
+		
+		    m2x = mc2.x;
+		    m2y = mc2.y;
+		    m2w = mc2.nominalBounds.width;
+		    m2h = mc2.nominalBounds.height;
+		
+		    if (    m1x >= m2x + m2w
+		        ||  m1x + m1w <= m2x
+		        ||  m1y >= m2y + m2h
+		        ||  m1y + m1h <= m2y) {
+		        return false;
+		    } else {
+		        return true;
+		    }
+		}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+	// Layer_1
+	this.rep = new lib.btnchkTr();
+	this.rep.name = "rep";
+	this.rep.parent = this;
+	this.rep.setTransform(523.5,551.9,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.repre = new lib.btnchkTr();
+	this.repre.name = "repre";
+	this.repre.parent = this;
+	this.repre.setTransform(523.5,417.9,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.verif = new lib.btnchkTr();
+	this.verif.name = "verif";
+	this.verif.parent = this;
+	this.verif.setTransform(523.5,284.9,1,1,0,0,0,22.5,66.5);
+	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
+
+	this.instance = new lib.Bitmap3();
+	this.instance.parent = this;
+	this.instance.setTransform(501,485);
+
+	this.instance_1 = new lib.Bitmap2();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(501,352);
+
+	this.instance_2 = new lib.Bitmap1();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(501,219);
+
+	this.cadre3 = new lib.rempRmc();
+	this.cadre3.name = "cadre3";
+	this.cadre3.parent = this;
+	this.cadre3.setTransform(0.7,590.3,2.447,0.738,0,0,0,0,40);
+	this.cadre3.alpha = 0.102;
+
+	this.cadre2 = new lib.rempRmc();
+	this.cadre2.name = "cadre2";
+	this.cadre2.parent = this;
+	this.cadre2.setTransform(1.2,449,2.477,0.738,0,0,0,0.1,40.1);
+	this.cadre2.alpha = 0.102;
+
+	this.cadre1 = new lib.rempRmc();
+	this.cadre1.name = "cadre1";
+	this.cadre1.parent = this;
+	this.cadre1.setTransform(-0.2,309.5,2.458,0.738,0,0,0,0,40.1);
+	this.cadre1.alpha = 0.102;
+
+	this.instance_3 = new lib.p12i();
+	this.instance_3.parent = this;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.cadre1},{t:this.cadre2},{t:this.cadre3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.p12, new cjs.Rectangle(-0.2,0,550.3,670), null);
 
 
 (lib.p9 = function(mode,startPosition,loop) {
@@ -2668,7 +2845,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.05,1.003);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("A2rzSIUAAAAACTTIQBAAA2nTTIUAAAACsA8IUAAAAASzIIUAAA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("A2rzSIUAAAAACTTIQBAAA2nTTIUAAAAASzIIUAAAACsA8IUAAA");
 	this.shape.setTransform(204.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.btxt3},{t:this.txt3},{t:this.btxt5},{t:this.txt5},{t:this.btxt2},{t:this.txt2},{t:this.btxt4},{t:this.txt4},{t:this.btxt6},{t:this.txt6}]}).wait(1));
@@ -3209,7 +3386,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	// timeline functions:
 	this.frame_0 = function() {
 		var pg = new Array(new lib.p0(),new lib.p1(),new lib.p2(),new lib.p3(),new lib.p4(),new lib.p5() , new lib.p6(),
-			new lib.p7(),new lib.p8(),new lib.p9(), new lib.p10(),new lib.p11());
+			new lib.p7(),new lib.p8(),new lib.p9(), new lib.p10(),new lib.p11(),new lib.p12());
 			
 		var pags = this.parent.parent.getChildByName('pags');
 		var navs = this.parent.parent.getChildByName('navs');
@@ -3398,8 +3575,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.frame_0 = function() {
 		var assetsPath = "./sounds/";
 			var sounds = [{src:"spriteAudio.ogg", data: { audioSprite: [
-		{id:"s9001", startTime:58330, duration:1867}, 
-		{id:"s9002", startTime:60196, duration:1735}, 
+		{id:"s9001", startTime:58330, duration:1867}, //1867
+		{id:"s9002", startTime:60196, duration:1788}, //1388
 		{id:"s1", startTime:0, duration:1210},
 		{id:"s2", startTime:1223, duration:1088},
 		{id:"s3", startTime:2352, duration: 1177},
@@ -3476,7 +3653,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		  if (this.textBaseline === "top")
 		  {
 		  var lineHeight = this.lineHeight || this.getMeasuredLineHeight();
-		  y += lineHeight * 0.11;
+		  y += lineHeight * 0.06;
 		  }
 		  // Chrome 17 will fail to draw the text if the last param is included but null, so we feed it a large value instead:
 		  if (this.outline) { ctx.strokeText(text, 0, y, this.maxWidth||0xFFFF); }
@@ -3484,7 +3661,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		  };
 		}
 		
-		
+		var pg = new Array(new lib.p0(),new lib.p1(),new lib.p2(),new lib.p3(),new lib.p4(),new lib.p5() , new lib.p6(),
+			new lib.p7(),new lib.p8(),new lib.p9(), new lib.p10(),new lib.p11(),new lib.p12());
 		
 		var np; var txtactif=1;
 		var container1 = new createjs.Container();
@@ -3521,7 +3699,7 @@ lib.properties = {
 	color: "#CCCCCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/kourassa3_atlas_.png", id:"kourassa3_atlas_"}
+		{src:"images/kourassa3_atlas_.png?1517763689911", id:"kourassa3_atlas_"}
 	],
 	preloads: []
 };
