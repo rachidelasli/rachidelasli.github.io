@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"kourassa3_atlas_", frames: [[1104,672,533,670],[1608,7506,400,400],[1206,6300,400,400],[1206,7506,400,400],[0,4808,400,400],[804,7376,400,400],[0,7220,400,400],[402,7510,400,400],[1608,6300,400,400],[1639,672,400,400],[1639,1074,400,400],[0,7622,400,400],[1206,7104,400,400],[1608,7104,400,400],[402,7108,400,400],[402,6304,400,400],[0,6416,400,400],[804,6572,400,400],[1206,6702,400,400],[1608,6702,400,400],[402,6706,400,400],[0,6818,400,400],[804,6974,400,400],[804,4964,400,400],[1206,5094,400,400],[1608,5094,400,400],[402,5098,400,400],[0,5210,400,400],[804,5366,400,400],[1206,5496,400,400],[1608,5496,400,400],[1585,1476,400,400],[1585,1878,400,400],[1584,2280,400,400],[1584,2682,400,400],[514,2686,400,400],[1578,3084,400,400],[514,3088,400,400],[0,3200,400,400],[402,5500,400,400],[0,5612,400,400],[804,5768,400,400],[1206,5898,400,400],[1608,5898,400,400],[402,5902,400,400],[0,6014,400,400],[804,6170,400,400],[916,3356,400,400],[1318,3486,400,400],[402,3490,400,400],[0,3602,400,400],[804,3758,400,400],[1206,3888,400,400],[1608,3888,400,400],[402,3892,400,400],[0,4004,400,400],[804,4160,400,400],[1206,4290,400,400],[1608,4290,400,400],[402,4294,400,400],[0,4406,400,400],[804,4562,400,400],[1206,4692,400,400],[1608,4692,400,400],[402,4696,400,400],[1057,1344,526,669],[0,1344,527,669],[529,1344,526,670],[0,2015,525,669],[527,2016,524,668],[0,0,550,670],[1053,2685,523,669],[1987,1476,45,133],[1987,1611,45,133],[1987,1746,45,133],[1318,3356,154,84],[1720,3744,154,84],[1656,516,389,148],[804,7908,550,165],[1356,7908,150,150],[2016,260,3,36],[0,2686,512,512],[1656,0,256,256],[1656,258,256,256],[1720,3486,256,256],[1914,0,128,128],[552,0,550,670],[1104,0,550,670],[1057,2015,525,668],[0,672,550,670],[552,672,550,670],[1914,413,67,39],[1876,3744,150,80],[804,7778,150,80],[1914,342,98,69],[956,7778,150,80],[1914,260,100,80],[1914,130,128,128]]}
+		{name:"kourassa3_atlas_", frames: [[1104,672,533,670],[1639,672,400,400],[1639,1074,400,400],[1608,5898,400,400],[402,5902,400,400],[0,7622,400,400],[1206,7506,400,400],[1608,7506,400,400],[402,7510,400,400],[1608,5496,400,400],[402,5500,400,400],[0,5612,400,400],[804,5768,400,400],[1206,5898,400,400],[0,6014,400,400],[804,6170,400,400],[1206,6300,400,400],[1608,6300,400,400],[402,6304,400,400],[0,6416,400,400],[804,6572,400,400],[1206,6702,400,400],[1608,6702,400,400],[402,6706,400,400],[0,6818,400,400],[804,6974,400,400],[1206,7104,400,400],[1608,7104,400,400],[402,7108,400,400],[0,7220,400,400],[804,7376,400,400],[804,4160,400,400],[1206,4290,400,400],[1608,4290,400,400],[402,4294,400,400],[0,4406,400,400],[804,4562,400,400],[1206,4692,400,400],[1608,4692,400,400],[402,4696,400,400],[0,4808,400,400],[804,4964,400,400],[1206,5094,400,400],[1608,5094,400,400],[402,5098,400,400],[0,5210,400,400],[804,5366,400,400],[1206,5496,400,400],[1585,1476,400,400],[1585,1878,400,400],[1584,2280,400,400],[1584,2682,400,400],[514,2686,400,400],[1578,3084,400,400],[514,3088,400,400],[0,3200,400,400],[916,3356,400,400],[1318,3486,400,400],[402,3490,400,400],[0,3602,400,400],[804,3758,400,400],[1206,3888,400,400],[1608,3888,400,400],[402,3892,400,400],[0,4004,400,400],[1057,1344,526,669],[0,1344,527,669],[529,1344,526,670],[0,2015,525,669],[527,2016,524,668],[0,0,550,670],[1053,2685,523,669],[1987,1476,45,133],[1987,1611,45,133],[1987,1746,45,133],[1318,3356,154,84],[1720,3744,154,84],[1656,516,389,148],[804,7908,550,165],[1356,7908,150,150],[2016,260,3,36],[0,2686,512,512],[1656,0,256,256],[1656,258,256,256],[1720,3486,256,256],[1914,0,128,128],[552,0,550,670],[1104,0,550,670],[1057,2015,525,668],[0,672,550,670],[552,672,550,670],[1914,413,67,39],[1876,3744,150,80],[804,7778,150,80],[1914,342,98,69],[956,7778,150,80],[1914,260,100,80],[1914,130,128,128]]}
 ];
 
 
@@ -1416,41 +1416,30 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.frame_0 = function() {
 		createjs.Touch.enable(stage,false);
 		
-		var harf = new Array("/ مُـ","/ مُدُ","/ ـدُ","نٌ","/ نَـ","/ نَسْـ","/ ـسْـ","ـرٌ","/ مَـ","/ مَنا","/ نا","رٌ");
+		var harf = new Array("/ مُـ","/ مُدُ","/ ـدُ","نٌ","/ نَـ","/ نَسْـ","/ ـسْـ","ـرٌ","/ مَـ","/ مَنا","/ ـنا","رٌ");
 		var hy = new Array(225,225,225,225,378,378,378,378,530,530,530,530);
 		var hx = new Array(327,238,149,59,327,238,149,59,327,238,149,59);
-		var clr = new Array("#FF0022","#000","#FF3399","#0000FF","#FF0022","#000","#FF3399","#0000FF","#FF0022","#000","#FF3399","#0000FF");
+		var clr = new Array("#FF0000","#000","#0C9900","#0000FF","#FF0022","#000","#FF3399","#0000FF","#FF0022","#000","#FF3399","#0000FF");
 		var cnts= new Array();
 		var txts= new Array();
 		var shps = new Array();
 		
-		
-			var graphics = new createjs.Graphics().beginFill("#000000").drawRect(0, 0, 75, 40);
-		 
+		var graphics = new createjs.Graphics().beginFill("#000000").drawRect(0,0, 75, 49);
 		for(var i =0 ; i < harf.length ;i++){
 		var shape = new createjs.Shape(graphics);
-		 shape.alpha=0.2;
-			shps[i]=shape;
+		 shape.alpha=0.2; shps[i]=shape;
 		}
-		
 		
 		for(var i =0 ; i < harf.length ;i++){
 			txt = new createjs.Text(harf[i], "40px Arial", "#000");
-			txts[i] = txt;
-			txts[i].x += 10;
-			txts[i].color = clr[i];
+			txts[i] = txt; txts[i].x += 10; txts[i].color = clr[i];
 		}
 		txts[3].x+=10;txts[7].x+=10; txts[11].x+=10; txts[5].x-=5;txts[6].x-=5;
 		
 		for(var i =0 ; i < harf.length ;i++){
 			cnt = new createjs.Container();
-			cnts[i] = cnt;
-			cnts[i].x = hx[i];cnts[i].y=hy[i];
-			
-			cnts[i].regX=37.5; cnts[i].regY=20;
-			cnts[i].backgroundColor= 'red';
+			cnts[i] = cnt; cnts[i].x = hx[i];cnts[i].y=hy[i]; cnts[i].regX=37.5; cnts[i].regY=24.5;
 		}
-		
 			
 		for(var i =0 ; i < harf.length ;i++){
 		    cnts[i].addChild(shps[i],txts[i]);
@@ -1458,141 +1447,106 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		var cntsBx = new Array();
 		var cntsBy = new Array();
 		for(var i =0 ; i < harf.length ;i++){
-		    this.addChild(cnts[i]);
-			cntsBx[i] = cnts[i].x;
-			cntsBy[i] = cnts[i].y;
+		    this.addChild(cnts[i]); cntsBx[i] = cnts[i].x; cntsBy[i] = cnts[i].y;
 		}
-		
-		
 		for(var i = 0 ; i< cnts.length ;i++){
-		cnts[i].cursor="pointer";
-		cnts[i].addEventListener("pressmove", pressmove.bind(this));
-			//cnts[i].addEventListener("pressup", pressup.bind(this));
+		cnts[i].cursor="pointer"; cnts[i].addEventListener("pressmove", pressmove.bind(this));
 		}
-		
 		for(var i = 0 ; i< cnts.length ;i++){
 			cnts[i].addEventListener("pressup", pressup1.bind(this));
 		}
-		
 		for(var i = 0 ; i< cnts.length ;i++){
 			cnts[i].addEventListener("pressup", pressup2.bind(this));
 		}
-		
 		for(var i = 0 ; i< cnts.length ;i++){
 			cnts[i].addEventListener("pressup", pressup3.bind(this));
 		}
 		
 		
 		function pressmove(evt){
-			//evt.currentTarget.cursor="pointer";
 		var p=this.globalToLocal(evt.stageX, evt.stageY);
-		evt.currentTarget.x =  p.x; 
-		evt.currentTarget.y =  p.y;	
+		evt.currentTarget.x =  p.x; evt.currentTarget.y =  p.y;	
 		}
-		
 		function pressup1(evt){	
 			for(var i = 0 ; i< 4 ;i++){
-			if (cnts[i].x >= this.cadre1.x + 390 
-		        ||   cnts[i].x + 75 <= this.cadre1.x
-		        ||  cnts[i].y >= this.cadre1.y + 49.5
-		        ||  cnts[i].y + 49.5 <= this.cadre1.y) 
-			  {   cnts[i].x =  cntsBx[i]; 
-				  cnts[i].y =  cntsBy[i];
-				  }
-			else { cnts[i].y =  this.cadre1.y;   }
-		    }
-		   
+				if (cnts[i].x >= this.cadre1.x + 390 || cnts[i].x + 75 <= this.cadre1.x || cnts[i].y >= this.cadre1.y + 49.5 || cnts[i].y + 49.5 <= this.cadre1.y) 
+				  { cnts[i].x =  cntsBx[i]; cnts[i].y =  cntsBy[i];}
+				else { cnts[i].y =  this.cadre1.y - 5;   }
+		      }
 		}
 		
 		function pressup2(evt){	
 			
 			for(var i = 4 ; i< 8 ;i++){
-			if (cnts[i].x >= this.cadre2.x + 390 + 37.5
-		        ||   cnts[i].x + 75 <= this.cadre2.x
-		        ||  cnts[i].y >= this.cadre2.y + 49.5
-		        ||  cnts[i].y + 49.5 <= this.cadre2.y) 
-			  {   cnts[i].x =  cntsBx[i]; 
-				  cnts[i].y =  cntsBy[i];
-				  }
-			else { cnts[i].y =  this.cadre2.y;   }
-		    }
+			    if (cnts[i].x >= this.cadre2.x + 390 || cnts[i].x + 75 <= this.cadre2.x || cnts[i].y >= this.cadre2.y + 49.5 || cnts[i].y + 49.5 <= this.cadre2.y) 
+			    { cnts[i].x =  cntsBx[i]; cnts[i].y =  cntsBy[i];}
+				else { cnts[i].y =  this.cadre2.y - 5;   }
+		     }
 		 
 		}
 		
 		function pressup3(evt){	
 			for(var i = 8 ; i< 12 ;i++){
-			if (cnts[i].x >= this.cadre3.x + 390 + 37.5
-		        ||   cnts[i].x + 75 <= this.cadre3.x
-		        ||  cnts[i].y >= this.cadre3.y + 49.5
-		        ||  cnts[i].y + 49.5 <= this.cadre3.y) 
-			  {   cnts[i].x =  cntsBx[i]; 
-				  cnts[i].y =  cntsBy[i];
-				  }
-			else { cnts[i].y =  this.cadre3.y;   }
-		    }
+			    if (cnts[i].x >= this.cadre3.x + 390 || cnts[i].x + 75 <= this.cadre3.x || cnts[i].y >= this.cadre3.y + 49.5 || cnts[i].y + 49.5 <= this.cadre3.y) 
+			    { cnts[i].x =  cntsBx[i]; cnts[i].y = cntsBy[i];}
+			    else { cnts[i].y =  this.cadre3.y - 5 ;   }
+		      }
 		}
 		
+		var that = this;
+		function setcolor(hex, mc) {
+		  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+		  var r = parseInt(result[1], 16)
+		  var g = parseInt(result[2], 16)
+		  var b = parseInt(result[3], 16)
+		  var w = that[mc].nominalBounds.width
+		  var h = that[mc].nominalBounds.height
+		  that[mc].filters = [new createjs.ColorFilter(0, 0, 0, 1, r, g, b, 1)];
+		  that[mc].cache(0, 0, w, h);
+		}
+		setcolor("#0000ff", "cadre1") ;setcolor("#0000ff", "cadre2") ;setcolor("#0000ff", "cadre3") ;
 		
+		this.verif.on("click" , verif.bind(this));
+		this.repre.on("click" , repre.bind(this));
+		this.rep.on("click" , rep.bind(this));
+		function verif(evt){
+			cnts[0].getBounds();cnts[1].getBounds();cnts[2].getBounds();cnts[3].getBounds();
+			//if(cnts[0].x > cnts[2].x && cnts[2].x > cnts[3] && cnts[0].y == this.cadre1.y - 5 && cnts[2].y == this.cadre1.y - 5 &&  cnts[3].y == this.cadre1.y - 5 && cnts[1].y !=this.cadre1.y - 5)
+				if(cnts[0].y == this.cadre1.y - 5 && cnts[2].y == this.cadre1.y - 5 &&  cnts[3].y == this.cadre1.y - 5 && cnts[1].y !=this.cadre1.y - 5 && cnts[0].x >  cnts[2].x && cnts[2].x >  cnts[3].x)
+		        {setcolor("#00ff00", "cadre1") ; isvalid1=true;}	
+			    else {setcolor("#ff0000", "cadre1") ; isvalid1=false;}
+				
+				if(cnts[5].y == this.cadre2.y - 5 && cnts[7].y == this.cadre2.y - 5 &&  cnts[4].y != this.cadre2.y - 5 && cnts[6].y !=this.cadre2.y - 5 && cnts[5].x >  cnts[7].x)
+		        {setcolor("#00ff00", "cadre2") ; isvalid2=true;}	
+			    else {setcolor("#ff0000", "cadre2") ; isvalid2=false;}
+				
+				if(cnts[8].y == this.cadre3.y - 5 && cnts[10].y == this.cadre3.y - 5 &&  cnts[11].y == this.cadre3.y - 5 && cnts[9].y !=this.cadre3.y - 5 && cnts[8].x > cnts[10].x && cnts[10].x >  cnts[11].x)
+		        {setcolor("#00ff00", "cadre3") ; isvalid3=true;}	
+			    else {setcolor("#ff0000", "cadre3") ; isvalid3=false;}
+				
+				if( isvalid1==true && isvalid2==true && isvalid3==true)
+		        {playSound("s9001"); }	
+			    else {playSound("s9002");}
+		}
+		function repre(evt){
+			for(i=0 ; i< cnts.length ; i++){
+				cnts[i].x = cntsBx[i]; cnts[i].y =  cntsBy[i];
+				setcolor("#0000ff", "cadre1") ;setcolor("#0000ff", "cadre2") ;setcolor("#0000ff", "cadre3") ;
+			}
+		}
+		function rep(evt){
+			cnts[0].y=cnts[2].y=cnts[3].y=this.cadre1.y - 5;
+			cnts[1].y=cntsBy[1];cnts[1].x=cntsBx[1];
+			cnts[5].y=cnts[7].y=this.cadre2.y - 5;
+			cnts[4].y=cntsBy[4];cnts[4].x=cntsBx[4];
+			cnts[6].y=cntsBy[6];cnts[6].x=cntsBx[6];
+			cnts[8].y=cnts[10].y=cnts[11].y=this.cadre3.y - 5;
+			cnts[9].y=cntsBy[9];cnts[9].x=cntsBx[9];
+			cnts[0].x=cnts[5].x=cnts[8].x= 340 ;
+			cnts[2].x=cnts[7].x=cnts[10].x= 265 ;
+			cnts[3].x=cnts[11].x= 190 ;
 			
-			
-		
-		
-		
-		
-		
-		function intersect(obj1, obj2){
-		   obj1.getBounds();
-		
-		
-		  var pt = obj1.globalToLocal(obj2.x, obj2.y);
-		  
-		  var h1 = -(obj1.height / 2 + obj2.height);
-		  var h2 = obj2.width / 2;
-		  var w1 = -(obj1.width / 2 + obj2.width);
-		  var w2 = obj2.width / 2;
-		 
-		  
-		  if(pt.x > w2 || pt.x < w1) return false;
-		  if(pt.y > h2 || pt.y < h1) return false;
-		  
-		  return true;
 		}
-		
-		
-		
-		
-		//-------------------------------
-		
-		function checkCollision(mc1, mc2) {
-		
-		    m1x = mc1.x;
-		    m1y = mc1.y;
-		    m1w = mc1.width;
-		    m1h = mc1.height;
-		
-		    m2x = mc2.x;
-		    m2y = mc2.y;
-		    m2w = mc2.width;
-		    m2h = mc2.height;
-		
-		    if (    m1x >= m2x + m2w
-		        ||  m1x + m1w <= m2x
-		        ||  m1y >= m2y + m2h
-		        ||  m1y + m1h <= m2y) {
-		        return false;
-		    } else {
-		        return true;
-		    }
-		}
-		/*
-		 if (evt.currentTarget.x >= this.cadre1.x + 390 + 37.5
-		        ||   evt.currentTarget.x + 75 <= this.cadre1.x
-		        ||  evt.currentTarget.y >= this.cadre1.y + 49.5
-		        ||  evt.currentTarget.y + 49.5 <= this.cadre1.y) 
-			  {          }
-					 
-			else {    }
-		*/
 	}
 
 	// actions tween:
@@ -1632,20 +1586,20 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.cadre3 = new lib.rempRmc();
 	this.cadre3.name = "cadre3";
 	this.cadre3.parent = this;
-	this.cadre3.setTransform(0.7,590.3,2.6,0.738,0,0,0,0,40);
-	this.cadre3.alpha = 0.199;
+	this.cadre3.setTransform(0.7,592.3,2.6,0.738,0,0,0,0,40);
+	this.cadre3.alpha = 0.148;
 
 	this.cadre2 = new lib.rempRmc();
 	this.cadre2.name = "cadre2";
 	this.cadre2.parent = this;
-	this.cadre2.setTransform(0.9,439,2.6,0.738,0,0,0,0.1,40.1);
-	this.cadre2.alpha = 0.199;
+	this.cadre2.setTransform(0.9,441,2.6,0.738,0,0,0,0.1,40.1);
+	this.cadre2.alpha = 0.148;
 
 	this.cadre1 = new lib.rempRmc();
 	this.cadre1.name = "cadre1";
 	this.cadre1.parent = this;
-	this.cadre1.setTransform(0,280.5,2.6,0.738,0,0,0,0,40);
-	this.cadre1.alpha = 0.199;
+	this.cadre1.setTransform(0,281.5,2.6,0.738,0,0,0,0,40);
+	this.cadre1.alpha = 0.148;
 
 	this.instance_3 = new lib.p12i11111();
 	this.instance_3.parent = this;
@@ -3449,7 +3403,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.046,1.001);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqbTTIT/AAAqLzIIT/AA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqLzIIT/AAAqbTTIT/AA");
 	this.shape.setTransform(271.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.btxt6},{t:this.txt6}]}).wait(1));
