@@ -1511,7 +1511,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		this.rep.on("click" , rep.bind(this));
 		function verif(evt){
 			cnts[0].getBounds();cnts[1].getBounds();cnts[2].getBounds();cnts[3].getBounds();
-			//if(cnts[0].x > cnts[2].x && cnts[2].x > cnts[3] && cnts[0].y == this.cadre1.y - 5 && cnts[2].y == this.cadre1.y - 5 &&  cnts[3].y == this.cadre1.y - 5 && cnts[1].y !=this.cadre1.y - 5)
 				if(cnts[0].y == this.cadre1.y - 5 && cnts[2].y == this.cadre1.y - 5 &&  cnts[3].y == this.cadre1.y - 5 && cnts[1].y !=this.cadre1.y - 5 && cnts[0].x >  cnts[2].x && cnts[2].x >  cnts[3].x)
 		        {setcolor("#00ff00", "cadre1") ; isvalid1=true;}	
 			    else {setcolor("#ff0000", "cadre1") ; isvalid1=false;}
@@ -1545,7 +1544,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 			cnts[0].x=cnts[5].x=cnts[8].x= 340 ;
 			cnts[2].x=cnts[7].x=cnts[10].x= 265 ;
 			cnts[3].x=cnts[11].x= 190 ;
-			
+			setcolor("#00ff00", "cadre1") ;setcolor("#00ff00", "cadre2") ;setcolor("#00ff00", "cadre3") ;
 		}
 	}
 
