@@ -1768,7 +1768,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		function repre(evt){
 			for(i=0 ; i< cnts.length ; i++){
 				cnts[i].x = cntsBx[i]; cnts[i].y =  cntsBy[i];
-				setcolor("#0000ff", "cadre1") ;setcolor("#0000ff", "cadre2") ;setcolor("#0000ff", "cadre3") ;
+				setcolor("#0000ff", "cadre1") ;setcolor("#0000ff", "cadre2") ;setcolor("#0000ff", "cadre3") ;setcolor("#0000ff", "cadre4") ;
 			}
 		}
 		function rep(evt){
@@ -1857,32 +1857,22 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
-	this.rep.setTransform(526.5,509.5,0.811,0.78,0,0,0,22.5,66.5);
+	this.rep.setTransform(526.5,460.5,0.811,0.78,0,0,0,22.5,66.5);
 	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.repre = new lib.btnchkTr();
 	this.repre.name = "repre";
 	this.repre.parent = this;
-	this.repre.setTransform(526.5,405,0.811,0.78,0,0,0,22.5,66.5);
+	this.repre.setTransform(526.5,356,0.811,0.78,0,0,0,22.5,66.5);
 	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
-
-	this.verif = new lib.btnchkTr();
-	this.verif.name = "verif";
-	this.verif.parent = this;
-	this.verif.setTransform(526.5,301.3,0.811,0.78,0,0,0,22.5,66.5);
-	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.instance = new lib.Bitmap3();
 	this.instance.parent = this;
-	this.instance.setTransform(508,457,0.811,0.78);
+	this.instance.setTransform(508,408,0.811,0.78);
 
 	this.instance_1 = new lib.Bitmap2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(508,354,0.811,0.78);
-
-	this.instance_2 = new lib.Bitmap1();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(508,250,0.811,0.78);
+	this.instance_1.setTransform(508,305,0.811,0.78);
 
 	this.cadre4 = new lib.rempRmc();
 	this.cadre4.name = "cadre4";
@@ -1908,10 +1898,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.cadre1.setTransform(0.3,248.5,1.733,0.738,0,0,0,0.1,40.1);
 	this.cadre1.alpha = 0.07;
 
-	this.instance_3 = new lib._01311111();
-	this.instance_3.parent = this;
+	this.instance_2 = new lib._01311111();
+	this.instance_2.parent = this;
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.cadre1},{t:this.cadre2},{t:this.cadre3},{t:this.cadre4},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.text_6},{t:this.text_5},{t:this.text_4},{t:this.text_3},{t:this.text_2},{t:this.text_1},{t:this.text}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.cadre1},{t:this.cadre2},{t:this.cadre3},{t:this.cadre4},{t:this.instance_1},{t:this.instance},{t:this.repre},{t:this.rep},{t:this.text_6},{t:this.text_5},{t:this.text_4},{t:this.text_3},{t:this.text_2},{t:this.text_1},{t:this.text}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p13, new cjs.Rectangle(0,0,550,670), null);
 
@@ -4436,7 +4426,7 @@ lib.properties = {
 	color: "#CCCCCC",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/kourassa3_atlas_.png?1518385771925", id:"kourassa3_atlas_"}
+		{src:"images/kourassa3_atlas_.png?1518386635439", id:"kourassa3_atlas_"}
 	],
 	preloads: []
 };
