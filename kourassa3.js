@@ -4477,15 +4477,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
-	// Layer_3
-	this.instance = new lib.p15();
-	this.instance.parent = this;
-	this.instance.setTransform(275,335,1,1,0,0,0,275,335);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(280,340,550,670);
+p.nominalBounds = null;
 // library properties:
 lib.properties = {
 	id: '8D4C0671D4D96B4689C38B4633B478C1',
