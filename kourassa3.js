@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"kourassa3_atlas_", frames: [[3312,0,533,670],[929,2149,400,400],[3039,2014,400,400],[2247,2148,400,400],[402,2260,400,400],[3051,2682,400,400],[3453,2682,400,400],[1206,2817,400,400],[1608,2817,400,400],[0,2818,400,400],[2537,2818,400,400],[2010,2952,400,400],[804,2953,400,400],[402,3064,400,400],[2939,3084,400,400],[3341,3084,400,400],[1206,3219,400,400],[1608,3219,400,400],[0,3220,400,400],[2412,3220,400,400],[2010,3354,400,400],[1608,4023,400,400],[0,4024,400,400],[2412,4024,400,400],[2010,4158,400,400],[804,4159,400,400],[402,4270,400,400],[2814,4290,400,400],[3216,4290,400,400],[3441,2280,400,400],[1331,2415,400,400],[1733,2415,400,400],[0,2416,400,400],[2649,2416,400,400],[2135,2550,400,400],[804,2551,400,400],[402,2662,400,400],[2412,3622,400,400],[2010,3756,400,400],[804,3757,400,400],[402,3868,400,400],[2814,3888,400,400],[3216,3888,400,400],[3618,3888,400,400],[1206,4023,400,400],[804,3355,400,400],[402,3466,400,400],[2814,3486,400,400],[3216,3486,400,400],[3618,3486,400,400],[1206,3621,400,400],[1608,3621,400,400],[0,3622,400,400],[3694,672,400,400],[3694,1074,400,400],[2637,1344,400,400],[1041,1345,400,400],[3692,1476,400,400],[2637,1746,400,400],[1041,1747,400,400],[527,1858,400,400],[3692,1878,400,400],[1443,2013,400,400],[1845,2013,400,400],[0,2014,400,400],[1584,672,526,669],[0,672,527,669],[529,672,526,670],[3167,672,525,669],[2111,1343,524,668],[0,0,550,670],[1057,672,525,671],[2640,672,525,670],[0,1343,525,669],[2112,672,526,669],[552,0,550,670],[3167,1343,523,669],[3999,0,45,133],[4046,0,45,133],[4003,305,45,133],[3847,412,154,84],[3847,498,154,84],[3618,4290,389,148],[1206,4425,550,165],[3847,0,150,150],[4093,0,3,36],[527,1344,512,512],[2649,2148,256,256],[3051,2416,256,256],[3743,3084,256,256],[3847,152,128,128],[1104,0,550,670],[1656,0,550,670],[1584,1343,525,668],[2208,0,550,670],[2760,0,550,670],[4003,440,67,39],[3847,584,150,80],[2247,2013,150,80],[3977,234,98,69],[2399,2013,150,80],[3977,152,100,80],[3847,282,128,128]]}
+		{name:"kourassa3_atlas_", frames: [[3312,0,533,670],[1845,2013,400,400],[1443,2013,400,400],[0,2014,400,400],[3039,2014,400,400],[2247,2148,400,400],[929,2149,400,400],[402,2260,400,400],[3441,2280,400,400],[1331,2415,400,400],[1733,2415,400,400],[0,2416,400,400],[2649,2416,400,400],[2135,2550,400,400],[2010,3354,400,400],[804,3355,400,400],[402,3466,400,400],[2814,3486,400,400],[3216,3486,400,400],[3618,3486,400,400],[1206,3621,400,400],[1608,3621,400,400],[804,2551,400,400],[402,2662,400,400],[3051,2682,400,400],[3453,2682,400,400],[1206,2817,400,400],[1608,2817,400,400],[0,2818,400,400],[2537,2818,400,400],[2010,2952,400,400],[804,2953,400,400],[402,3064,400,400],[2939,3084,400,400],[3341,3084,400,400],[1206,3219,400,400],[1608,3219,400,400],[0,3220,400,400],[2412,3220,400,400],[0,3622,400,400],[2412,3622,400,400],[2010,3756,400,400],[804,3757,400,400],[402,3868,400,400],[2814,3888,400,400],[3216,3888,400,400],[3618,3888,400,400],[1206,4023,400,400],[1608,4023,400,400],[0,4024,400,400],[2412,4024,400,400],[2010,4158,400,400],[804,4159,400,400],[402,4270,400,400],[2814,4290,400,400],[3216,4290,400,400],[3694,672,400,400],[3694,1074,400,400],[2637,1344,400,400],[1041,1345,400,400],[3692,1476,400,400],[2637,1746,400,400],[1041,1747,400,400],[527,1858,400,400],[3692,1878,400,400],[1584,672,526,669],[0,672,527,669],[529,672,526,670],[3167,672,525,669],[2111,1343,524,668],[0,0,550,670],[1057,672,525,671],[2640,672,525,670],[0,1343,525,669],[2112,672,526,669],[552,0,550,670],[3167,1343,523,669],[3999,0,45,133],[4046,0,45,133],[4003,305,45,133],[3847,412,154,84],[3847,498,154,84],[3618,4290,389,148],[1206,4425,550,165],[3847,0,150,150],[4093,0,3,36],[527,1344,512,512],[2649,2148,256,256],[3051,2416,256,256],[3743,3084,256,256],[3847,152,128,128],[1104,0,550,670],[1656,0,550,670],[1584,1343,525,668],[2208,0,550,670],[2760,0,550,670],[4003,440,67,39],[3847,584,150,80],[2247,2013,150,80],[3977,234,98,69],[2399,2013,150,80],[3977,152,100,80],[3847,282,128,128]]}
 ];
 
 
@@ -774,19 +774,6 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 }).prototype = getMCSymbolPrototype(lib.p16, new cjs.Rectangle(0,0,550,670), null);
 
 
-(lib.p15 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Layer_1
-	this.instance = new lib._015();
-	this.instance.parent = this;
-	this.instance.setTransform(0,0,1.048,1);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.p15, new cjs.Rectangle(0,0,550,670), null);
-
-
 (lib.n4 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -1107,19 +1094,16 @@ p.nominalBounds = new cjs.Rectangle(0,0,85,75);
 	// Layer_1
 	this.instance = new lib.voix();
 	this.instance.parent = this;
+	this.instance.setTransform(0,0,0.469,0.781);
 
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(5,1,1).p("Ap/p/IT/AAIAAT/Iz/AAg");
-	this.shape.setTransform(64,64);
+	this.instance_1 = new lib.rmpjR();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(0,0,0.4,1.25);
 
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#CCCC00").s().p("Ap/KAIAAz/IT/AAIAAT/g");
-	this.shape_1.setTransform(64,64);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance,p:{x:0}}]}).to({state:[{t:this.instance,p:{x:2}}]},1).to({state:[{t:this.instance,p:{x:0}}]},1).to({state:[{t:this.shape_1},{t:this.shape},{t:this.instance,p:{x:0}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[{t:this.instance_1},{t:this.instance}]},1).to({state:[{t:this.instance_1},{t:this.instance}]},1).to({state:[{t:this.instance_1},{t:this.instance}]},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,128,128);
+p.nominalBounds = new cjs.Rectangle(0,0,60,100);
 
 
 (lib.rpr = function(mode,startPosition,loop) {
@@ -1253,6 +1237,78 @@ p.nominalBounds = new cjs.Rectangle(0,0,1,33);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,160,80);
+
+
+(lib.p15 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		var btns = new Array(this.s106, this.s107, this.s108, this.s109, this.s110, this.s111, this.s112);
+		                      
+		
+		for (var i=0; i < btns.length ; i++){
+			
+			btns[i].on("click" , plS);
+			}
+			function plS(e){
+				playSound(e.currentTarget.name);
+				}
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+
+	// Layer_1
+	this.s112 = new lib.snd();
+	this.s112.name = "s112";
+	this.s112.parent = this;
+	this.s112.setTransform(72.1,547.5,0.625,0.391,0,0,0,0.1,0.1);
+	new cjs.ButtonHelper(this.s112, 0, 1, 2, false, new lib.snd(), 3);
+
+	this.s111 = new lib.snd();
+	this.s111.name = "s111";
+	this.s111.parent = this;
+	this.s111.setTransform(72.1,480.5,0.625,0.391,0,0,0,0.1,0.1);
+	new cjs.ButtonHelper(this.s111, 0, 1, 2, false, new lib.snd(), 3);
+
+	this.s110 = new lib.snd();
+	this.s110.name = "s110";
+	this.s110.parent = this;
+	this.s110.setTransform(72.1,415.5,0.625,0.391,0,0,0,0.1,0.1);
+	new cjs.ButtonHelper(this.s110, 0, 1, 2, false, new lib.snd(), 3);
+
+	this.s109 = new lib.snd();
+	this.s109.name = "s109";
+	this.s109.parent = this;
+	this.s109.setTransform(72.1,349.5,0.625,0.391,0,0,0,0.1,0.1);
+	new cjs.ButtonHelper(this.s109, 0, 1, 2, false, new lib.snd(), 3);
+
+	this.s108 = new lib.snd();
+	this.s108.name = "s108";
+	this.s108.parent = this;
+	this.s108.setTransform(72.1,281.5,0.625,0.391,0,0,0,0.1,0.1);
+	new cjs.ButtonHelper(this.s108, 0, 1, 2, false, new lib.snd(), 3);
+
+	this.s107 = new lib.snd();
+	this.s107.name = "s107";
+	this.s107.parent = this;
+	this.s107.setTransform(72.1,214.5,0.625,0.391,0,0,0,0.1,0.1);
+	new cjs.ButtonHelper(this.s107, 0, 1, 2, false, new lib.snd(), 3);
+
+	this.s106 = new lib.snd();
+	this.s106.name = "s106";
+	this.s106.parent = this;
+	this.s106.setTransform(72.1,148,0.625,0.391,0,0,0,0.1,0.1);
+	new cjs.ButtonHelper(this.s106, 0, 1, 2, false, new lib.snd(), 3);
+
+	this.instance = new lib._015();
+	this.instance.parent = this;
+	this.instance.setTransform(0,0,1.048,1);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.s106},{t:this.s107},{t:this.s108},{t:this.s109},{t:this.s110},{t:this.s111},{t:this.s112}]}).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.p15, new cjs.Rectangle(0,0,550,670), null);
 
 
 (lib.p0 = function(mode,startPosition,loop) {
@@ -4320,6 +4376,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 			var sounds = [{src:"spriteAudio.ogg", data: { audioSprite: [
 		{id:"s9001", startTime:58330, duration:1867}, // vrai
 		{id:"s9002", startTime:60196, duration:1788}, //essaie 2
+		{id:"s9003", startTime:116990, duration:2080}, //ma9ati3
+		{id:"s9004", startTime:119109, duration:1782}, //kalimat
+		{id:"s9005", startTime:120923, duration:1624}, //jomal
+		
 		{id:"s1", startTime:0, duration:1210},   
 		{id:"s2", startTime:1223, duration:1088},
 		{id:"s3", startTime:2352, duration: 1177},
@@ -4425,6 +4485,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		{id:"s103", startTime:113372, duration: 1380},
 		{id:"s104", startTime:114744, duration: 1217},
 		{id:"s105", startTime:115979, duration: 1022},
+		{id:"s106", startTime:122597, duration: 2315},
+		{id:"s107", startTime:124975, duration: 3406},
+		{id:"s108", startTime:128381, duration: 3355},
+		{id:"s109", startTime:131765, duration: 2337},
+		{id:"s110", startTime:134096, duration: 3742},
+		{id:"s111", startTime:137838, duration: 2391},
+		{id:"s112", startTime:140229, duration: 2366},
 		
 						]}}];
 			
