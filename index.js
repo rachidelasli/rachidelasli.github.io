@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[0,672,533,670],[0,0,550,670],[1320,824,154,84],[1062,930,389,148],[535,1342,550,165],[1320,672,150,150],[0,1344,256,256],[258,1344,256,256],[1062,672,256,256],[552,0,550,670],[535,672,525,668],[1104,0,550,670],[1087,1162,150,80],[1472,672,150,80],[1062,1080,150,80],[1214,1080,100,80]]}
+		{name:"index_atlas_", frames: [[0,672,533,670],[0,0,550,670],[1320,824,154,84],[1062,930,389,148],[535,1342,550,165],[1320,672,150,150],[0,1344,256,256],[258,1344,256,256],[1062,672,256,256],[552,0,550,670],[535,672,525,668],[1104,0,550,670],[1472,672,150,80],[1062,1080,150,80],[1087,1162,150,80],[1214,1080,100,80]]}
 ];
 
 
@@ -472,149 +472,57 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 			
 			this.gop9.on("click", gop9.bind(this));
 		function gop9(){
-			window.open("./حرف النون/index.html", "_self");}
+			window.open("./النون/index.html", "_self");}
+			
+			this.gop18.on("click", gop18.bind(this));
+		function gop18(){
+			window.open("./العين/index.html", "_self");}
 	}
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.gop18 = new lib.btnTr();
+	this.gop18.name = "gop18";
+	this.gop18.parent = this;
+	this.gop18.setTransform(294.4,279.7,1.307,0.475,0,0,0,0.1,40.1);
+	new cjs.ButtonHelper(this.gop18, 0, 1, 2, false, new lib.btnTr(), 3);
+
+	this.gop9 = new lib.btnTr();
+	this.gop9.name = "gop9";
+	this.gop9.parent = this;
+	this.gop9.setTransform(294.4,232.7,1.307,0.475,0,0,0,0.1,40.1);
+	new cjs.ButtonHelper(this.gop9, 0, 1, 2, false, new lib.btnTr(), 3);
+
 	this.gop1 = new lib.btnTr();
 	this.gop1.name = "gop1";
 	this.gop1.parent = this;
-	this.gop1.setTransform(289.2,61,1.393,0.475,0,0,0,0.1,40.2);
+	this.gop1.setTransform(295.3,61,1.307,0.475,0,0,0,0.1,40.2);
 	new cjs.ButtonHelper(this.gop1, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.gop2 = new lib.btnTr();
 	this.gop2.name = "gop2";
 	this.gop2.parent = this;
-	this.gop2.setTransform(289.2,101.5,1.393,0.475,0,0,0,0.1,40.2);
+	this.gop2.setTransform(295.3,101.5,1.307,0.475,0,0,0,0.1,40.2);
 	new cjs.ButtonHelper(this.gop2, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.gop4 = new lib.btnTr();
 	this.gop4.name = "gop4";
 	this.gop4.parent = this;
-	this.gop4.setTransform(289.2,144.7,1.393,0.475,0,0,0,0.1,40.2);
+	this.gop4.setTransform(295.3,144.7,1.307,0.475,0,0,0,0.1,40.2);
 	new cjs.ButtonHelper(this.gop4, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.gop5 = new lib.btnTr();
 	this.gop5.name = "gop5";
 	this.gop5.parent = this;
-	this.gop5.setTransform(288.1,186.7,1.393,0.475,0,0,0,0,40.1);
+	this.gop5.setTransform(294.4,186.7,1.307,0.475,0,0,0,0.1,40.1);
 	new cjs.ButtonHelper(this.gop5, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9 = new lib.btnTr();
-	this.gop9.name = "gop9";
-	this.gop9.parent = this;
-	this.gop9.setTransform(61.5,616.8,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_1 = new lib.btnTr();
-	this.gop9_1.name = "gop9_1";
-	this.gop9_1.parent = this;
-	this.gop9_1.setTransform(61.5,567.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_1, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_2 = new lib.btnTr();
-	this.gop9_2.name = "gop9_2";
-	this.gop9_2.parent = this;
-	this.gop9_2.setTransform(61.5,518.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_2, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_3 = new lib.btnTr();
-	this.gop9_3.name = "gop9_3";
-	this.gop9_3.parent = this;
-	this.gop9_3.setTransform(61.5,470.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_3, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_4 = new lib.btnTr();
-	this.gop9_4.name = "gop9_4";
-	this.gop9_4.parent = this;
-	this.gop9_4.setTransform(61.5,422.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_4, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_5 = new lib.btnTr();
-	this.gop9_5.name = "gop9_5";
-	this.gop9_5.parent = this;
-	this.gop9_5.setTransform(61.5,374.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_5, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_6 = new lib.btnTr();
-	this.gop9_6.name = "gop9_6";
-	this.gop9_6.parent = this;
-	this.gop9_6.setTransform(61.5,326.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_6, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_7 = new lib.btnTr();
-	this.gop9_7.name = "gop9_7";
-	this.gop9_7.parent = this;
-	this.gop9_7.setTransform(61.5,278.9,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_7, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_8 = new lib.btnTr();
-	this.gop9_8.name = "gop9_8";
-	this.gop9_8.parent = this;
-	this.gop9_8.setTransform(61.5,231,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_8, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_9 = new lib.btnTr();
-	this.gop9_9.name = "gop9_9";
-	this.gop9_9.parent = this;
-	this.gop9_9.setTransform(289.1,617.2,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_9, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_10 = new lib.btnTr();
-	this.gop9_10.name = "gop9_10";
-	this.gop9_10.parent = this;
-	this.gop9_10.setTransform(289.1,568.3,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_10, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_11 = new lib.btnTr();
-	this.gop9_11.name = "gop9_11";
-	this.gop9_11.parent = this;
-	this.gop9_11.setTransform(289.1,519.3,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_11, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_12 = new lib.btnTr();
-	this.gop9_12.name = "gop9_12";
-	this.gop9_12.parent = this;
-	this.gop9_12.setTransform(289.1,471.3,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_12, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_13 = new lib.btnTr();
-	this.gop9_13.name = "gop9_13";
-	this.gop9_13.parent = this;
-	this.gop9_13.setTransform(289.1,423.3,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_13, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_14 = new lib.btnTr();
-	this.gop9_14.name = "gop9_14";
-	this.gop9_14.parent = this;
-	this.gop9_14.setTransform(289.1,375.3,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_14, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_15 = new lib.btnTr();
-	this.gop9_15.name = "gop9_15";
-	this.gop9_15.parent = this;
-	this.gop9_15.setTransform(289.1,327.3,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_15, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_16 = new lib.btnTr();
-	this.gop9_16.name = "gop9_16";
-	this.gop9_16.parent = this;
-	this.gop9_16.setTransform(289.1,279.3,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_16, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.gop9_17 = new lib.btnTr();
-	this.gop9_17.name = "gop9_17";
-	this.gop9_17.parent = this;
-	this.gop9_17.setTransform(289.1,231.4,1.393,0.55,0,0,0,0,40);
-	new cjs.ButtonHelper(this.gop9_17, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.instance = new lib.p3i();
 	this.instance.parent = this;
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.gop9_17},{t:this.gop9_16},{t:this.gop9_15},{t:this.gop9_14},{t:this.gop9_13},{t:this.gop9_12},{t:this.gop9_11},{t:this.gop9_10},{t:this.gop9_9},{t:this.gop9_8},{t:this.gop9_7},{t:this.gop9_6},{t:this.gop9_5},{t:this.gop9_4},{t:this.gop9_3},{t:this.gop9_2},{t:this.gop9_1},{t:this.gop9},{t:this.gop5},{t:this.gop4},{t:this.gop2},{t:this.gop1}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.gop5},{t:this.gop4},{t:this.gop2},{t:this.gop1},{t:this.gop9},{t:this.gop18}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p3, new cjs.Rectangle(0,0,550,670), null);
 
@@ -1262,7 +1170,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png?1519347225424", id:"index_atlas_"}
+		{src:"images/index_atlas_.png?1519371810999", id:"index_atlas_"}
 	],
 	preloads: []
 };
