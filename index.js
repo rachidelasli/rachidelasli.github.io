@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[0,672,533,670],[0,0,550,670],[1320,824,154,84],[1062,930,389,148],[535,1342,550,165],[1320,672,150,150],[0,1344,256,256],[258,1344,256,256],[1062,672,256,256],[552,0,550,670],[535,672,525,668],[1104,0,550,670],[1472,672,150,80],[1062,1080,150,80],[1087,1162,150,80],[1214,1080,100,80]]}
+		{name:"index_atlas_", frames: [[0,672,533,670],[0,0,550,670],[1062,1082,154,84],[535,1342,550,165],[1062,930,150,150],[0,1344,256,256],[258,1344,256,256],[1062,672,256,256],[552,0,550,670],[535,672,525,668],[1104,0,550,670],[1214,930,150,80],[1320,672,150,80],[1320,754,150,80],[1320,836,100,80]]}
 ];
 
 
@@ -32,93 +32,86 @@ lib.ssMetadata = [
 
 
 
-(lib.capt = function() {
+(lib.clavL = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clavL = function() {
+(lib.clavN = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.clavN = function() {
+(lib.hand = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.hand = function() {
+(lib.hm1 = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.hm1 = function() {
+(lib.hm2 = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.hm2 = function() {
+(lib.p3i = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(8);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.p3i = function() {
+(lib.p4i = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.p4i = function() {
+(lib.prp = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(10);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.prp = function() {
+(lib.rempRg = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(11);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rempRg = function() {
+(lib.rmpjR = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmpjR = function() {
+(lib.rmprR = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.rmprR = function() {
-	this.spriteSheet = ss["index_atlas_"];
-	this.gotoAndStop(14);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.svI = function() {
 	this.spriteSheet = ss["index_atlas_"];
-	this.gotoAndStop(15);
+	this.gotoAndStop(14);
 }).prototype = p = new cjs.Sprite();
 // helper functions:
 
@@ -142,23 +135,47 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 (lib.p4 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
+	// Layer_2
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#000000").ss(2,1,1).p("EgpjAcNMAAAg4ZMBTHAAAMAAAA4Z");
+	this.shape.setTransform(276,447.4);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
 	// Layer_1
-	this.instance = new lib.capt();
-	this.instance.parent = this;
-	this.instance.setTransform(31,172,1.221,1.351);
-
-	this.text = new cjs.Text("بطاقة تقنية", "bold 56px 'Arial'", "#0033FF");
+	this.text = new cjs.Text("متطلبات التشغيل", "bold 25px 'Arial'", "#999900");
 	this.text.textAlign = "center";
-	this.text.lineHeight = 65;
-	this.text.lineWidth = 363;
+	this.text.lineHeight = 30;
+	this.text.lineWidth = 505;
 	this.text.parent = this;
-	this.text.setTransform(253.7,30.4);
+	this.text.setTransform(275.5,226.2);
 
-	this.instance_1 = new lib.p4i();
-	this.instance_1.parent = this;
-	this.instance_1.setTransform(0,0,1.048,1.003);
+	this.text_1 = new cjs.Text("البرامج المستعملة في برمجة و تصميم المشروع", "bold 25px 'Arial'", "#999900");
+	this.text_1.textAlign = "center";
+	this.text_1.lineHeight = 30;
+	this.text_1.lineWidth = 505;
+	this.text_1.parent = this;
+	this.text_1.setTransform(274.5,81.3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.text},{t:this.instance}]}).wait(1));
+	this.text_2 = new cjs.Text("- Adobe Animate cc with html5 Canvas\n- CreateJs (EaselJs - preloadJs - SoundJs)\n- Adobe Photoshop\n- Audacity", "bold 20px 'Arial'");
+	this.text_2.textAlign = "center";
+	this.text_2.lineHeight = 24;
+	this.text_2.lineWidth = 510;
+	this.text_2.parent = this;
+	this.text_2.setTransform(275,122.4);
+
+	this.text_3 = new cjs.Text("بطاقة تقنية", "bold 56px 'Arial'", "#0099CC");
+	this.text_3.textAlign = "center";
+	this.text_3.lineHeight = 65;
+	this.text_3.lineWidth = 363;
+	this.text_3.parent = this;
+	this.text_3.setTransform(276.7,11.4);
+
+	this.instance = new lib.p4i();
+	this.instance.parent = this;
+	this.instance.setTransform(0,0,1.048,1.003);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.text_3},{t:this.text_2},{t:this.text_1},{t:this.text}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p4, new cjs.Rectangle(0,0,550,670), null);
 
@@ -1170,7 +1187,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png?1519371810999", id:"index_atlas_"}
+		{src:"images/index_atlas_.png", id:"index_atlas_"}
 	],
 	preloads: []
 };
