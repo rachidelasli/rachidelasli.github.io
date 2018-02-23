@@ -74,7 +74,7 @@ lib.ssMetadata = [
 
 
 
-(lib.p4i = function() {
+(lib.p4i1 = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(9);
 }).prototype = p = new cjs.Sprite();
@@ -171,7 +171,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.text_3.parent = this;
 	this.text_3.setTransform(276.7,11.4);
 
-	this.instance = new lib.p4i();
+	this.instance = new lib.p4i1();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,1.048,1.003);
 
@@ -184,17 +184,10 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.text = new cjs.Text("2", "bold 23px 'Arial'");
-	this.text.textAlign = "center";
-	this.text.lineHeight = 28;
-	this.text.lineWidth = 100;
-	this.text.parent = this;
-	this.text.setTransform(268.1,633.2);
-
 	this.instance = new lib._2();
 	this.instance.parent = this;
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.text}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p2, new cjs.Rectangle(0,0,550,670), null);
 
