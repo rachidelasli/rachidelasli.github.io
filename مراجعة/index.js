@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[0,1343,526,669],[0,672,527,669],[528,1343,523,669],[599,507,45,133],[646,507,45,133],[552,507,45,133],[552,0,550,165],[529,1186,150,150],[911,1268,3,36],[529,672,512,512],[810,167,256,256],[552,167,256,256],[0,0,550,670],[963,1186,150,80],[811,1186,150,80],[811,1268,98,69],[552,425,100,80],[681,1186,128,128]]}
+		{name:"index_atlas_", frames: [[0,1343,526,669],[0,672,527,669],[528,1343,523,669],[646,507,45,133],[599,507,45,133],[552,507,45,133],[552,0,550,165],[529,1186,150,150],[911,1268,3,36],[529,672,512,512],[810,167,256,256],[552,167,256,256],[0,0,550,670],[811,1186,150,80],[963,1186,150,80],[811,1268,98,69],[552,425,100,80],[681,1186,128,128]]}
 ];
 
 
@@ -1056,12 +1056,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		function selectedT(e){
 			    
 				switch(e.target.name) {
-		        case "btxt1": window.txtactif= 1; this.parent.clign.x= this.parent.btxt1.x + 10 ; this.parent.clign.y= this.parent.btxt1.y +20; this.parent.clavL.y= 0; break;
-				case "btxt2": window.txtactif= 2; this.parent.clign.x= this.parent.btxt2.x + 10 ; this.parent.clign.y= this.parent.btxt2.y +20; this.parent.clavL.y= 0; break;
-		        case "btxt3": window.txtactif= 3; this.parent.clign.x= this.parent.btxt3.x + 10 ; this.parent.clign.y= this.parent.btxt3.y +20; this.parent.clavL.y= 0; break;
-		        case "btxt4": window.txtactif= 4; this.parent.clign.x= this.parent.btxt4.x + 10 ; this.parent.clign.y= this.parent.btxt4.y +20; this.parent.clavL.y= 0; break;
-		        case "btxt5": window.txtactif= 5; this.parent.clign.x= this.parent.btxt5.x + 10 ; this.parent.clign.y= this.parent.btxt5.y +20; this.parent.clavL.y= 0; break;
-				case "btxt6": window.txtactif= 6; this.parent.clign.x= this.parent.btxt6.x + 10 ; this.parent.clign.y= this.parent.btxt6.y +20; this.parent.clavL.y= 0; break;
+		        case "btxt1": window.txtactif= 1; this.parent.clign.x= this.parent.btxt1.x + 10 ; this.parent.clign.y= this.parent.btxt1.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+				case "btxt2": window.txtactif= 2; this.parent.clign.x= this.parent.btxt2.x + 10 ; this.parent.clign.y= this.parent.btxt2.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+		        case "btxt3": window.txtactif= 3; this.parent.clign.x= this.parent.btxt3.x + 10 ; this.parent.clign.y= this.parent.btxt3.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+		        case "btxt4": window.txtactif= 4; this.parent.clign.x= this.parent.btxt4.x + 10 ; this.parent.clign.y= this.parent.btxt4.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+		        case "btxt5": window.txtactif= 5; this.parent.clign.x= this.parent.btxt5.x + 10 ; this.parent.clign.y= this.parent.btxt5.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+				case "btxt6": window.txtactif= 6; this.parent.clign.x= this.parent.btxt6.x + 10 ; this.parent.clign.y= this.parent.btxt6.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
 		        default: window.txtactif= 1 ;this.parent.clign.x= this.parent.btxt1.x + 20 ; this.parent.clign.y= this.parent.btxt1.y +10;}
 				/*
 				for(var i=0;i<btxt.length;i++){
@@ -1483,7 +1483,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.frame_0 = function() {
 		var btxt = new Array(this.btxt1, this.btxt2 , this.btxt3, this.btxt4 , this.btxt5 );
 		var txt = new Array(this.txt1, this.txt2 , this.txt3, this.txt4 , this.txt5 );
-		
+		/*
 		for(var i = 0 ; i< btxt.length ; i++){
 			btxt[i].on("click",selectedT.bind(this));}
 			
@@ -1497,11 +1497,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		        case "btxt5": window.txtactif= 5; this.clign.x= this.btxt5.x + 10 ; this.clign.y= this.btxt5.y +20; this.clavL.y= 0; break;
 				default: window.txtactif= 1 ;this.clign.x= this.btxt1.x + 20 ; this.clign.y= this.btxt1.y +10;}
 				}
-		
+		*/
 		
 		
 		this.clv.on("click", clv.bind(this));
-		function clv(){this.clavL.y=0;}
+		function clv(){
+			TweenMax.to(this.clavL,3,{y:0,ease:Elastic.easeOut});}
 		
 		
 		this.verif.on("click" , verif.bind(this));
@@ -1718,7 +1719,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		
 		
 		this.clv.on("click", clv.bind(this));
-		function clv(){this.clavL.y=0;}
+		function clv(){
+			
+			TweenMax.to(this.clavL,3,{y:0,ease:Elastic.easeOut});
+			//this.clavL.y=0;
+			}
 		
 		
 		this.verif.on("click" , verif.bind(this));
@@ -1905,7 +1910,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.046,1.001);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqLzIIT/AAAqbTTIT/AA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqbTTIT/AAAqLzIIT/AA");
 	this.shape.setTransform(271.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.btxt6},{t:this.txt6}]}).wait(1));
@@ -1975,7 +1980,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png", id:"index_atlas_"}
+		{src:"images/index_atlas_.png?1519563375039", id:"index_atlas_"}
 	],
 	preloads: []
 };

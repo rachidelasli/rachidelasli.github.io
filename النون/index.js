@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[402,3486,400,400],[2010,3352,400,400],[3618,3351,400,400],[3216,3351,400,400],[2814,3351,400,400],[0,3196,400,400],[1608,3085,400,400],[1206,3085,400,400],[2412,3084,400,400],[804,3084,400,400],[402,3084,400,400],[2010,2950,400,400],[3618,2949,400,400],[402,1476,400,400],[804,1476,400,400],[2524,1476,400,400],[1206,1477,400,400],[1608,1477,400,400],[0,1588,400,400],[2926,1743,400,400],[3328,1743,400,400],[2010,1744,400,400],[402,1878,400,400],[804,1878,400,400],[2412,1878,400,400],[1206,1879,400,400],[1608,1879,400,400],[0,1990,400,400],[2814,2145,400,400],[3216,2145,400,400],[3618,2145,400,400],[2010,2146,400,400],[402,2280,400,400],[804,2280,400,400],[2412,2280,400,400],[1206,2281,400,400],[1608,2281,400,400],[0,2392,400,400],[2122,1342,400,400],[3490,1341,400,400],[3088,1341,400,400],[0,1186,400,400],[1720,1075,400,400],[1318,1075,400,400],[2686,1074,400,400],[916,1074,400,400],[514,1074,400,400],[1720,673,400,400],[1318,673,400,400],[2686,672,400,400],[916,672,400,400],[514,672,400,400],[2814,2547,400,400],[3216,2547,400,400],[3618,2547,400,400],[2010,2548,400,400],[402,2682,400,400],[804,2682,400,400],[2412,2682,400,400],[1206,2683,400,400],[1608,2683,400,400],[0,2794,400,400],[2814,2949,400,400],[3216,2949,400,400],[1104,0,526,670],[3214,0,525,669],[3214,671,524,668],[0,0,550,670],[1632,0,525,671],[2687,0,525,670],[2159,671,525,669],[2159,0,526,669],[3999,74,45,133],[804,3487,479,281],[4046,74,45,133],[3088,672,111,122],[4046,276,29,29],[3999,209,45,133],[3999,0,85,72],[3999,344,55,74],[3999,420,53,57],[4078,209,18,57],[4046,209,30,65],[1285,3487,550,165],[3740,1032,150,150],[4086,0,3,36],[0,672,512,512],[3741,0,256,256],[3741,258,256,256],[3741,516,256,256],[552,0,550,670],[3740,774,256,256],[3892,1162,150,80],[3740,1184,150,80],[3998,774,98,69],[3088,796,100,80],[3892,1032,128,128]]}
+		{name:"index_atlas_", frames: [[916,672,400,400],[2686,672,400,400],[1318,673,400,400],[514,672,400,400],[1720,673,400,400],[514,1074,400,400],[916,1074,400,400],[2686,1074,400,400],[1318,1075,400,400],[1720,1075,400,400],[0,1186,400,400],[3088,1341,400,400],[3490,1341,400,400],[402,3486,400,400],[2010,3352,400,400],[3618,3351,400,400],[3216,3351,400,400],[2814,3351,400,400],[0,3196,400,400],[1608,3085,400,400],[1206,3085,400,400],[2412,3084,400,400],[804,3084,400,400],[402,3084,400,400],[2010,2950,400,400],[3618,2949,400,400],[3216,2949,400,400],[2814,2949,400,400],[0,2794,400,400],[1608,2683,400,400],[1206,2683,400,400],[2412,2682,400,400],[804,2682,400,400],[402,2682,400,400],[2010,2548,400,400],[3618,2547,400,400],[1206,2281,400,400],[1608,2281,400,400],[0,2392,400,400],[2814,2547,400,400],[3216,2547,400,400],[2010,1744,400,400],[402,1878,400,400],[804,1878,400,400],[2412,1878,400,400],[1206,1879,400,400],[1608,1879,400,400],[0,1990,400,400],[2814,2145,400,400],[3216,2145,400,400],[3618,2145,400,400],[2010,2146,400,400],[402,2280,400,400],[804,2280,400,400],[2412,2280,400,400],[2926,1743,400,400],[0,1588,400,400],[3328,1743,400,400],[1608,1477,400,400],[1206,1477,400,400],[2524,1476,400,400],[804,1476,400,400],[402,1476,400,400],[2122,1342,400,400],[1104,0,526,670],[2159,671,525,669],[3214,671,524,668],[552,0,550,670],[1632,0,525,671],[2687,0,525,670],[3214,0,525,669],[2159,0,526,669],[3999,209,45,133],[804,3487,479,281],[4046,74,45,133],[3088,672,111,122],[4046,276,29,29],[3999,74,45,133],[3999,0,85,72],[3999,344,55,74],[3999,420,53,57],[4078,209,18,57],[4046,209,30,65],[1285,3487,550,165],[3740,1032,150,150],[4086,0,3,36],[0,672,512,512],[3741,258,256,256],[3741,516,256,256],[3740,774,256,256],[0,0,550,670],[3741,0,256,256],[3740,1184,150,80],[3892,1162,150,80],[3998,774,98,69],[3088,796,100,80],[3892,1032,128,128]]}
 ];
 
 
@@ -2803,31 +2803,23 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 			
 			this.pinceau.on("click", showPalette.bind(this));
 			function showPalette(e){
-			this.btn1.visible =this.btn2.visible =this.btn3.visible =false;this.palette.x=5;
+				TweenMax.to(this.palette , 3,{x:5,ease:Elastic.easeOut});
+			this.btn1.visible =this.btn2.visible =this.btn3.visible =false;
 				container.visible=false;
 			}
 		this.palette.fermer.on("click", hidePalette.bind(this));
 			function hidePalette(e){
-			this.btn1.visible =this.btn2.visible =this.btn3.visible =true;this.palette.x=555;
-				container.visible=true;
+			TweenMax.to(this.palette , 1,{x:550,ease:Elastic.easeIn});	
+			this.btn1.visible =this.btn2.visible =this.btn3.visible =true;
+				//container.visible=true;
 			}
 			
 			this.pinceau.on("mouseover", mover.bind(this));
 			function mover(e){
 			e.currentTarget.cursor="pointer";
-				
 			}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+			
+			TweenMax.to(this.pinceau , 7,{x:475,ease:Elastic.easeOut});
 		
 		this.cadre.alpha = 0.05;
 		this.btn1.on("click", n1.bind(this));
@@ -2846,6 +2838,7 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 			var h1 = new lib.n1();
 			b.graphics.clear().beginStroke("green").setStrokeStyle(5).drawRect(0, 0, 330, 260);
 			container.addChild(h1.setTransform(0,0,0.825,0.65),b);
+			container.visible=true;
 		}
 		
 		function n2() {
@@ -2853,6 +2846,7 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 			var h2 = new lib.n2();
 			b.graphics.clear().beginStroke("red").setStrokeStyle(5).drawRect(0, 0, 330, 260);
 			container.addChild(h2.setTransform(0,0,0.825,0.65),b);
+			container.visible=true;
 		}
 		
 		function n3() {
@@ -2861,6 +2855,7 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 			var h4 = new lib.n4();
 			b.graphics.clear().beginStroke('blue').setStrokeStyle(5).drawRect(0, 0, 330, 260);
 			container.addChild(h3.setTransform(0,0,0.4125,0.65),h4.setTransform(165,-7,0.4125,0.65),b);
+			container.visible=true;
 		}
 	}
 
@@ -2871,7 +2866,7 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.pinceau = new lib.richa();
 	this.pinceau.name = "pinceau";
 	this.pinceau.parent = this;
-	this.pinceau.setTransform(513,204,0.699,1,0,0,180,50,50);
+	this.pinceau.setTransform(580.1,154,0.699,1,0,0,180,100,0);
 
 	this.mc7 = new lib.nou9ta();
 	this.mc7.name = "mc7";
@@ -3082,12 +3077,12 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 		function selectedT(e){
 			    
 				switch(e.target.name) {
-		        case "btxt1": window.txtactif= 1; this.parent.clign.x= this.parent.btxt1.x + 10 ; this.parent.clign.y= this.parent.btxt1.y +20; this.parent.clavL.y= 0; break;
-				case "btxt2": window.txtactif= 2; this.parent.clign.x= this.parent.btxt2.x + 10 ; this.parent.clign.y= this.parent.btxt2.y +20; this.parent.clavL.y= 0; break;
-		        case "btxt3": window.txtactif= 3; this.parent.clign.x= this.parent.btxt3.x + 10 ; this.parent.clign.y= this.parent.btxt3.y +20; this.parent.clavL.y= 0; break;
-		        case "btxt4": window.txtactif= 4; this.parent.clign.x= this.parent.btxt4.x + 10 ; this.parent.clign.y= this.parent.btxt4.y +20; this.parent.clavL.y= 0; break;
-		        case "btxt5": window.txtactif= 5; this.parent.clign.x= this.parent.btxt5.x + 10 ; this.parent.clign.y= this.parent.btxt5.y +20; this.parent.clavL.y= 0; break;
-				case "btxt6": window.txtactif= 6; this.parent.clign.x= this.parent.btxt6.x + 10 ; this.parent.clign.y= this.parent.btxt6.y +20; this.parent.clavL.y= 0; break;
+		        case "btxt1": window.txtactif= 1; this.parent.clign.x= this.parent.btxt1.x + 10 ; this.parent.clign.y= this.parent.btxt1.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+				case "btxt2": window.txtactif= 2; this.parent.clign.x= this.parent.btxt2.x + 10 ; this.parent.clign.y= this.parent.btxt2.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+		        case "btxt3": window.txtactif= 3; this.parent.clign.x= this.parent.btxt3.x + 10 ; this.parent.clign.y= this.parent.btxt3.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+		        case "btxt4": window.txtactif= 4; this.parent.clign.x= this.parent.btxt4.x + 10 ; this.parent.clign.y= this.parent.btxt4.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+		        case "btxt5": window.txtactif= 5; this.parent.clign.x= this.parent.btxt5.x + 10 ; this.parent.clign.y= this.parent.btxt5.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
+				case "btxt6": window.txtactif= 6; this.parent.clign.x= this.parent.btxt6.x + 10 ; this.parent.clign.y= this.parent.btxt6.y +20; TweenMax.to(this.parent.clavL,3,{y:0,ease:Elastic.easeOut}); break;
 		        default: window.txtactif= 1 ;this.parent.clign.x= this.parent.btxt1.x + 20 ; this.parent.clign.y= this.parent.btxt1.y +10;}
 				/*
 				for(var i=0;i<btxt.length;i++){
@@ -3508,7 +3503,7 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	// timeline functions:
 	this.frame_0 = function() {
 		this.clv.on("click", clv.bind(this));
-		function clv(){this.clavL.y=0;}
+		function clv(){TweenMax.to(this.clavL,3,{y:0,ease:Elastic.easeOut});}
 		
 		
 		this.verif.on("click" , verif.bind(this));
@@ -3706,7 +3701,7 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.instance_3.setTransform(0,0,1.05,1.003);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("A2rzSIUAAAAACTTIQBAAA2nTTIUAAAACsA8IUAAAAASzIIUAAA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("A2rzSIUAAAAACTTIQBAAA2nTTIUAAAAASzIIUAAAACsA8IUAAA");
 	this.shape.setTransform(204.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.btxt3},{t:this.txt3},{t:this.btxt5},{t:this.txt5},{t:this.btxt2},{t:this.txt2},{t:this.btxt4},{t:this.txt4},{t:this.btxt6},{t:this.txt6},{t:this.text}]}).wait(1));
@@ -3753,6 +3748,17 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.clign = new lib.clignM();
+	this.clign.name = "clign";
+	this.clign.parent = this;
+	this.clign.setTransform(205.1,475.6,3,1);
+
+	this.btxt1 = new lib.btnTr();
+	this.btxt1.name = "btxt1";
+	this.btxt1.parent = this;
+	this.btxt1.setTransform(199.3,465.2,0.506,0.614,0,0,0,0.2,0.1);
+	new cjs.ButtonHelper(this.btxt1, 0, 1, 2, false, new lib.btnTr(), 3);
+
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
@@ -3799,7 +3805,7 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.instance_4.parent = this;
 	this.instance_4.setTransform(0,0,1.048,1.001);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.txt},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.txt},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.btxt1},{t:this.clign}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p10, new cjs.Rectangle(0,0,550,670), null);
 
