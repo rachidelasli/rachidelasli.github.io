@@ -21,7 +21,7 @@
 	top:0;bottom:0;
   }
 </style>
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="createjs-2015.11.26.min.js"></script>
 <script src="index.js"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -34,6 +34,22 @@ function init() {
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
 	createjs.Sound.initializeDefaultPlugins();
+	createjs.Sound.initializeDefaultPlugins();
+var assetsPath = "./sounds/";
+	var sounds = [{src:"taalimat.ogg", data: { audioSprite: [
+{id:"s9001", startTime:5749, duration:1869}, // vrai
+{id:"s9002", startTime:7903, duration:1699}, //essaie 2
+{id:"s9003", startTime:0, duration:1882}, //ma9ati3
+{id:"s9004", startTime:2167, duration:1601}, //kalimat
+{id:"s9005", startTime:4079, duration:1388} //jomal
+
+				]}}];
+createjs.Sound.alternateExtensions = ["mp3"];
+createjs.Sound.on("fileload", hFileLoad);
+createjs.Sound.registerSounds(sounds, assetsPath);
+function hFileLoad() {
+		
+}
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();

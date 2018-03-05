@@ -23,7 +23,7 @@
 </style>
 <script src="../TweenMax.min.js"></script>
 <script src="../createjs-2015.11.26.min.js"></script>
-<script src="index.js"></script>
+<script src="index.js?1519722716848"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -33,70 +33,6 @@ function init() {
 	var comp=AdobeAn.getComposition("8D4C0671D4D96B4689C38B4633B478C1");
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
-	loader.installPlugin(createjs.Sound);
-	createjs.Sound.initializeDefaultPlugins();
-var assetsPath = "./sounds/";
-	var sounds = [{src:"sprite18-26.ogg", data: { audioSprite: [
-{id:"s9001", startTime:6039, duration:1954}, // vrai
-{id:"s9002", startTime:8295, duration:1742}, //essaie 2
-{id:"s9003", startTime:0, duration:2009}, //ma9ati3
-{id:"s9004", startTime:2292, duration:1732}, //kalimat
-{id:"s9005", startTime:4312, duration:1525}, //jomal
-
-{id:"s151", startTime:10305, duration: 500},  
-{id:"s152", startTime:11103, duration: 495},
-{id:"s153", startTime:11895, duration: 475},
-{id:"s154", startTime:12678, duration: 767},
-{id:"s155", startTime:13743, duration: 692},
-{id:"s156", startTime:14748, duration: 677},
-{id:"s157", startTime:15712, duration: 565},
-{id:"s158", startTime:16586, duration: 581},
-{id:"s159", startTime:17459, duration: 480},
-{id:"s160", startTime:18247, duration: 1146},
-{id:"s161", startTime:19701, duration: 1005},
-{id:"s162", startTime:21019, duration: 954},
-{id:"s163", startTime:22276, duration: 1050},
-{id:"s164", startTime:23639, duration: 1045},
-{id:"s165", startTime:24992, duration: 1197},
-{id:"s166", startTime:26497, duration: 1020},
-{id:"s167", startTime:27830, duration: 1070},
-{id:"s168", startTime:29188, duration: 833},
-{id:"s169", startTime:30314, duration: 808},
-{id:"s170", startTime:31435, duration: 788},
-{id:"s171", startTime:32520, duration: 800},
-{id:"s172", startTime:33626, duration: 767},
-{id:"s173", startTime:34696, duration: 778},
-{id:"s174", startTime:35782, duration: 1040},
-{id:"s175", startTime:37145, duration: 1096},
-{id:"s176", startTime:38544, duration: 964},
-{id:"s177", startTime:39821, duration: 1166},
-{id:"s178", startTime:41290, duration: 980},
-{id:"s179", startTime:42568, duration: 1293},
-{id:"s180", startTime:44163, duration: 4584},
-{id:"s181", startTime:49071, duration: 3045},
-{id:"s182", startTime:52418, duration: 2373},
-{id:"s183", startTime:55064, duration: 2737},
-{id:"s184", startTime:58103, duration: 2858},
-{id:"s185", startTime:61254, duration: 1303},
-{id:"s186", startTime:62829, duration: 868},
-{id:"s187", startTime:63991, duration: 1298},
-{id:"s188", startTime:65601, duration: 1030},
-{id:"s189", startTime:66954, duration: 959},
-{id:"s190", startTime:68242, duration: 1005},
-{id:"s191", startTime:69534, duration: 1151},
-{id:"s192", startTime:71014, duration: 1091},
-{id:"s193", startTime:72412, duration: 1288},
-{id:"s194", startTime:74008, duration: 1262},
-{id:"s195", startTime:75558, duration: 1595},
-{id:"s196", startTime:77461, duration: 717},
-				]}}];
-createjs.Sound.alternateExtensions = ["mp3"];
-createjs.Sound.on("fileload", hFileLoad);
-createjs.Sound.registerSounds(sounds, assetsPath);
-function hFileLoad() {
-		
-}
-
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
@@ -167,9 +103,6 @@ function handleComplete(evt,comp) {
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
-function playSound(id, loop) {
-	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
-}
 </script>
 <!-- write your code here -->
 </head>
@@ -179,6 +112,6 @@ function playSound(id, loop) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:680px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:680px; width: 560px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:680px; width: 560px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1519722716849 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>

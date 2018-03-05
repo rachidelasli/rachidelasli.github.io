@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[0,1343,526,669],[0,672,527,669],[528,1343,523,669],[646,507,45,133],[599,507,45,133],[552,507,45,133],[552,0,550,165],[529,1186,150,150],[911,1268,3,36],[529,672,512,512],[810,167,256,256],[552,167,256,256],[0,0,550,670],[811,1186,150,80],[963,1186,150,80],[811,1268,98,69],[552,425,100,80],[681,1186,128,128]]}
+		{name:"index_atlas_", frames: [[0,1343,526,669],[0,672,527,669],[528,1343,523,669],[646,507,45,133],[599,507,45,133],[552,507,45,133],[552,0,550,165],[529,1186,150,150],[911,1268,3,36],[529,672,512,512],[552,167,256,256],[810,167,256,256],[0,0,550,670],[811,1186,150,80],[963,1186,150,80],[811,1268,98,69],[552,425,100,80],[681,1186,128,128]]}
 ];
 
 
@@ -392,8 +392,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		var btns = new Array(this.s61, this.s62, this.s63, this.s64, this.s65, this.s66, this.s67, 
-		this.s68, this.s69, this.s70, this.s71, this.s72, this.s73, this.s74,this.s75,this.s76);
+		var btns = [this.s61, this.s62, this.s63, this.s64, this.s65, this.s66, this.s67, 
+		this.s68, this.s69, this.s70, this.s71, this.s72, this.s73, this.s74,this.s75,this.s76];
 		                      
 		
 		for (var i=0; i < btns.length ; i++){
@@ -543,17 +543,29 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		var btns = new Array(this.s1, this.s2, this.s3, this.s4, this.s5, this.s6, this.s7, this.s8, this.s9, this.s10, this.s11, this.s12, this.s13, this.s14,
-		this.s15,this.s16, this.s17, this.s18, this.s19, this.s20, this.s21, this.s22, this.s23, this.s24, this.s25, this.s26, this.s27, this.s28, this.s29, this.s30,
-		this.s31, this.s32, this.s33, this.s34, this.s35, this.s36, this.s37, this.s38, this.s39, this.s40, this.s41, this.s42, this.s43, this.s44, this.s45,
-		this.s46, this.s47, this.s48, this.s49, this.s50, this.s51, this.s52, this.s53, this.s54, this.s55, this.s56, this.s57, this.s58, this.s59, this.s60);
+		var btns1 = [this.s1, this.s2, this.s3, this.s4, this.s5, this.s6,this.s7, this.s8, this.s9, this.s10,
+		this.s11, this.s12, this.s13, this.s14,this.s15,this.s16, this.s17, this.s18, this.s19, this.s20];
 		                      
+		var btns2 = [ this.s21, this.s22, this.s23, this.s24,this.s25, this.s26, this.s27, this.s28, this.s29, 
+		this.s30,this.s31, this.s32, this.s33, this.s34, this.s35, this.s36, this.s37, this.s38, this.s39, this.s40];
 		
-		for (var i=0; i < btns.length ; i++){
-			
-			btns[i].on("click" , plS);
-			}
-			function plS(e){
+		var btns3 = [ this.s41, this.s42, this.s43, this.s44, this.s45,this.s46, this.s47, this.s48, this.s49, 
+		this.s50, this.s51, this.s52, this.s53, this.s54, this.s55, this.s56, this.s57, this.s58, this.s59, this.s60];
+		
+		for (var i=0; i < btns1.length ; i++){btns1[i].on("click" , plS1);}	
+		function plS1(e){
+				  createjs.Sound.stop();
+				playSound(e.currentTarget.name);
+				}
+				
+		for (var i=0; i < btns2.length ; i++){btns2[i].on("click" , plS2);}	
+		function plS2(e){
+				  createjs.Sound.stop();
+				playSound(e.currentTarget.name);
+				}
+				
+		for (var i=0; i < btns3.length ; i++){btns3[i].on("click" , plS3);}	
+		function plS3(e){
 				  createjs.Sound.stop();
 				playSound(e.currentTarget.name);
 				}
@@ -943,8 +955,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		var numero = new Array(this.ح0 , this.ح1 ,this.ح2 , this.ح3 , this.ح4 , this.ح5 , 
-		this.ح6 , this.ح7 , this.ح8 ,this.ح9 , this.supr);
+		var numero = [this.ح0 , this.ح1 ,this.ح2 , this.ح3 , this.ح4 , this.ح5 , 
+		this.ح6 , this.ح7 , this.ح8 ,this.ح9 , this.supr];
 		
 				var letter = "";
 		for(var i=0 ; i< numero.length ; i++){
@@ -1047,8 +1059,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		var btxt = new Array(this.parent.btxt1, this.parent.btxt2 , this.parent.btxt3, this.parent.btxt4 , this.parent.btxt5,this.parent.btxt6 );
-		var txt = new Array(this.parent.txt1, this.parent.txt2 , this.parent.txt3, this.parent.txt4 , this.parent.txt5, this.parent.txt6);
+		var btxt = [this.parent.btxt1, this.parent.btxt2 , this.parent.btxt3, this.parent.btxt4 , this.parent.btxt5,this.parent.btxt6 ];
+		var txt = [this.parent.txt1, this.parent.txt2 , this.parent.txt3, this.parent.txt4 , this.parent.txt5, this.parent.txt6];
 		
 		for(var i = 0 ; i < btxt.length ; i++) {btxt[i].on("click",selectedT.bind(this));}
 			
@@ -1072,10 +1084,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 				*/
 		}
 		
-		var letters = new Array(this.حب , this.حت , this.حث ,this.حج , this.حح , this.حخ , this.حد , this.حذ , this.حر , this.حز ,
+		var letters = [this.حب , this.حت , this.حث ,this.حج , this.حح , this.حخ , this.حد , this.حذ , this.حر , this.حز ,
 		 this.حس , this.حش , this.حص , this.حض , this.حط , this.حظ , this.حع , this.حغ , this.حف , this.حق , this.حك , this.حل ,
 		 this.حم , this.حن , this.حه , this.حآ , this.حة , this.حأ ,this.حإ , this.حئ , this.حؤ , this.حء , this.حا , this.حو , this.حي ,
-		 this.حى , this.حـ , this.حَ , this.حِ , this.حُ , this.حً , this.حٍ , this.حٌ , this.حْ , this.حّ , this.supr , this.esp  );
+		 this.حى , this.حـ , this.حَ , this.حِ , this.حُ , this.حً , this.حٍ , this.حٌ , this.حْ , this.حّ , this.supr , this.esp ];
 		
 			
 		
@@ -1481,24 +1493,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		var btxt = new Array(this.btxt1, this.btxt2 , this.btxt3, this.btxt4 , this.btxt5 );
-		var txt = new Array(this.txt1, this.txt2 , this.txt3, this.txt4 , this.txt5 );
-		/*
-		for(var i = 0 ; i< btxt.length ; i++){
-			btxt[i].on("click",selectedT.bind(this));}
-			
-			window.txtactif = 1;
-			function selectedT(e){
-				switch(e.target.name) {
-		        case "btxt1": window.txtactif= 1; this.clign.x= this.btxt1.x + 10 ; this.clign.y= this.btxt1.y +20; this.clavL.y= 0; break;
-				case "btxt2": window.txtactif= 2; this.clign.x= this.btxt2.x + 10 ; this.clign.y= this.btxt2.y +20; this.clavL.y= 0; break;
-		        case "btxt3": window.txtactif= 3; this.clign.x= this.btxt3.x + 10 ; this.clign.y= this.btxt3.y +20; this.clavL.y= 0; break;
-		        case "btxt4": window.txtactif= 4; this.clign.x= this.btxt4.x + 10 ; this.clign.y= this.btxt4.y +20; this.clavL.y= 0; break;
-		        case "btxt5": window.txtactif= 5; this.clign.x= this.btxt5.x + 10 ; this.clign.y= this.btxt5.y +20; this.clavL.y= 0; break;
-				default: window.txtactif= 1 ;this.clign.x= this.btxt1.x + 20 ; this.clign.y= this.btxt1.y +10;}
-				}
-		*/
-		
+		var btxt = [this.btxt1, this.btxt2 , this.btxt3, this.btxt4 , this.btxt5 ];
+		var txt = [this.txt1, this.txt2 , this.txt3, this.txt4 , this.txt5];
 		
 		this.clv.on("click", clv.bind(this));
 		function clv(){
@@ -1697,32 +1693,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		/*
-		var btxt = new Array(this.btxt1, this.btxt2 , this.btxt3, this.btxt4 , this.btxt5 );
-		var txt = new Array(this.txt1, this.txt2 , this.txt3, this.txt4 , this.txt5 );
-		
-		for(var i = 0 ; i< btxt.length ; i++){
-			btxt[i].on("click",selectedT.bind(this));}
-			
-			window.txtactif = 1;
-			function selectedT(e){
-				switch(e.target.name) {
-		        case "btxt1": window.txtactif= 1; this.clign.x= this.btxt1.x + 10 ; this.clign.y= this.btxt1.y +20; this.clavL.y= 0; break;
-				case "btxt2": window.txtactif= 2; this.clign.x= this.btxt2.x + 10 ; this.clign.y= this.btxt2.y +20; this.clavL.y= 0; break;
-		        case "btxt3": window.txtactif= 3; this.clign.x= this.btxt3.x + 10 ; this.clign.y= this.btxt3.y +20; this.clavL.y= 0; break;
-		        case "btxt4": window.txtactif= 4; this.clign.x= this.btxt4.x + 10 ; this.clign.y= this.btxt4.y +20; this.clavL.y= 0; break;
-		        case "btxt5": window.txtactif= 5; this.clign.x= this.btxt5.x + 10 ; this.clign.y= this.btxt5.y +20; this.clavL.y= 0; break;
-				default: window.txtactif= 1 ;this.clign.x= this.btxt1.x + 20 ; this.clign.y= this.btxt1.y +10;}
-				}
-		
-		*/
-		
-		
 		this.clv.on("click", clv.bind(this));
 		function clv(){
-			
 			TweenMax.to(this.clavL,3,{y:0,ease:Elastic.easeOut});
-			//this.clavL.y=0;
 			}
 		
 		
@@ -1910,7 +1883,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.046,1.001);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqbTTIT/AAAqLzIIT/AA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqLzIIT/AAAqbTTIT/AA");
 	this.shape.setTransform(271.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.btxt6},{t:this.txt6}]}).wait(1));
@@ -1932,13 +1905,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		{
 		  createjs.Text.prototype._drawTextLine = function(ctx, text, y)
 		  {
-		  // Adjust text position only if textBaseline is "top"
 		  if (this.textBaseline === "top")
 		  {
 		  var lineHeight = this.lineHeight || this.getMeasuredLineHeight();
 		  y += lineHeight * 0.06;
 		  }
-		  // Chrome 17 will fail to draw the text if the last param is included but null, so we feed it a large value instead:
 		  if (this.outline) { ctx.strokeText(text, 0, y, this.maxWidth||0xFFFF); }
 		  else { ctx.fillText(text, 0, y, this.maxWidth||0xFFFF); }
 		  };
@@ -1980,7 +1951,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png?1519563375039", id:"index_atlas_"}
+		{src:"images/index_atlas_.png", id:"index_atlas_"}
 	],
 	preloads: []
 };
