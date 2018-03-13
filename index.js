@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[0,672,533,670],[0,0,550,670],[1062,1082,154,84],[535,1342,550,165],[1062,930,150,150],[0,1344,256,256],[258,1344,256,256],[1062,672,256,256],[552,0,550,670],[535,672,525,668],[1104,0,550,670],[1320,754,150,80],[1214,930,150,80],[1320,672,150,80],[1320,836,100,80]]}
+		{name:"index_atlas_", frames: [[0,672,533,670],[0,0,550,670],[1062,1082,154,84],[535,1342,550,165],[1062,930,150,150],[0,1344,256,256],[258,1344,256,256],[1062,672,256,256],[552,0,550,670],[535,672,525,668],[1104,0,550,670],[1214,930,150,80],[1320,672,150,80],[1320,754,150,80],[1320,836,100,80]]}
 ];
 
 
@@ -277,6 +277,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 	this.frame_0 = function() {
 		var pg = [new lib.p0(),new lib.p1(),new lib.p2(),new lib.p3(),new lib.p4()];
 		
+		
 		var pags = this.parent.parent.getChildByName('pags');
 		var navs = this.parent.parent.getChildByName('navs');
 		var nav = navs.getChildByName('nav');
@@ -290,19 +291,16 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 			np=1;
 			nav.sv.visible=true;nav.hm.visible=true;nav.pr.visible=true;
 			pags.removeAllChildren();pags.addChild(pg[1]);
-			//this.parent.parent.setChildIndex( navs, this.parent.parent.getNumChildren()-1);
 			}
 		function p2(){
 			np=2;
 			nav.sv.visible=true;nav.hm.visible=true;nav.pr.visible=true;
 			pags.removeAllChildren();pags.addChild(pg[2]);
-			//this.parent.parent.setChildIndex( navs, this.parent.parent.getNumChildren()-1);
 			}
 		function p3(){
 			nav.sv.visible=true;nav.hm.visible=true;nav.pr.visible=true;
 			np=3;
 			pags.removeAllChildren();pags.addChild(pg[3]);
-			//this.parent.parent.setChildIndex( navs, this.parent.parent.getNumChildren()-1);
 			}
 	}
 
@@ -398,7 +396,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,160,80);
 			np += 1;
 			pags.removeAllChildren();pags.addChild(pg[np]);
 			   if(np <pg.length-1){this.sv.visible=true;}
-			   else{this.sv.visible=false;}	
+			   else{
+				   this.sv.visible=false;
+				   }	
 		}
 			
 		this.pr.on("click", pr.bind(this));
@@ -1183,6 +1183,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,150,80);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		window.moveTo(0,0);
+		    window.resizeTo(screen.width,screen.height);
+			
 		stage.enableMouseOver(10);
 		stage.mouseMoveOutside = true;
 		
@@ -1238,7 +1241,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png?1520207829010", id:"index_atlas_"}
+		{src:"images/index_atlas_.png?1520981517566", id:"index_atlas_"}
 	],
 	preloads: []
 };

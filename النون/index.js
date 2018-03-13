@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[1720,673,400,400],[514,1074,400,400],[916,1074,400,400],[2686,1074,400,400],[1318,1075,400,400],[1720,1075,400,400],[0,1186,400,400],[1608,1879,400,400],[0,1990,400,400],[2814,2145,400,400],[3216,2145,400,400],[3618,2145,400,400],[2010,2146,400,400],[402,2280,400,400],[804,2280,400,400],[3216,2547,400,400],[3618,2547,400,400],[2010,2548,400,400],[402,2682,400,400],[804,2682,400,400],[2412,2682,400,400],[1206,2683,400,400],[1608,2683,400,400],[0,1588,400,400],[2926,1743,400,400],[3328,1743,400,400],[2010,1744,400,400],[402,1878,400,400],[804,1878,400,400],[2412,1878,400,400],[1206,1879,400,400],[0,2794,400,400],[2814,2949,400,400],[3216,2949,400,400],[3618,2949,400,400],[2010,2950,400,400],[402,3084,400,400],[804,3084,400,400],[2412,3084,400,400],[1206,3085,400,400],[1608,3085,400,400],[0,3196,400,400],[2814,3351,400,400],[3216,3351,400,400],[3618,3351,400,400],[2010,3352,400,400],[402,3486,400,400],[3088,1341,400,400],[3490,1341,400,400],[2122,1342,400,400],[402,1476,400,400],[804,1476,400,400],[2524,1476,400,400],[1206,1477,400,400],[1608,1477,400,400],[514,672,400,400],[916,672,400,400],[2686,672,400,400],[1318,673,400,400],[2412,2280,400,400],[1206,2281,400,400],[1608,2281,400,400],[0,2392,400,400],[2814,2547,400,400],[1104,0,526,670],[3214,0,525,669],[3214,671,524,668],[0,0,550,670],[1632,0,525,671],[2687,0,525,670],[2159,671,525,669],[2159,0,526,669],[4046,74,45,133],[804,3487,479,281],[3999,209,45,133],[3088,672,111,122],[4056,324,29,29],[3999,74,45,133],[3999,0,85,72],[3999,344,55,74],[3999,420,53,57],[4078,257,18,57],[4046,257,30,65],[1285,3487,550,165],[3740,1032,150,150],[4086,0,3,36],[0,672,512,512],[4046,209,46,46],[3741,0,256,256],[3741,258,256,256],[3741,516,256,256],[552,0,550,670],[3740,774,256,256],[3892,1162,150,80],[3740,1184,150,80],[3998,774,98,69],[3088,796,100,80],[3892,1032,128,128]]}
+		{name:"index_atlas_", frames: [[514,672,400,400],[916,672,400,400],[2686,672,400,400],[1318,673,400,400],[1720,673,400,400],[514,1074,400,400],[916,1074,400,400],[2686,1074,400,400],[1318,1075,400,400],[1720,1075,400,400],[0,2794,400,400],[2814,2949,400,400],[3216,2949,400,400],[3618,2949,400,400],[2010,2950,400,400],[402,3084,400,400],[804,3084,400,400],[2412,3084,400,400],[1206,3085,400,400],[1608,3085,400,400],[0,3196,400,400],[2814,3351,400,400],[3216,3351,400,400],[3618,3351,400,400],[2010,3352,400,400],[402,3486,400,400],[3216,2547,400,400],[3618,2547,400,400],[2412,2280,400,400],[1206,2281,400,400],[0,2392,400,400],[1608,2281,400,400],[2814,2547,400,400],[2010,2548,400,400],[402,2682,400,400],[804,2682,400,400],[2412,2682,400,400],[1206,2683,400,400],[1608,2683,400,400],[3328,1743,400,400],[2926,1743,400,400],[0,1588,400,400],[1608,1477,400,400],[1206,1477,400,400],[2524,1476,400,400],[804,1476,400,400],[402,1476,400,400],[2122,1342,400,400],[3490,1341,400,400],[0,1186,400,400],[3088,1341,400,400],[2010,1744,400,400],[402,1878,400,400],[804,1878,400,400],[2412,1878,400,400],[1206,1879,400,400],[1608,1879,400,400],[0,1990,400,400],[2814,2145,400,400],[3216,2145,400,400],[3618,2145,400,400],[2010,2146,400,400],[402,2280,400,400],[804,2280,400,400],[1104,0,526,670],[3214,0,525,669],[3214,671,524,668],[552,0,550,670],[1632,0,525,671],[2687,0,525,670],[2159,671,525,669],[2159,0,526,669],[4046,74,45,133],[804,3487,479,281],[3999,209,45,133],[3088,672,111,122],[4056,324,29,29],[3999,74,45,133],[3999,0,85,72],[3999,344,55,74],[3999,420,53,57],[4078,257,18,57],[4046,257,30,65],[1285,3487,550,165],[3740,1032,150,150],[4086,0,3,36],[0,672,512,512],[4046,209,46,46],[3741,0,256,256],[3741,258,256,256],[3741,516,256,256],[0,0,550,670],[3740,774,256,256],[3892,1162,150,80],[3740,1184,150,80],[3998,774,98,69],[3088,796,100,80],[3892,1032,128,128]]}
 ];
 
 
@@ -2514,22 +2514,22 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
-	this.rep.setTransform(526.5,460.5,0.811,0.78,0,0,0,22.5,66.5);
+	this.rep.setTransform(526.5,455.7,0.81,0.706,0,0,0,22.6,66.7);
 	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.repre = new lib.btnchkTr();
 	this.repre.name = "repre";
 	this.repre.parent = this;
-	this.repre.setTransform(526.5,356,0.811,0.78,0,0,0,22.5,66.5);
+	this.repre.setTransform(526.5,361.1,0.81,0.706,0,0,0,22.6,66.8);
 	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.instance = new lib.Bitmap3_1();
 	this.instance.parent = this;
-	this.instance.setTransform(508,408,0.811,0.78);
+	this.instance.setTransform(508,408,0.81,0.706);
 
 	this.instance_1 = new lib.Bitmap2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(508,305,0.811,0.78);
+	this.instance_1.setTransform(508,315,0.81,0.706);
 
 	this.cadre4 = new lib.rempRmc();
 	this.cadre4.name = "cadre4";
@@ -2712,32 +2712,32 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
-	this.rep.setTransform(525.6,528.2,0.811,0.822,0,0,0,22.6,66.5);
+	this.rep.setTransform(525.6,506.4,0.811,0.659,0,0,0,22.6,66.5);
 	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.repre = new lib.btnchkTr();
 	this.repre.name = "repre";
 	this.repre.parent = this;
-	this.repre.setTransform(525.6,418,0.811,0.822,0,0,0,22.6,66.5);
+	this.repre.setTransform(525.6,418.1,0.811,0.659,0,0,0,22.6,66.5);
 	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.verif = new lib.btnchkTr();
 	this.verif.name = "verif";
 	this.verif.parent = this;
-	this.verif.setTransform(525.6,308.7,0.811,0.822,0,0,0,22.6,66.5);
+	this.verif.setTransform(525.6,330.5,0.811,0.659,0,0,0,22.6,66.5);
 	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.instance = new lib.Bitmap3_1();
 	this.instance.parent = this;
-	this.instance.setTransform(507,473,0.811,0.822);
+	this.instance.setTransform(507,462,0.811,0.659);
 
 	this.instance_1 = new lib.Bitmap2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(507,364,0.811,0.822);
+	this.instance_1.setTransform(507,375,0.811,0.659);
 
 	this.instance_2 = new lib.Bitmap1();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(507,255,0.811,0.822);
+	this.instance_2.setTransform(507,287,0.811,0.659);
 
 	this.cadre3 = new lib.rempRmc();
 	this.cadre3.name = "cadre3";
@@ -2770,6 +2770,9 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		window.moveTo(0,0);
+		    window.resizeTo(screen.width,screen.height);
+		
 		var abeille = [this.mc1,this.mc2,this.mc3,this.mc4,this.mc5,this.mc6,this.mc7];
 		var that = this;
 		stage.enableMouseOver(10);
@@ -2799,7 +2802,10 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 			}
 		
 			function chg(e){
+				TweenMax.to(this.palette,3,{x:5, ease:Elastic.easeOut});
 			setcolor(lawn , e.currentTarget.name ) ;
+				this.btn1.visible =this.btn2.visible =this.btn3.visible =false;
+				container.visible=false;
 			}
 			
 			this.pinceau.on("click", showPalette.bind(this));
@@ -3648,32 +3654,32 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
-	this.rep.setTransform(25.5,495.5,1,1,0,0,0,22.5,66.5);
+	this.rep.setTransform(528.2,493.2,0.873,0.737,0,0,0,22.5,66.7);
 	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.repre = new lib.btnchkTr();
 	this.repre.name = "repre";
 	this.repre.parent = this;
-	this.repre.setTransform(25.5,361.5,1,1,0,0,0,22.5,66.5);
+	this.repre.setTransform(528.2,394.3,0.873,0.737,0,0,0,22.5,66.6);
 	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.verif = new lib.btnchkTr();
 	this.verif.name = "verif";
 	this.verif.parent = this;
-	this.verif.setTransform(25.5,228.5,1,1,0,0,0,22.5,66.5);
+	this.verif.setTransform(528.2,296.2,0.873,0.737,0,0,0,22.5,66.6);
 	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.instance = new lib.Bitmap3_1();
 	this.instance.parent = this;
-	this.instance.setTransform(3,428);
+	this.instance.setTransform(509,444,0.873,0.737);
 
 	this.instance_1 = new lib.Bitmap2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(3,295);
+	this.instance_1.setTransform(509,346,0.873,0.737);
 
 	this.instance_2 = new lib.Bitmap1();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(3,162);
+	this.instance_2.setTransform(509,248,0.873,0.737);
 
 	this.clavL = new lib.clavL_1();
 	this.clavL.name = "clavL";
@@ -3707,7 +3713,7 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.instance_3.setTransform(0,0,1.05,1.003);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("A2rzSIUAAAAACTTIQBAAA2nTTIUAAAACsA8IUAAAAASzIIUAAA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("A2rzSIUAAAAACTTIQBAAA2nTTIUAAAAASzIIUAAAACsA8IUAAA");
 	this.shape.setTransform(204.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.btxt3},{t:this.txt3},{t:this.btxt5},{t:this.txt5},{t:this.btxt2},{t:this.txt2},{t:this.btxt4},{t:this.txt4},{t:this.btxt6},{t:this.txt6},{t:this.text}]}).wait(1));
@@ -3720,6 +3726,8 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		TweenMax.to(this.clav,3,{x:-45, ease:Power2.easeOut});
+		
 		this.verif.on("click" , verif.bind(this));
 		function verif(){
 			
@@ -3760,42 +3768,43 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.btxt1 = new lib.btnTr();
 	this.btxt1.name = "btxt1";
 	this.btxt1.parent = this;
-	this.btxt1.setTransform(199.3,465.2,0.506,0.614,0,0,0,0.2,0.1);
+	this.btxt1.setTransform(275,465.7,0.649,0.988,0,0,0,138.9,0.7);
 	new cjs.ButtonHelper(this.btxt1, 0, 1, 2, false, new lib.btnTr(), 3);
 
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
-	this.rep.setTransform(25.5,435.2,1,0.75,0,0,0,22.5,66.7);
+	this.rep.setTransform(518,567.9,1,0.658,0,0,0,22.6,66.8);
 	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.repre = new lib.btnchkTr();
 	this.repre.name = "repre";
 	this.repre.parent = this;
-	this.repre.setTransform(25.5,334.7,1,0.75,0,0,0,22.5,66.7);
+	this.repre.setTransform(518,479.8,1,0.658,0,0,0,22.6,66.8);
 	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.verif = new lib.btnchkTr();
 	this.verif.name = "verif";
 	this.verif.parent = this;
-	this.verif.setTransform(25.5,235.1,1,0.75,0,0,0,22.5,66.8);
+	this.verif.setTransform(518,392.3,1,0.658,0,0,0,22.6,66.8);
 	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.instance = new lib.Bitmap3_1();
 	this.instance.parent = this;
-	this.instance.setTransform(3,385,1,0.75);
+	this.instance.setTransform(495,524,1,0.658);
 
 	this.instance_1 = new lib.Bitmap2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(3,285,1,0.75);
+	this.instance_1.setTransform(495,436,1,0.658);
 
 	this.instance_2 = new lib.Bitmap1();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(3,185,1,0.75);
+	this.instance_2.setTransform(495,348,1,0.658);
 
-	this.instance_3 = new lib.clavN_1();
-	this.instance_3.parent = this;
-	this.instance_3.setTransform(90.4,551.4,0.999,0.681,0,0,0,84.2,81.6);
+	this.clav = new lib.clavN_1();
+	this.clav.name = "clav";
+	this.clav.parent = this;
+	this.clav.setTransform(612.5,524.3,1.012,1.038,-52.7,0,0,0,0.4);
 
 	this.txt = new cjs.Text("", "40px 'Arial'", "#3300CC");
 	this.txt.name = "txt";
@@ -3805,13 +3814,13 @@ p.nominalBounds = new cjs.Rectangle(-35.7,-34.2,71.6,68.5);
 	this.txt.parent = this;
 	this.txt.setTransform(237,467.6);
 
-	this.instance_4 = new lib._010();
-	this.instance_4.parent = this;
-	this.instance_4.setTransform(0,0,1.048,1.001);
+	this.instance_3 = new lib._010();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(0,0,1.048,1.001);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_4},{t:this.txt},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.btxt1},{t:this.clign}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.txt},{t:this.clav},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.btxt1},{t:this.clign}]}).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.p10, new cjs.Rectangle(0,0,550,670), null);
+}).prototype = getMCSymbolPrototype(lib.p10, new cjs.Rectangle(0,0,849.6,670), null);
 
 
 // stage content:
