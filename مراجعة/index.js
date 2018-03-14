@@ -238,29 +238,29 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Layer_1
-	this.text = new cjs.Text("لوحة المفاتيح", "bold 18px 'Arial'");
+	this.text = new cjs.Text("لوحة المفاتيح", "bold 18px 'Arial'", "#9900CC");
 	this.text.textAlign = "center";
 	this.text.lineHeight = 22;
 	this.text.lineWidth = 110;
 	this.text.parent = this;
-	this.text.setTransform(59.6,2);
+	this.text.setTransform(61,2);
 
 	this.instance = new lib.clvierico();
 	this.instance.parent = this;
-	this.instance.setTransform(0,4,0.234,0.127);
+	this.instance.setTransform(4,7,0.234,0.117);
 
-	this.instance_1 = new lib.rmplblnc();
+	this.instance_1 = new lib.rmpjR();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(0,0,1.224,0.899);
+	this.instance_1.setTransform(0,0,0.8,0.775);
 
-	this.instance_2 = new lib.rmpjR();
+	this.instance_2 = new lib.rmplblnc();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(0,0,0.8,0.775);
+	this.instance_2.setTransform(0,0,1.224,0.899);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.127,x:0,y:4}},{t:this.text,p:{x:59.6,color:"#000000"}}]}).to({state:[{t:this.instance_2},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]},1).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.127,x:4,y:4}},{t:this.text,p:{x:61,color:"#000000"}}]},1).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.127,x:4,y:4}},{t:this.text,p:{x:61,color:"#000000"}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]}).to({state:[{t:this.instance_2},{t:this.instance,p:{scaleY:0.127,x:0,y:4}},{t:this.text,p:{x:60,color:"#000000"}}]},1).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]},1).to({state:[{t:this.instance_2},{t:this.instance,p:{scaleY:0.127,x:4,y:4}},{t:this.text,p:{x:61,color:"#000000"}}]},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,120,69);
+p.nominalBounds = new cjs.Rectangle(0,0,124,67);
 
 
 (lib.clignM = function(mode,startPosition,loop) {
@@ -346,7 +346,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,1,33);
 	this.instance = new lib.Symbol2();
 	this.instance.parent = this;
 	this.instance.setTransform(75,40);
-	this.instance.alpha = 0.148;
+	this.instance.alpha = 0.25;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0.301},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:1},0).wait(1));
 
@@ -393,7 +393,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	// Layer_1
 	this.instance = new lib.hand();
 	this.instance.parent = this;
-	this.instance.setTransform(496.6,164.3,0.243,0.243,-120);
+	this.instance.setTransform(465.5,147.1,0.203,0.203,-120);
 
 	this.s76 = new lib.btnTr();
 	this.s76.name = "s76";
@@ -491,37 +491,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.s65.setTransform(379.1,248.2,0.68,1.387,0,0,0,0.1,0.3);
 	new cjs.ButtonHelper(this.s65, 0, 1, 2, false, new lib.btnTr(), 3);
 
-	this.s1 = new lib.btnTr();
-	this.s1.name = "s1";
-	this.s1.parent = this;
-	this.s1.setTransform(66.1,135.3,0.68,1.374,0,0,0,0.1,0.4);
-	new cjs.ButtonHelper(this.s1, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.s1_1 = new lib.btnTr();
-	this.s1_1.name = "s1_1";
-	this.s1_1.parent = this;
-	this.s1_1.setTransform(171.1,135.3,0.68,1.374,0,0,0,0.1,0.4);
-	new cjs.ButtonHelper(this.s1_1, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.s1_2 = new lib.btnTr();
-	this.s1_2.name = "s1_2";
-	this.s1_2.parent = this;
-	this.s1_2.setTransform(275.1,135.3,0.68,1.374,0,0,0,0.1,0.4);
-	new cjs.ButtonHelper(this.s1_2, 0, 1, 2, false, new lib.btnTr(), 3);
-
-	this.s1_3 = new lib.btnTr();
-	this.s1_3.name = "s1_3";
-	this.s1_3.parent = this;
-	this.s1_3.setTransform(379.1,135.3,0.68,1.374,0,0,0,0.1,0.4);
-	new cjs.ButtonHelper(this.s1_3, 0, 1, 2, false, new lib.btnTr(), 3);
-
 	this.instance_1 = new lib._008();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(0,1,1.044,1.001);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.s1_3},{t:this.s1_2},{t:this.s1_1},{t:this.s1},{t:this.s65},{t:this.s66},{t:this.s67},{t:this.s68},{t:this.s69},{t:this.s70},{t:this.s71},{t:this.s72},{t:this.s61},{t:this.s62},{t:this.s63},{t:this.s64},{t:this.s73},{t:this.s74},{t:this.s75},{t:this.s76},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.s65},{t:this.s66},{t:this.s67},{t:this.s68},{t:this.s69},{t:this.s70},{t:this.s71},{t:this.s72},{t:this.s61},{t:this.s62},{t:this.s63},{t:this.s64},{t:this.s73},{t:this.s74},{t:this.s75},{t:this.s76},{t:this.instance}]}).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.p8, new cjs.Rectangle(0,1,550.5,670), null);
+}).prototype = getMCSymbolPrototype(lib.p8, new cjs.Rectangle(0,1,550,670), null);
 
 
 (lib.p5 = function(mode,startPosition,loop) {
@@ -566,7 +542,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	// Layer_1
 	this.instance = new lib.hand();
 	this.instance.parent = this;
-	this.instance.setTransform(521.9,167,0.248,0.248,-139);
+	this.instance.setTransform(507.8,145,0.207,0.2,-139);
 
 	this.s45 = new lib.btnTr();
 	this.s45.name = "s45";
@@ -934,7 +910,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.s1},{t:this.s2},{t:this.s3},{t:this.s4},{t:this.s5},{t:this.s6},{t:this.s7},{t:this.s8},{t:this.s9},{t:this.s10},{t:this.s11},{t:this.s12},{t:this.s13},{t:this.s14},{t:this.s15},{t:this.s16},{t:this.s17},{t:this.s18},{t:this.s19},{t:this.s20},{t:this.s21},{t:this.s22},{t:this.s23},{t:this.s24},{t:this.s25},{t:this.s26},{t:this.s27},{t:this.s28},{t:this.s29},{t:this.s30},{t:this.s31},{t:this.s32},{t:this.s33},{t:this.s34},{t:this.s35},{t:this.s36},{t:this.s37},{t:this.s38},{t:this.s39},{t:this.s40},{t:this.s41},{t:this.s46},{t:this.s47},{t:this.s48},{t:this.s49},{t:this.s50},{t:this.s51},{t:this.s52},{t:this.s53},{t:this.s54},{t:this.s55},{t:this.s56},{t:this.s57},{t:this.s58},{t:this.s59},{t:this.s60},{t:this.s42},{t:this.s43},{t:this.s44},{t:this.s45},{t:this.instance}]}).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.p5, new cjs.Rectangle(0,0,563.4,670), null);
+}).prototype = getMCSymbolPrototype(lib.p5, new cjs.Rectangle(0,0,550,670), null);
 
 
 (lib.clavN_1 = function(mode,startPosition,loop) {
@@ -1551,32 +1527,32 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
-	this.rep.setTransform(25.5,509.2,1,0.765,0,0,0,22.5,66.6);
+	this.rep.setTransform(25.6,488.3,0.778,0.66,0,0,0,22.7,66.7);
 	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.repre = new lib.btnchkTr();
 	this.repre.name = "repre";
 	this.repre.parent = this;
-	this.repre.setTransform(25.5,406.7,1,0.765,0,0,0,22.5,66.6);
+	this.repre.setTransform(25.6,399.8,0.778,0.66,0,0,0,22.7,66.7);
 	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.verif = new lib.btnchkTr();
 	this.verif.name = "verif";
 	this.verif.parent = this;
-	this.verif.setTransform(25.5,304.9,1,0.765,0,0,0,22.5,66.5);
+	this.verif.setTransform(25.6,311.9,0.778,0.66,0,0,0,22.7,66.5);
 	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.instance = new lib.Bitmap3();
 	this.instance.parent = this;
-	this.instance.setTransform(3,458,1,0.765);
+	this.instance.setTransform(8,444,0.778,0.66);
 
 	this.instance_1 = new lib.Bitmap2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(3,356,1,0.765);
+	this.instance_1.setTransform(8,356,0.778,0.66);
 
 	this.instance_2 = new lib.Bitmap1();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(3,254,1,0.765);
+	this.instance_2.setTransform(8,268,0.778,0.66);
 
 	this.clavL = new lib.clavL_1();
 	this.clavL.name = "clavL";
@@ -1789,32 +1765,32 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
-	this.rep.setTransform(25.5,474.5,1,0.663,0,0,0,22.5,66.5);
+	this.rep.setTransform(25.6,474.5,0.782,0.663,0,0,0,22.7,66.5);
 	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.repre = new lib.btnchkTr();
 	this.repre.name = "repre";
 	this.repre.parent = this;
-	this.repre.setTransform(25.5,385.7,1,0.663,0,0,0,22.5,66.5);
+	this.repre.setTransform(25.6,385.7,0.782,0.663,0,0,0,22.7,66.5);
 	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.verif = new lib.btnchkTr();
 	this.verif.name = "verif";
 	this.verif.parent = this;
-	this.verif.setTransform(25.5,297.5,1,0.663,0,0,0,22.5,66.5);
+	this.verif.setTransform(25.6,297.5,0.782,0.663,0,0,0,22.7,66.5);
 	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.instance = new lib.Bitmap3();
 	this.instance.parent = this;
-	this.instance.setTransform(3,430,1,0.663);
+	this.instance.setTransform(8,430,0.782,0.663);
 
 	this.instance_1 = new lib.Bitmap2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(3,342,1,0.663);
+	this.instance_1.setTransform(8,342,0.782,0.663);
 
 	this.instance_2 = new lib.Bitmap1();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(3,253,1,0.663);
+	this.instance_2.setTransform(8,253,0.782,0.663);
 
 	this.clavL = new lib.clavL_1();
 	this.clavL.name = "clavL";
@@ -1872,7 +1848,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.046,1.001);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqbTTIT/AAAqLzIIT/AA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqLzIIT/AAAqbTTIT/AA");
 	this.shape.setTransform(271.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.btxt6},{t:this.txt6}]}).wait(1));
@@ -1940,7 +1916,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png?1520703735869", id:"index_atlas_"}
+		{src:"images/index_atlas_.png", id:"index_atlas_"}
 	],
 	preloads: []
 };
