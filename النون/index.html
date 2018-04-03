@@ -10,8 +10,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>index</title>
+<title>حرف النون</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -34,98 +38,87 @@ function init() {
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
+	var loader = new createjs.LoadQueue(false);
+	loader.installPlugin(createjs.Sound);
 	createjs.Sound.initializeDefaultPlugins();
 var assetsPath = "./sounds/";
-	var sounds = [{src:"sprite9-17.ogg", data: { audioSprite: [
-{id:"s9001", startTime:6006, duration:1915}, // vrai
-{id:"s9002", startTime:8220, duration:1731}, //essaie 2
-{id:"s9003", startTime:0, duration:1934}, //ma9ati3
-{id:"s9004", startTime:2226, duration:1719}, //kalimat
-{id:"s9005", startTime:4230, duration:1516}, //jomal
+	var sounds = [{src:"sprite_n.ogg", data: { audioSprite: [
+{id:"s9001", startTime:0, duration:1843}, // vrai
+{id:"s9002", startTime:2149, duration:1682}, //essaie 2
 
-{id:"s77", startTime:10230, duration: 622},
-{id:"s78", startTime:11137, duration: 507},
-{id:"s79", startTime:11930, duration: 552},
-{id:"s80", startTime:12767, duration: 869},
-{id:"s81", startTime:13915, duration: 837},
-{id:"s82", startTime:15038, duration: 761},
-{id:"s83", startTime:16097, duration: 590},
-{id:"s84", startTime:16978, duration: 577},
-{id:"s85", startTime:17874, duration: 577},
-{id:"s86", startTime:18710, duration: 1205},
-{id:"s87", startTime:20213, duration: 1465},
-{id:"s88", startTime:21976, duration: 1137},
-{id:"s89", startTime:23441, duration: 1383},
-{id:"s90", startTime:25109, duration: 1135},
-{id:"s91", startTime:26549, duration: 1326},
-{id:"s92", startTime:28160, duration: 1351},
-{id:"s93", startTime:29796, duration: 1097},
-{id:"s94", startTime:31185, duration: 1186},
-{id:"s95", startTime:32657, duration: 1015},
-{id:"s96", startTime:33957, duration: 926},
-{id:"s97", startTime:35181, duration: 1040},
-{id:"s98", startTime:36513, duration: 977},
-{id:"s99", startTime:37788, duration: 1224},
-{id:"s100", startTime:39297, duration: 989},
-{id:"s101", startTime:40584, duration: 1237},
-{id:"s102", startTime:42119, duration: 1040},
-{id:"s103", startTime:43470, duration: 1294},
-{id:"s104", startTime:45068, duration: 1091},
-{id:"s105", startTime:46445, duration: 945},
-{id:"s106", startTime:47669, duration: 2252},
-{id:"s107", startTime:50199, duration: 3311},
-{id:"s108", startTime:53808, duration: 3317},
-{id:"s109", startTime:57423, duration: 2302},
-{id:"s110", startTime:60024, duration: 3761},
-{id:"s111", startTime:64064, duration: 2169},
-{id:"s112", startTime:66531, duration: 2347},
-{id:"s113", startTime:69157, duration: 558},
-{id:"s114", startTime:70019, duration: 825},
-{id:"s115", startTime:71129, duration: 482},
-{id:"s116", startTime:71909, duration: 672},
-{id:"s117", startTime:72873, duration: 526},
-{id:"s118", startTime:73685, duration: 488},
-{id:"s119", startTime:74465, duration: 831},
-{id:"s120", startTime:75588, duration: 615},
-{id:"s121",  startTime:93949, duration: 767},
-{id:"s122", startTime:77503, duration: 736},
-{id:"s123", startTime:78537, duration: 533},
-{id:"s124", startTime:79349, duration: 666},
-{id:"s125", startTime:80294, duration: 634},
-{id:"s126", startTime:81226, duration: 679},
-{id:"s127", startTime:82196, duration: 362},
-{id:"s128", startTime:82850, duration: 691},
-{id:"s129", startTime:83826, duration: 742},
-{id:"s130", startTime:84860, duration: 634},
-{id:"s131", startTime:85786, duration: 818},
-{id:"s132", startTime:86890, duration: 660},
-{id:"s133", startTime:87835, duration: 755},
-{id:"s134", startTime:88881, duration: 767},
-{id:"s135", startTime:89940, duration: 799},
-{id:"s136", startTime:91038, duration: 666},
-{id:"s137", startTime:91989, duration: 660},
-{id:"s138", startTime:92940, duration: 717},
-{id:"s139", startTime:93949, duration: 767},
-{id:"s140", startTime:95014, duration: 786},
-{id:"s141", startTime:96099, duration: 729},
-{id:"s142", startTime:97120, duration: 615},
-{id:"s143", startTime:98020, duration: 1230},
-{id:"s144", startTime:99543, duration: 1326},
-{id:"s145", startTime:101166, duration: 1471},
-{id:"s146", startTime:102910, duration: 1104},
-{id:"s147", startTime:104312, duration: 1142},
-{id:"s148", startTime:105739, duration: 1129},
-{id:"s149", startTime:107160, duration: 1046},
-{id:"s150", startTime:108492, duration: 1230},
-
-				]}}];
+{id:"s1", startTime:3524, duration:621},   
+{id:"s2", startTime:4146, duration:486},
+{id:"s3", startTime:4632, duration: 541},
+{id:"s4", startTime:5173, duration: 849},
+{id:"s5", startTime:6022, duration: 834},
+{id:"s6", startTime:6855, duration: 763},
+{id:"s7", startTime:7918, duration: 592},
+{id:"s8", startTime:8210, duration: 596},
+{id:"s9", startTime:8806, duration: 570},
+{id:"s10", startTime:9377, duration: 1224},
+{id:"s11", startTime:10601, duration: 1512},
+{id:"s12", startTime:12113, duration: 1200},
+{id:"s13", startTime:13313, duration: 1392},
+{id:"s14", startTime:14705, duration: 1176},
+{id:"s15", startTime:15881, duration: 1272},
+{id:"s16", startTime:17153, duration: 1368},
+{id:"s17", startTime:17521, duration: 1128},
+{id:"s18", startTime:19649, duration: 1488},
+{id:"s19", startTime:21137, duration: 1032},
+{id:"s20", startTime:22169, duration: 960},
+{id:"s21", startTime:23129, duration: 1080},
+{id:"s22", startTime:24209, duration: 1008},
+{id:"s23", startTime:25217, duration: 1248},
+{id:"s24", startTime:26465, duration: 1032},
+{id:"s25", startTime:27497, duration: 1272},
+{id:"s26", startTime:28769, duration: 1080},
+{id:"s27", startTime:29873, duration: 1415},
+{id:"s28", startTime:31289, duration: 1128},
+{id:"s29", startTime:32417, duration: 984},
+{id:"s30", startTime:33401, duration: 2256},
+{id:"s31", startTime:35657, duration: 3360},
+{id:"s32", startTime:39017, duration: 2616},
+{id:"s33", startTime:41633, duration: 2352},
+{id:"s34", startTime:43985, duration: 3912},
+{id:"s35", startTime:47897, duration: 2184},
+{id:"s36", startTime:50081, duration: 2376},
+{id:"s37", startTime:52457, duration: 600},
+{id:"s38", startTime:53057, duration: 864},
+{id:"s39", startTime:53921, duration: 504},
+{id:"s40", startTime:54425, duration: 528},
+{id:"s41", startTime:54953, duration: 864},
+{id:"s42", startTime:55817, duration: 648},
+{id:"s43", startTime:56465, duration: 1080},
+{id:"s44", startTime:57545, duration: 768},
+{id:"s45", startTime:58313, duration: 552},
+{id:"s46", startTime:58865, duration: 672},
+{id:"s47", startTime:59537, duration: 720},
+{id:"s48", startTime:60257, duration: 384},
+{id:"s49", startTime:60641, duration: 720},
+{id:"s50", startTime:61361, duration: 768},
+{id:"s51", startTime:62129, duration: 672},
+{id:"s52", startTime:62801, duration: 864},
+{id:"s53", startTime:63665, duration: 672},
+{id:"s54", startTime:64337, duration: 768},
+{id:"s55", startTime:65105, duration: 816},
+{id:"s56", startTime:65921, duration: 840},
+{id:"s57", startTime:66761, duration: 720},
+{id:"s58", startTime:67481, duration: 696},
+{id:"s59", startTime:68177, duration: 744},
+{id:"s60", startTime:68921, duration: 888},
+{id:"s61", startTime:69809, duration: 768},
+{id:"s62", startTime:70577, duration: 1128},
+{id:"s63", startTime:71705, duration: 1224},
+{id:"s64", startTime:72929, duration: 1152},
+{id:"s65", startTime:74081, duration: 1080}
+	]}}];
 createjs.Sound.alternateExtensions = ["mp3"];
 createjs.Sound.on("fileload", hFileLoad);
 createjs.Sound.registerSounds(sounds, assetsPath);
-function hFileLoad() {
-		
-}
 
+function hFileLoad(event) {
+
+}
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
@@ -202,7 +195,7 @@ function playSound(id, loop) {
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
+<body onload="init();" style="margin:0px;background-color:aliceblue;">
 	<div id="animation_container" style="background-color:rgba(153, 102, 102, 1.00); width:560px; height:680px">
 		<canvas id="canvas" width="560" height="680" style="position: absolute; display: none; background-color:rgba(153, 102, 102, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:680px; position: absolute; left: 0px; top: 0px; display: none;">

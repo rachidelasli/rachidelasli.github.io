@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[0,1343,526,669],[0,672,527,669],[528,1343,523,669],[958,425,45,133],[804,507,45,133],[851,507,45,133],[552,0,550,165],[552,425,150,150],[1005,425,3,36],[529,672,512,512],[552,167,256,256],[810,167,256,256],[1043,425,256,256],[0,0,550,670],[552,577,150,80],[704,425,150,80],[704,507,98,69],[856,425,100,80]]}
+		{name:"index_atlas_", frames: [[0,1343,526,669],[0,672,527,669],[528,1343,523,669],[851,507,45,133],[958,425,45,133],[804,507,45,133],[552,0,550,165],[552,425,150,150],[1005,425,3,36],[529,672,512,512],[552,167,256,256],[810,167,256,256],[1043,425,256,256],[0,0,550,670],[552,577,150,80],[704,425,150,80],[704,507,98,69],[856,425,100,80]]}
 ];
 
 
@@ -257,7 +257,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(0,0,1.224,0.899);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]}).to({state:[{t:this.instance_2},{t:this.instance,p:{scaleY:0.127,x:0,y:4}},{t:this.text,p:{x:60,color:"#000000"}}]},1).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]},1).to({state:[{t:this.instance_2},{t:this.instance,p:{scaleY:0.127,x:4,y:4}},{t:this.text,p:{x:61,color:"#000000"}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]}).to({state:[{t:this.instance_2},{t:this.instance,p:{scaleY:0.127,x:0,y:4}},{t:this.text,p:{x:60,color:"#000000"}}]},1).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]},1).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,124,67);
@@ -505,9 +505,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		window.moveTo(0,0);
-		window.resizeTo(screen.width,screen.height);
-		
 		var btns1 = [this.s1, this.s2, this.s3, this.s4, this.s5, this.s6,this.s7, this.s8, this.s9, this.s10,
 		this.s11, this.s12, this.s13, this.s14,this.s15,this.s16, this.s17, this.s18, this.s19, this.s20];
 		                      
@@ -1848,7 +1845,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.046,1.001);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqLzIIT/AAAqbTTIT/AA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqbTTIT/AAAqLzIIT/AA");
 	this.shape.setTransform(271.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.rpr},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.btxt6},{t:this.txt6}]}).wait(1));
@@ -1862,6 +1859,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		window.moveTo(0,0);
+		window.resizeTo(screen.width,screen.height);
+		
 		stage.enableMouseOver(10);
 		stage.mouseMoveOutside = true;
 		
@@ -1916,7 +1916,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png", id:"index_atlas_"}
+		{src:"images/index_atlas_.png?1522739538038", id:"index_atlas_"}
 	],
 	preloads: []
 };

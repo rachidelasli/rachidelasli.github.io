@@ -10,8 +10,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>index</title>
+<title>مراجعة حروف الدورة الأولى</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -34,7 +38,6 @@ function init() {
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
-
 	createjs.Sound.initializeDefaultPlugins();
 var assetsPath = "./sounds/";
 	var sounds = [{src:"sprite5.ogg", data: { audioSprite: [
@@ -117,9 +120,6 @@ var assetsPath = "./sounds/";
 {id:"s74", startTime:99632, duration: 1306},
 {id:"s75", startTime:101236, duration: 1352},
 {id:"s76", startTime:102885, duration: 1191},
-
-
-
 	]}}];
 createjs.Sound.alternateExtensions = ["mp3"];
 createjs.Sound.on("fileload", hFileLoad);
@@ -205,7 +205,7 @@ function playSound(id, loop) {
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
+<body onload="init();" style="margin:0px;background-color:linen;">
 	<div id="animation_container" style="background-color:rgba(153, 102, 102, 1.00); width:560px; height:680px">
 		<canvas id="canvas" width="560" height="680" style="position: absolute; display: none; background-color:rgba(153, 102, 102, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:680px; position: absolute; left: 0px; top: 0px; display: none;">

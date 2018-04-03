@@ -10,8 +10,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>index</title>
+<title>حرف العين</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -36,67 +40,60 @@ function init() {
 	loader.installPlugin(createjs.Sound);
 	createjs.Sound.initializeDefaultPlugins();
 var assetsPath = "./sounds/";
-	var sounds = [{src:"sprite18-26.ogg", data: { audioSprite: [
-{id:"s9001", startTime:6039, duration:1954}, // vrai
-{id:"s9002", startTime:8295, duration:1742}, //essaie 2
-{id:"s9003", startTime:0, duration:2009}, //ma9ati3
-{id:"s9004", startTime:2292, duration:1732}, //kalimat
-{id:"s9005", startTime:4312, duration:1525}, //jomal
+	var sounds = [{src:"sprite_3.ogg", data: { audioSprite: [
+{id:"s9001", startTime:0, duration:1831}, // vrai
+{id:"s9002", startTime:1831, duration:1669}, //essaie 2
 
-{id:"s151", startTime:10305, duration: 500},  
-{id:"s152", startTime:11103, duration: 495},
-{id:"s153", startTime:11895, duration: 475},
-{id:"s154", startTime:12678, duration: 767},
-{id:"s155", startTime:13743, duration: 692},
-{id:"s156", startTime:14748, duration: 677},
-{id:"s157", startTime:15712, duration: 565},
-{id:"s158", startTime:16586, duration: 581},
-{id:"s159", startTime:17459, duration: 480},
-{id:"s160", startTime:18247, duration: 1146},
-{id:"s161", startTime:19701, duration: 1005},
-{id:"s162", startTime:21019, duration: 954},
-{id:"s163", startTime:22276, duration: 1050},
-{id:"s164", startTime:23639, duration: 1045},
-{id:"s165", startTime:24992, duration: 1197},
-{id:"s166", startTime:26497, duration: 1020},
-{id:"s167", startTime:27830, duration: 1070},
-{id:"s168", startTime:29188, duration: 833},
-{id:"s169", startTime:30314, duration: 808},
-{id:"s170", startTime:31435, duration: 788},
-{id:"s171", startTime:32520, duration: 800},
-{id:"s172", startTime:33626, duration: 767},
-{id:"s173", startTime:34696, duration: 778},
-{id:"s174", startTime:35782, duration: 1040},
-{id:"s175", startTime:37145, duration: 1096},
-{id:"s176", startTime:38544, duration: 964},
-{id:"s177", startTime:39821, duration: 1166},
-{id:"s178", startTime:41290, duration: 980},
-{id:"s179", startTime:42568, duration: 1293},
-{id:"s180", startTime:44163, duration: 4584},
-{id:"s181", startTime:49071, duration: 3045},
-{id:"s182", startTime:52418, duration: 2373},
-{id:"s183", startTime:55064, duration: 2737},
-{id:"s184", startTime:58103, duration: 2858},
-{id:"s185", startTime:61254, duration: 1303},
-{id:"s186", startTime:62829, duration: 868},
-{id:"s187", startTime:63991, duration: 1298},
-{id:"s188", startTime:65601, duration: 1030},
-{id:"s189", startTime:66954, duration: 959},
-{id:"s190", startTime:68242, duration: 1005},
-{id:"s191", startTime:69534, duration: 1151},
-{id:"s192", startTime:71014, duration: 1091},
-{id:"s193", startTime:72412, duration: 1288},
-{id:"s194", startTime:74008, duration: 1262},
-{id:"s195", startTime:75558, duration: 1595},
-{id:"s196", startTime:77461, duration: 717},
-				]}}];
+{id:"s1", startTime:3518, duration:496},   
+{id:"s2", startTime:4014, duration:552},
+{id:"s3", startTime:4566, duration: 468},
+{id:"s4", startTime:5034, duration: 760},
+{id:"s5", startTime:5794, duration: 692},
+{id:"s6", startTime:6486, duration: 658},
+{id:"s7", startTime:7144, duration: 573},
+{id:"s8", startTime:7717, duration: 648},
+{id:"s9", startTime:8365, duration: 493},
+{id:"s10", startTime:8858, duration: 1154},
+{id:"s11", startTime:10012, duration: 1027},
+{id:"s12", startTime:11039, duration: 974},
+{id:"s13", startTime:12013, duration: 1075},
+{id:"s14", startTime:13088, duration: 1059},
+{id:"s15", startTime:14147, duration: 1197},
+{id:"s16", startTime:15344, duration: 1037},
+{id:"s17", startTime:16381, duration: 1070},
+{id:"s18", startTime:17451, duration: 888},
+{id:"s19", startTime:18339, duration: 888},
+{id:"s20", startTime:19227, duration: 840},
+{id:"s21", startTime:20067, duration: 888},
+{id:"s22", startTime:20955, duration: 840},
+{id:"s23", startTime:21795, duration: 864},
+{id:"s24", startTime:22659, duration: 1128},
+{id:"s25", startTime:23787, duration: 1176},
+{id:"s26", startTime:24963, duration: 1056},
+{id:"s27", startTime:26019, duration: 1248},
+{id:"s28", startTime:27267, duration: 1056},
+{id:"s29", startTime:28323, duration: 1368},
+{id:"s30", startTime:29691, duration: 3264},
+{id:"s31", startTime:32955, duration: 3120},
+{id:"s32", startTime:36075, duration: 2448},
+{id:"s33", startTime:38523, duration: 2808},
+{id:"s34", startTime:41331, duration: 2928},
+{id:"s35", startTime:44259, duration: 1368},
+{id:"s36", startTime:45627, duration: 931},
+{id:"s37", startTime:46563, duration: 1248},
+{id:"s38", startTime:47811, duration: 1176},
+{id:"s39", startTime:48987, duration: 1368},
+{id:"s40", startTime:50355, duration: 1320},
+{id:"s41", startTime:51675, duration: 1680},
+{id:"s42", startTime:53355, duration: 792}
+	]}}];
 createjs.Sound.alternateExtensions = ["mp3"];
 createjs.Sound.on("fileload", hFileLoad);
 createjs.Sound.registerSounds(sounds, assetsPath);
-function hFileLoad() {
-		
-}
 
+function hFileLoad(event) {
+
+}
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
@@ -173,7 +170,7 @@ function playSound(id, loop) {
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
+<body onload="init();" style="margin:0px;background-color:mintcream;">
 	<div id="animation_container" style="background-color:rgba(153, 102, 102, 1.00); width:560px; height:680px">
 		<canvas id="canvas" width="560" height="680" style="position: absolute; display: none; background-color:rgba(153, 102, 102, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:680px; position: absolute; left: 0px; top: 0px; display: none;">

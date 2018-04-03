@@ -10,8 +10,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>index</title>
+<title>حرف الجيم</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -34,6 +38,74 @@ function init() {
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
+	createjs.Sound.initializeDefaultPlugins();
+var assetsPath = "./sounds/";
+	var sounds = [{src:"sprite_j.ogg", data: { audioSprite: [
+{id:"s9001", startTime:88199, duration:1920}, // vrai
+{id:"s9002", startTime:90119, duration:1752}, //essaie 2
+
+{id:"s1", startTime:0, duration:388},   
+{id:"s2", startTime:388, duration:484},
+{id:"s3", startTime:872, duration: 462},
+{id:"s4", startTime:1334, duration: 776},
+{id:"s5", startTime:2110, duration: 838},
+{id:"s6", startTime:2948, duration: 753},
+{id:"s7", startTime:3701, duration: 485},
+{id:"s8", startTime:4186, duration: 514},
+{id:"s9", startTime:4700, duration: 483},
+{id:"s10", startTime:5183, duration: 980},
+{id:"s11", startTime:6162, duration: 1274},
+{id:"s12", startTime:7436, duration: 1084},
+{id:"s13", startTime:8521, duration: 1396},
+{id:"s14", startTime:9917, duration: 1084},
+{id:"s15", startTime:11002, duration: 945},
+{id:"s16", startTime:11947, duration: 1228},
+{id:"s17", startTime:13175, duration: 1320},
+{id:"s18", startTime:14495, duration: 1080},
+{id:"s19", startTime:15575, duration: 1057},
+{id:"s20", startTime:16633, duration: 1296},
+{id:"s21", startTime:17929, duration: 1392},
+{id:"s22", startTime:19321, duration: 1176},
+{id:"s23", startTime:20497, duration: 1008},
+{id:"s24", startTime:21572, duration: 989},
+{id:"s25", startTime:22561, duration: 1296},
+{id:"s26", startTime:23857, duration: 936},
+{id:"s27", startTime:24793, duration: 936},
+{id:"s28", startTime:25729, duration: 912},
+{id:"s29", startTime:26641, duration: 840},
+{id:"s30", startTime:27481, duration: 5136},
+{id:"s31", startTime:32617, duration: 6696},
+{id:"s32", startTime:39313, duration: 3696},
+{id:"s33", startTime:43009, duration: 2904},
+{id:"s34", startTime:45913, duration: 6648},
+{id:"s35", startTime:52561, duration: 1272},
+{id:"s36", startTime:53833, duration: 1344},
+{id:"s37", startTime:55177, duration: 914},
+{id:"s38", startTime:56091, duration: 1320},
+{id:"s39", startTime:57411, duration: 922},
+{id:"s40", startTime:58334, duration: 1473},
+{id:"s41", startTime:59807, duration: 1296},
+{id:"s42", startTime:61103, duration: 1008},
+{id:"s43", startTime:62111, duration: 960},
+{id:"s44", startTime:63071, duration: 1104},
+{id:"s45", startTime:64175, duration: 1128},
+{id:"s46", startTime:65303, duration: 840},
+{id:"s47", startTime:66143, duration: 888},
+{id:"s48", startTime:67031, duration: 1320},
+{id:"s49", startTime:68351, duration: 1200},
+{id:"s50", startTime:69551, duration: 936},
+{id:"s51", startTime:70487, duration: 1248},
+{id:"s52", startTime:71735, duration: 960},
+{id:"s53", startTime:72695, duration: 1176},
+{id:"s54", startTime:73871, duration: 14328}
+	]}}];
+createjs.Sound.alternateExtensions = ["mp3"];
+createjs.Sound.on("fileload", hFileLoad);
+createjs.Sound.registerSounds(sounds, assetsPath);
+
+function hFileLoad(event) {
+
+}
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
@@ -110,7 +182,7 @@ function playSound(id, loop) {
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
+<body onload="init();" style="margin:0px;background-color:bisque;">
 	<div id="animation_container" style="background-color:rgba(153, 102, 102, 1.00); width:560px; height:680px">
 		<canvas id="canvas" width="560" height="680" style="position: absolute; display: none; background-color:rgba(153, 102, 102, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:680px; position: absolute; left: 0px; top: 0px; display: none;">

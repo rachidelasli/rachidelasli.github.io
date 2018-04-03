@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[1206,4919,400,400],[1608,3311,400,400],[1206,3311,400,400],[0,5320,400,400],[1608,4919,400,400],[402,4918,400,400],[804,4918,400,400],[0,4918,400,400],[1608,4517,400,400],[1206,4517,400,400],[804,4516,400,400],[402,4516,400,400],[0,4516,400,400],[1608,4115,400,400],[1206,4115,400,400],[804,4114,400,400],[402,4114,400,400],[0,4114,400,400],[1608,3713,400,400],[1206,3713,400,400],[0,3712,400,400],[0,1300,400,400],[402,1300,400,400],[804,1300,400,400],[1206,1301,400,400],[1608,1301,400,400],[0,1702,400,400],[402,1702,400,400],[804,1702,400,400],[1206,1703,400,400],[1608,1703,400,400],[0,2104,400,400],[402,2104,400,400],[804,2104,400,400],[1206,2105,400,400],[1608,2105,400,400],[0,2506,400,400],[402,2506,400,400],[804,2506,400,400],[1206,2507,400,400],[1608,2507,400,400],[0,2908,400,400],[402,2908,400,400],[804,2908,400,400],[1206,2909,400,400],[1608,2909,400,400],[0,3310,400,400],[402,3310,400,400],[804,3310,400,400],[804,3712,400,400],[402,3712,400,400],[402,5320,400,400],[804,5320,400,400],[1206,5321,400,400],[1206,7331,400,400],[804,7330,400,400],[402,7330,400,400],[0,7330,400,400],[1608,6929,400,400],[1206,6929,400,400],[804,6928,400,400],[402,6928,400,400],[0,6928,400,400],[1608,6527,400,400],[1206,6527,400,400],[804,6526,400,400],[402,6526,400,400],[0,6526,400,400],[1608,6125,400,400],[1206,6125,400,400],[804,6124,400,400],[402,6124,400,400],[0,6124,400,400],[1608,5723,400,400],[1206,5723,400,400],[804,5722,400,400],[402,5722,400,400],[0,5722,400,400],[1608,5321,400,400],[0,652,506,646],[508,652,504,646],[1527,0,507,648],[0,0,507,650],[1525,650,505,649],[1017,0,508,647],[1017,649,506,649],[509,0,506,650],[1921,7945,63,63],[501,7899,87,152],[1874,7945,45,133],[1827,7945,45,133],[1866,7331,164,145],[1866,7760,159,100],[996,7899,45,133],[2010,1301,36,36],[1827,7862,180,81],[2010,1339,33,33],[1986,7945,54,31],[2010,1409,20,30],[501,7732,550,165],[1866,7478,150,150],[2036,0,3,36],[1996,7630,46,46],[1608,7589,256,256],[1608,7331,256,256],[1053,7733,256,256],[1311,7733,256,256],[0,7732,499,296],[590,7899,150,80],[742,7899,150,80],[1569,7847,256,256],[894,7899,100,80],[2010,1374,31,33],[1866,7630,128,128]]}
+		{name:"index_atlas_", frames: [[1206,2909,400,400],[1608,2909,400,400],[0,3310,400,400],[402,3310,400,400],[804,3310,400,400],[1206,3311,400,400],[1608,3311,400,400],[0,3712,400,400],[402,3712,400,400],[804,3712,400,400],[1206,3713,400,400],[1608,3713,400,400],[0,4114,400,400],[402,4114,400,400],[804,4114,400,400],[1206,4115,400,400],[1608,4115,400,400],[0,4516,400,400],[402,4516,400,400],[804,4516,400,400],[1206,4517,400,400],[1608,4517,400,400],[804,6124,400,400],[1206,6125,400,400],[1608,6125,400,400],[0,6526,400,400],[402,6526,400,400],[804,6526,400,400],[1206,6527,400,400],[1608,6527,400,400],[0,6928,400,400],[402,6928,400,400],[804,6928,400,400],[1206,6929,400,400],[1608,6929,400,400],[0,7330,400,400],[402,7330,400,400],[804,7330,400,400],[1206,7331,400,400],[0,1300,400,400],[402,1300,400,400],[804,1300,400,400],[1206,1301,400,400],[1608,1301,400,400],[0,1702,400,400],[402,1702,400,400],[804,1702,400,400],[1206,1703,400,400],[1608,1703,400,400],[0,2104,400,400],[402,2104,400,400],[804,2104,400,400],[1206,2105,400,400],[1608,2105,400,400],[0,2506,400,400],[402,2506,400,400],[0,4918,400,400],[402,4918,400,400],[804,4918,400,400],[1206,4919,400,400],[1608,4919,400,400],[0,5320,400,400],[402,5320,400,400],[804,5320,400,400],[1206,5321,400,400],[1608,5321,400,400],[0,5722,400,400],[402,5722,400,400],[804,5722,400,400],[1206,5723,400,400],[1608,5723,400,400],[0,6124,400,400],[402,6124,400,400],[804,2506,400,400],[1206,2507,400,400],[1608,2507,400,400],[0,2908,400,400],[402,2908,400,400],[804,2908,400,400],[0,652,506,646],[508,652,504,646],[1527,0,507,648],[0,0,507,650],[1525,650,505,649],[1017,0,508,647],[1017,649,506,649],[509,0,506,650],[1921,7945,63,63],[501,7899,87,152],[996,7899,45,133],[1827,7945,45,133],[1866,7331,164,145],[1866,7760,159,100],[1874,7945,45,133],[2010,1301,36,36],[1827,7862,180,81],[2010,1339,33,33],[1986,7945,54,31],[2010,1409,20,30],[501,7732,550,165],[1866,7478,150,150],[2036,0,3,36],[1996,7630,46,46],[1608,7331,256,256],[1608,7589,256,256],[1053,7733,256,256],[1311,7733,256,256],[0,7732,499,296],[590,7899,150,80],[742,7899,150,80],[1569,7847,256,256],[894,7899,100,80],[2010,1374,31,33],[1866,7630,128,128]]}
 ];
 
 
@@ -585,7 +585,7 @@ lib.ssMetadata = [
 
 
 
-(lib._030 = function() {
+(lib._0301 = function() {
 	this.spriteSheet = ss["index_atlas_"];
 	this.gotoAndStop(82);
 }).prototype = p = new cjs.Sprite();
@@ -2165,24 +2165,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.حْ.setTransform(455,152.6,0.227,0.488);
 	new cjs.ButtonHelper(this.حْ, 0, 1, 2, false, new lib.btnTr(), 3);
 
-	this.text = new cjs.Text("ّ", "40px 'Arial'", "#FF6666");
-	this.text.textAlign = "center";
-	this.text.lineHeight = 47;
-	this.text.lineWidth = 20;
-	this.text.parent = this;
-	this.text.setTransform(68.1,151.9);
-
-	this.text_1 = new cjs.Text("ْ", "40px 'Arial'", "#FF6666");
-	this.text_1.textAlign = "center";
-	this.text_1.lineHeight = 47;
-	this.text_1.lineWidth = 21;
-	this.text_1.parent = this;
-	this.text_1.setTransform(469.5,151.9);
-
 	this.clign = new lib.clignM();
 	this.clign.name = "clign";
 	this.clign.parent = this;
-	this.clign.setTransform(450,300,1,1,0,0,0,0.5,16.5);
+	this.clign.setTransform(451.5,300,4,1,0,0,0,0.5,16.5);
 
 	this.txt8 = new cjs.Text("", "40px 'Arial'", "#FF6666");
 	this.txt8.name = "txt8";
@@ -2398,7 +2384,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.حَ.setTransform(418,152.6,0.227,0.488);
 	new cjs.ButtonHelper(this.حَ, 0, 1, 2, false, new lib.btnTr(), 3);
 
-	this.instance_2 = new lib._030();
+	this.instance_2 = new lib._0301();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(0,0,1.085,1.031);
 
@@ -2406,7 +2392,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.parent = this;
 	this.instance_3.setTransform(450,300,1,1,0,0,0,0.5,16.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.حَ},{t:this.حُ},{t:this.حِ},{t:this.حا},{t:this.حو},{t:this.حي},{t:this.حً},{t:this.حٌ},{t:this.حٍ},{t:this.حب},{t:this.حد},{t:this.حت},{t:this.حل},{t:this.حف},{t:this.حص},{t:this.حر},{t:this.حع},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.btxt6},{t:this.btxt7},{t:this.btxt8},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.txt6},{t:this.txt7},{t:this.txt8},{t:this.clign},{t:this.text_1},{t:this.text},{t:this.حْ},{t:this.حّ},{t:this.supr},{t:this.instance_1},{t:this.instance},{t:this.repre},{t:this.rep}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.حَ},{t:this.حُ},{t:this.حِ},{t:this.حا},{t:this.حو},{t:this.حي},{t:this.حً},{t:this.حٌ},{t:this.حٍ},{t:this.حب},{t:this.حد},{t:this.حت},{t:this.حل},{t:this.حف},{t:this.حص},{t:this.حر},{t:this.حع},{t:this.btxt1},{t:this.btxt2},{t:this.btxt3},{t:this.btxt4},{t:this.btxt5},{t:this.btxt6},{t:this.btxt7},{t:this.btxt8},{t:this.txt1},{t:this.txt2},{t:this.txt3},{t:this.txt4},{t:this.txt5},{t:this.txt6},{t:this.txt7},{t:this.txt8},{t:this.clign},{t:this.حْ},{t:this.حّ},{t:this.supr},{t:this.instance_1},{t:this.instance},{t:this.repre},{t:this.rep}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p30, new cjs.Rectangle(0,0,550,670), null);
 
@@ -2536,24 +2522,24 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 			for(var i = 0 ; i< slash.length ;i++){
 		       slash[i].x=337.40; 
 		       }
-			TweenMax.to(cnts[0],3,{x:205, ease:Elastic.easeOut});
-			TweenMax.to(cnts[1],3,{x:170, ease:Elastic.easeOut});
-			TweenMax.to(cnts[2],3,{x:100, ease:Elastic.easeOut});
-			TweenMax.to(cnts[3],3,{x:170, ease:Elastic.easeOut});
-			TweenMax.to(cnts[4],3,{x:100, ease:Elastic.easeOut});
-			TweenMax.to(cnts[5],3,{x:275, ease:Elastic.easeOut});
-			TweenMax.to(cnts[6],3,{x:205, ease:Elastic.easeOut});
-			TweenMax.to(cnts[7],3,{x:100, ease:Elastic.easeOut});
-			TweenMax.to(cnts[8],3,{x:170, ease:Elastic.easeOut});
-			TweenMax.to(cnts[9],3,{x:20, ease:Elastic.easeOut});
-			TweenMax.to(cnts[10],3,{x:170, ease:Elastic.easeOut});
-			TweenMax.to(cnts[11],3,{x:100, ease:Elastic.easeOut});
-			TweenMax.to(cnts[12],3,{x:290, ease:Elastic.easeOut});
-			TweenMax.to(cnts[13],3,{x:225, ease:Elastic.easeOut});
-			TweenMax.to(cnts[14],3,{x:155, ease:Elastic.easeOut});
-			TweenMax.to(cnts[15],3,{x:60, ease:Elastic.easeOut});
-			TweenMax.to(cnts[16],3,{x:120, ease:Elastic.easeOut});
-			TweenMax.to(cnts[17],3,{x:0, ease:Elastic.easeOut});
+			TweenMax.to(cnts[0],1,{x:205, ease:Power2.easeOut});
+			TweenMax.to(cnts[1],1,{x:170, ease:Power2.easeOut,delay:0.1});
+			TweenMax.to(cnts[2],1,{x:100, ease:Power2.easeOut,delay:0.2});
+			TweenMax.to(cnts[3],1,{x:170, ease:Power2.easeOut,delay:0.3});
+			TweenMax.to(cnts[4],1,{x:100, ease:Power2.easeOut,delay:0.4});
+			TweenMax.to(cnts[5],1,{x:275, ease:Power2.easeOut,delay:0.5});
+			TweenMax.to(cnts[6],1,{x:205, ease:Power2.easeOut,delay:0.6});
+			TweenMax.to(cnts[7],1,{x:100, ease:Power2.easeOut,delay:0.7});
+			TweenMax.to(cnts[8],1,{x:170, ease:Power2.easeOut,delay:0.8});
+			TweenMax.to(cnts[9],1,{x:20, ease:Power2.easeOut,delay:0.9});
+			TweenMax.to(cnts[10],1,{x:170, ease:Power2.easeOut,delay:1});
+			TweenMax.to(cnts[11],1,{x:100, ease:Power2.easeOut,delay:1.1});
+			TweenMax.to(cnts[12],1,{x:290, ease:Power2.easeOut,delay:1.2});
+			TweenMax.to(cnts[13],1,{x:225, ease:Power2.easeOut,delay:1.3});
+			TweenMax.to(cnts[14],1,{x:155, ease:Power2.easeOut,delay:1.4});
+			TweenMax.to(cnts[15],1,{x:60, ease:Power2.easeOut,delay:1.5});
+			TweenMax.to(cnts[16],1,{x:120, ease:Power2.easeOut,delay:1.6});
+			TweenMax.to(cnts[17],1,{x:0, ease:Power2.easeOut,delay:1.7});
 			
 			
 			slash[0].x=145;
@@ -2597,7 +2583,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 				if( isvalid1==true && isvalid2==true && isvalid3==true && isvalid3==true && isvalid4==true && isvalid5==true)
 		           {
 					playSound("s9001"); 
-					 
 				   }	
 			    else {
 					playSound("s9002");
@@ -2816,76 +2801,64 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 		this.b5.on("pressup", pressup5.bind(this));
 		function pressup1(evt){
 		var p=this.globalToLocal(evt.stageX, evt.stageY);
-		 /*
-			if(p.x < 160 && p.x > 130 && p.y < 180 && p.y > 150 
-			|| p.x < 160 && p.x > 130 && p.y < 285 && p.y > 255 ||p.x < 160 && p.x > 130 &&  p.y < 375 && p.y > 350
-			|| p.x < 160 && p.x > 130 && p.y < 495 && p.y > 470|| p.x < 160 && p.x > 130 && p.y < 585 && p.y > 560){}
+		 
+			if(p.x < 170 && p.x > 130 && p.y < 180 && p.y > 145 
+			|| p.x < 170 && p.x > 130 && p.y < 280 && p.y > 250 ||p.x < 170 && p.x > 130 &&  p.y < 385 && p.y > 345
+			|| p.x < 170 && p.x > 130 && p.y < 495 && p.y > 450|| p.x < 170 && p.x > 130 && p.y < 590 && p.y > 550){}
 		 else {miLinea1 = this.removeChild(miLinea1);}
-			*/
 			
+			/*
 			if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
 				this.f4.cri.alpha==0.3 || this.f5.cri.alpha==0.3){}
 			else {miLinea1 = this.removeChild(miLinea1);}	
-		
+		*/
 			
 		}
 		function pressup2(evt){
-		/*var p=this.globalToLocal(evt.stageX, evt.stageY);
-		 if(p.x < 160 && p.x > 130 && p.y < 180 && p.y > 150 
-			|| p.x < 160 && p.x > 130 && p.y < 285 && p.y > 255 ||p.x < 160 && p.x > 130 &&  p.y < 375 && p.y > 350
-			|| p.x < 160 && p.x > 130 && p.y < 495 && p.y > 470|| p.x < 160 && p.x > 130 && p.y < 585 && p.y > 560){}
-		 else {miLinea2 = this.removeChild(miLinea2);}*/
-			if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
+			var p=this.globalToLocal(evt.stageX, evt.stageY);
+		if(p.x < 170 && p.x > 130 && p.y < 180 && p.y > 145 
+			|| p.x < 170 && p.x > 130 && p.y < 280 && p.y > 250 ||p.x < 170 && p.x > 130 &&  p.y < 385 && p.y > 345
+			|| p.x < 170 && p.x > 130 && p.y < 495 && p.y > 450|| p.x < 170 && p.x > 130 && p.y < 590 && p.y > 550){}
+		 else {miLinea2 = this.removeChild(miLinea2);}
+			
+			/*if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
 				this.f4.cri.alpha==0.3 || this.f5.cri.alpha==0.3){}
-			else {miLinea2 = this.removeChild(miLinea2);}
+			else {miLinea2 = this.removeChild(miLinea2);}*/
 		}
 		function pressup3(evt){
-		/*var p=this.globalToLocal(evt.stageX, evt.stageY);
-		 if(p.x < 160 && p.x > 130 && p.y < 180 && p.y > 150 
-			|| p.x < 160 && p.x > 130 && p.y < 285 && p.y > 255 ||p.x < 160 && p.x > 130 &&  p.y < 375 && p.y > 350
-			|| p.x < 160 && p.x > 130 && p.y < 495 && p.y > 470|| p.x < 160 && p.x > 130 && p.y < 585 && p.y > 560){}
-		 else {miLinea3 = this.removeChild(miLinea3);}*/
-			if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
+			var p=this.globalToLocal(evt.stageX, evt.stageY);
+		if(p.x < 170 && p.x > 130 && p.y < 180 && p.y > 145 
+			|| p.x < 170 && p.x > 130 && p.y < 280 && p.y > 250 ||p.x < 170 && p.x > 130 &&  p.y < 385 && p.y > 345
+			|| p.x < 170 && p.x > 130 && p.y < 495 && p.y > 450|| p.x < 170 && p.x > 130 && p.y < 590 && p.y > 550){}
+		 else {miLinea3 = this.removeChild(miLinea3);}
+			/*if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
 				this.f4.cri.alpha==0.3 || this.f5.cri.alpha==0.3){}
-			else {miLinea3 = this.removeChild(miLinea3);}
+			else {miLinea3 = this.removeChild(miLinea3);}*/
 		}
 		
 		function pressup4(evt){
-		/*var p=this.globalToLocal(evt.stageX, evt.stageY);
-		 if(p.x < 160 && p.x > 130 && p.y < 180 && p.y > 150 
-			|| p.x < 160 && p.x > 130 && p.y < 285 && p.y > 255 ||p.x < 160 && p.x > 130 &&  p.y < 375 && p.y > 350
-			|| p.x < 160 && p.x > 130 && p.y < 495 && p.y > 470|| p.x < 160 && p.x > 130 && p.y < 585 && p.y > 560){}
-		 else {miLinea4 = this.removeChild(miLinea4);}*/
-			if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
+			var p=this.globalToLocal(evt.stageX, evt.stageY);
+		if(p.x < 170 && p.x > 130 && p.y < 180 && p.y > 145 
+			|| p.x < 170 && p.x > 130 && p.y < 280 && p.y > 250 ||p.x < 170 && p.x > 130 &&  p.y < 385 && p.y > 345
+			|| p.x < 170 && p.x > 130 && p.y < 495 && p.y > 450|| p.x < 170 && p.x > 130 && p.y < 590 && p.y > 550){}
+		 else {miLinea4 = this.removeChild(miLinea4);}
+			/*if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
 				this.f4.cri.alpha==0.3 || this.f5.cri.alpha==0.3){}
-			else {miLinea4 = this.removeChild(miLinea4);}
+			else {miLinea4 = this.removeChild(miLinea4);}*/
 		}
 		
 		function pressup5(evt){
-		/*var p=this.globalToLocal(evt.stageX, evt.stageY);
-		 if(p.x < 160 && p.x > 130 && p.y < 180 && p.y > 150 
-			|| p.x < 160 && p.x > 130 && p.y < 285 && p.y > 255 ||p.x < 160 && p.x > 130 &&  p.y < 375 && p.y > 350
-			|| p.x < 160 && p.x > 130 && p.y < 495 && p.y > 470|| p.x < 160 && p.x > 130 && p.y < 585 && p.y > 560){}
-		 else {miLinea5 = this.removeChild(miLinea5);}*/
-			if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
+			var p=this.globalToLocal(evt.stageX, evt.stageY);
+		if(p.x < 170 && p.x > 130 && p.y < 180 && p.y > 145 
+			|| p.x < 170 && p.x > 130 && p.y < 280 && p.y > 250 ||p.x < 170 && p.x > 130 &&  p.y < 385 && p.y > 345
+			|| p.x < 170 && p.x > 130 && p.y < 495 && p.y > 450|| p.x < 170 && p.x > 130 && p.y < 590 && p.y > 550){}
+		 else {miLinea5 = this.removeChild(miLinea5);}
+			/*if(this.f1.cri.alpha==0.3 || this.f2.cri.alpha==0.3 || this.f3.cri.alpha==0.3 ||
 				this.f4.cri.alpha==0.3 || this.f5.cri.alpha==0.3){}
-			else {miLinea5 = this.removeChild(miLinea5);}
+			else {miLinea5 = this.removeChild(miLinea5);}*/
 		}
 		
-		/*
-		this.on("pressup", pressup.bind(this));
-		function pressup(evt){
-		var p=this.globalToLocal(evt.stageX, evt.stageY);
-		 if(p.x < 160 && p.x > 130 && p.y < 180 && p.y > 150 
-			|| p.x < 160 && p.x > 130 && p.y < 285 && p.y > 255 ||p.x < 160 && p.x > 130 &&  p.y < 375 && p.y > 350
-			|| p.x < 160 && p.x > 130 && p.y < 495 && p.y > 470|| p.x < 160 && p.x > 130 && p.y < 585 && p.y > 560){}
-		 else if(valid=="b1"){miLinea1 = this.removeChild(miLinea1);}
-		 else if(valid=="b2"){miLinea1 = this.removeChild(miLinea2);}
-		 else if(valid=="b3"){miLinea1 = this.removeChild(miLinea3);}
-		 else if(valid=="b4"){miLinea1 = this.removeChild(miLinea4);}
-		 else if(valid=="b5"){miLinea1 = this.removeChild(miLinea5);}
-		}
-		*/
+		
 		
 		this.b1.on("pressmove", pressmove1.bind(this));
 		this.b2.on("pressmove", pressmove2.bind(this));
@@ -2991,52 +2964,52 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.f5 = new lib.rpr();
 	this.f5.name = "f5";
 	this.f5.parent = this;
-	this.f5.setTransform(146.6,570.6,0.694,0.694,0,0,0,16.7,16.8);
+	this.f5.setTransform(148.9,572.9,0.833,0.833,0,0,0,16.8,16.8);
 
 	this.b5 = new lib.rpr();
 	this.b5.name = "b5";
 	this.b5.parent = this;
-	this.b5.setTransform(329.5,570,0.694,0.694,0,0,0,18,16);
+	this.b5.setTransform(332,572.2,0.833,0.833,0,0,0,18.1,16);
 
 	this.f4 = new lib.rpr();
 	this.f4.name = "f4";
 	this.f4.parent = this;
-	this.f4.setTransform(146.6,472.6,0.694,0.694,0,0,0,16.7,16.8);
+	this.f4.setTransform(148.9,474.9,0.833,0.833,0,0,0,16.8,16.8);
 
 	this.b4 = new lib.rpr();
 	this.b4.name = "b4";
 	this.b4.parent = this;
-	this.b4.setTransform(329.5,472.2,0.694,0.694,0,0,0,18,16.3);
+	this.b4.setTransform(332,474.5,0.833,0.833,0,0,0,18.1,16.3);
 
 	this.f3 = new lib.rpr();
 	this.f3.name = "f3";
 	this.f3.parent = this;
-	this.f3.setTransform(146.6,364.6,0.694,0.694,0,0,0,16.7,16.8);
+	this.f3.setTransform(148.9,366.9,0.833,0.833,0,0,0,16.8,16.8);
 
 	this.b3 = new lib.rpr();
 	this.b3.name = "b3";
 	this.b3.parent = this;
-	this.b3.setTransform(329.5,364,0.694,0.694,0,0,0,18,16);
+	this.b3.setTransform(332,366.2,0.833,0.833,0,0,0,18.1,16);
 
 	this.f2 = new lib.rpr();
 	this.f2.name = "f2";
 	this.f2.parent = this;
-	this.f2.setTransform(146.6,269.6,0.694,0.694,0,0,0,16.7,16.8);
+	this.f2.setTransform(148.9,271.9,0.833,0.833,0,0,0,16.8,16.8);
 
 	this.b2 = new lib.rpr();
 	this.b2.name = "b2";
 	this.b2.parent = this;
-	this.b2.setTransform(329.5,269.2,0.694,0.694,0,0,0,18,16.3);
+	this.b2.setTransform(332,271.5,0.833,0.833,0,0,0,18.1,16.3);
 
 	this.f1 = new lib.rpr();
 	this.f1.name = "f1";
 	this.f1.parent = this;
-	this.f1.setTransform(146.6,167.6,0.694,0.694,0,0,0,16.7,16.8);
+	this.f1.setTransform(148.9,169.9,0.833,0.833,0,0,0,16.8,16.8);
 
 	this.b1 = new lib.rpr();
 	this.b1.name = "b1";
 	this.b1.parent = this;
-	this.b1.setTransform(329.5,167.1,0.694,0.694,0,0,0,18,16.1);
+	this.b1.setTransform(332,169.3,0.833,0.833,0,0,0,18.1,16.1);
 
 	this.instance_2 = new lib._0281();
 	this.instance_2.parent = this;
@@ -3052,9 +3025,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		window.moveTo(0,0);
-		window.resizeTo(screen.width,screen.height);
-		
 		var pomme = [this.mc1,this.mc2,this.mc3,this.mc4];
 		var that = this;
 		stage.enableMouseOver(10);
@@ -3152,18 +3122,22 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.instance = new lib.hand();
+	this.instance.parent = this;
+	this.instance.setTransform(529,137.6,0.125,0.125,-135);
+
 	this.palette = new lib.paletteF_1();
 	this.palette.name = "palette";
 	this.palette.parent = this;
 	this.palette.setTransform(561.4,469,1,1,0,0,0,0,148);
 
-	this.instance = new lib.hand();
-	this.instance.parent = this;
-	this.instance.setTransform(470,569,0.125,0.125,-90);
-
 	this.instance_1 = new lib.hand();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(470,396,0.125,0.125,-90);
+	this.instance_1.setTransform(470,569,0.125,0.125,-90);
+
+	this.instance_2 = new lib.hand();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(470,396,0.125,0.125,-90);
 
 	this.btn3 = new lib.btnTr();
 	this.btn3.name = "btn3";
@@ -3207,11 +3181,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.mc1.parent = this;
 	this.mc1.setTransform(184.2,235.5,1,1,0,0,0,82,72.5);
 
-	this.instance_2 = new lib._027();
-	this.instance_2.parent = this;
-	this.instance_2.setTransform(0,0,1.087,1.037);
+	this.instance_3 = new lib._027();
+	this.instance_3.parent = this;
+	this.instance_3.setTransform(0,0,1.087,1.037);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.mc1},{t:this.mc2},{t:this.mc3},{t:this.mc4},{t:this.pinceau},{t:this.cadre},{t:this.btn1},{t:this.btn3},{t:this.instance_1},{t:this.instance},{t:this.palette}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.mc1},{t:this.mc2},{t:this.mc3},{t:this.mc4},{t:this.pinceau},{t:this.cadre},{t:this.btn1},{t:this.btn3},{t:this.instance_2},{t:this.instance_1},{t:this.palette},{t:this.instance}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p27, new cjs.Rectangle(0,0,1060.4,670), null);
 
@@ -3760,8 +3734,13 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		window.moveTo(0,0);
+		window.resizeTo(screen.width,screen.height);
+		
 		stage.enableMouseOver(10);
 		stage.mouseMoveOutside = true;
+		
+		
 		
 		var firefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 		if (firefox && createjs)
@@ -3815,45 +3794,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png", id:"index_atlas_"},
-		{src:"sounds/s1.mp3", id:"s1"},
-{src:"sounds/s2.mp3", id:"s2"},
-{src:"sounds/s3.mp3", id:"s3"},
-{src:"sounds/s4.mp3", id:"s4"},
-{src:"sounds/s5.mp3", id:"s5"},
-{src:"sounds/s6.mp3",id:"s6"},
-{src:"sounds/s7.mp3", id:"s7"},
-{src:"sounds/s8.mp3", id:"s8"},
-{src:"sounds/s9.mp3", id:"s9"},
-{src:"sounds/s10.mp3", id:"s10"},
-{src:"sounds/s11.mp3", id:"s11"},
-{src:"sounds/s12.mp3", id:"s12"},
-{src:"sounds/s13.mp3", id:"s13"},
-{src:"sounds/s14.mp3", id:"s14"},
-{src:"sounds/s15.mp3", id:"s15"},
-{src:"sounds/s16.mp3", id:"s16"},
-{src:"sounds/s17.mp3", id:"s17"},
-{src:"sounds/s18.mp3", id:"s18"},
-{src:"sounds/s19.mp3", id:"s19"},
-{src:"sounds/s20.mp3", id:"s20"},
-{src:"sounds/s21.mp3", id:"s21"},
-{src:"sounds/s22.mp3", id:"s22"},
-{src:"sounds/s23.mp3", id:"s23"},
-{src:"sounds/s24.mp3", id:"s24"},
-{src:"sounds/s25.mp3", id:"s25"},
-{src:"sounds/s26.mp3", id:"s26"},
-{src:"sounds/s27.mp3", id:"s27"},
-{src:"sounds/s28.mp3", id:"s28"},
-{src:"sounds/s29.mp3", id:"s29"},
-{src:"sounds/s30.mp3", id:"s30"},
-{src:"sounds/s31.mp3", id:"s31"},
-{src:"sounds/s32.mp3", id:"s32"},
-{src:"sounds/s33.mp3", id:"s33"},
-{src:"sounds/s34.mp3", id:"s34"},
-{src:"sounds/s35.mp3", id:"s35"},
-{src:"sounds/s36.mp3", id:"s36"},
-{src:"sounds/s37.mp3", id:"s37"}
-
+		{src:"images/index_atlas_.png?1522738978526", id:"index_atlas_"}
 	],
 	preloads: []
 };

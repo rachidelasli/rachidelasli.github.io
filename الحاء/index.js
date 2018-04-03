@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"index_atlas_", frames: [[2814,2259,400,400],[1608,2260,400,400],[3618,2259,400,400],[3618,1857,400,400],[3216,1857,400,400],[1608,1858,400,400],[402,1859,400,400],[804,1969,400,400],[2010,2105,400,400],[0,2259,400,400],[1206,2259,400,400],[2412,2259,400,400],[0,2661,400,400],[2010,2507,400,400],[804,2371,400,400],[3216,2259,400,400],[402,2261,400,400],[2334,1301,400,400],[804,1165,400,400],[402,1055,400,400],[1932,1054,400,400],[3447,1053,400,400],[3045,1053,400,400],[1530,1053,400,400],[0,1053,400,400],[402,653,400,400],[1932,652,400,400],[3447,651,400,400],[3045,651,400,400],[1530,651,400,400],[0,651,400,400],[2010,1703,400,400],[1206,1857,400,400],[0,1857,400,400],[0,1455,400,400],[1608,1456,400,400],[3540,1455,400,400],[3138,1455,400,400],[2736,1455,400,400],[1206,1455,400,400],[804,1567,400,400],[402,1457,400,400],[2412,1857,400,400],[2814,1857,400,400],[0,0,507,649],[3046,0,504,649],[2539,0,505,648],[1016,0,506,649],[3552,0,504,649],[2032,0,505,650],[509,0,505,651],[2539,650,504,649],[1524,0,506,649],[934,866,63,63],[3849,814,87,152],[4044,651,45,133],[2480,652,45,133],[956,653,45,133],[3849,651,193,161],[2334,929,81,38],[956,788,54,76],[2334,897,161,30],[2334,652,144,161],[2913,2661,550,165],[804,653,150,150],[4091,0,3,36],[1016,651,512,512],[2486,787,46,46],[1206,1165,256,256],[1206,2661,256,256],[3465,2661,256,256],[3723,2661,256,256],[2412,2661,499,296],[3938,814,150,80],[2334,815,150,80],[804,805,128,128],[1464,2662,256,256],[3938,896,100,80],[4058,0,31,33]]}
+		{name:"index_atlas_", frames: [[1530,651,400,400],[0,651,400,400],[2010,2507,400,400],[0,2661,400,400],[1608,2260,400,400],[804,2371,400,400],[402,2261,400,400],[3216,2259,400,400],[3618,2259,400,400],[2814,2259,400,400],[2412,2259,400,400],[1206,2259,400,400],[0,2259,400,400],[2010,2105,400,400],[804,1969,400,400],[402,1859,400,400],[1608,1858,400,400],[3618,1857,400,400],[3216,1857,400,400],[2814,1857,400,400],[2412,1857,400,400],[1206,1857,400,400],[0,1857,400,400],[2010,1703,400,400],[804,1567,400,400],[402,1457,400,400],[1608,1456,400,400],[3540,1455,400,400],[3138,1455,400,400],[2736,1455,400,400],[1206,1455,400,400],[0,1455,400,400],[2334,1301,400,400],[804,1165,400,400],[402,1055,400,400],[1932,1054,400,400],[3447,1053,400,400],[3045,1053,400,400],[1530,1053,400,400],[0,1053,400,400],[402,653,400,400],[1932,652,400,400],[3447,651,400,400],[3045,651,400,400],[0,0,507,649],[2539,650,504,649],[2539,0,505,648],[1524,0,506,649],[3552,0,504,649],[2032,0,505,650],[509,0,505,651],[3046,0,504,649],[1016,0,506,649],[934,866,63,63],[3849,814,87,152],[956,653,45,133],[2480,652,45,133],[4044,651,45,133],[3849,651,193,161],[2334,929,81,38],[956,788,54,76],[2334,897,161,30],[2334,652,144,161],[2913,2661,550,165],[804,653,150,150],[4091,0,3,36],[1016,651,512,512],[2486,787,46,46],[1206,1165,256,256],[1464,2662,256,256],[3723,2661,256,256],[3465,2661,256,256],[2412,2661,499,296],[2334,815,150,80],[3938,814,150,80],[804,805,128,128],[1206,2661,256,256],[3938,896,100,80],[4058,0,31,33]]}
 ];
 
 
@@ -920,18 +920,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,85,75);
 p.nominalBounds = new cjs.Rectangle(0,0,60,100);
 
 
-(lib.rempRmc_1 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Layer_1
-	this.instance_1 = new lib.rempRg();
-	this.instance_1.parent = this;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.rempRmc_1, new cjs.Rectangle(0,0,150,80), null);
-
-
 (lib.hm = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -977,7 +965,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(0,0,0.8,0.775);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]}).to({state:[{t:this.instance,p:{scaleY:0.127,x:0,y:4}},{t:this.text,p:{x:60,color:"#000000"}}]},1).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]},1).to({state:[{t:this.instance,p:{scaleY:0.127,x:4,y:4}},{t:this.text,p:{x:61,color:"#000000"}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]}).to({state:[{t:this.instance,p:{scaleY:0.127,x:0,y:4}},{t:this.text,p:{x:60,color:"#000000"}}]},1).to({state:[{t:this.instance_1},{t:this.instance,p:{scaleY:0.117,x:4,y:7}},{t:this.text,p:{x:61,color:"#9900CC"}}]},1).to({state:[{t:this.instance_1}]},1).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,124,67);
@@ -1019,6 +1007,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,1,33);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.instance = new lib.hand();
+	this.instance.parent = this;
+	this.instance.setTransform(77.9,140,0.187,0.187,135);
+
 	this.s28 = new lib.snd();
 	this.s28.name = "s28";
 	this.s28.parent = this;
@@ -1043,11 +1035,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,1,33);
 	this.s25.setTransform(63.9,151.5,0.625,0.391,0,0,0,0.1,0.1);
 	new cjs.ButtonHelper(this.s25, 0, 1, 2, false, new lib.snd(), 3);
 
-	this.instance = new lib._051();
-	this.instance.parent = this;
-	this.instance.setTransform(0,0,1.089,1.029);
+	this.instance_1 = new lib._051();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(0,0,1.089,1.029);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.s25},{t:this.s26},{t:this.s27},{t:this.s28}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.s25},{t:this.s26},{t:this.s27},{t:this.s28},{t:this.instance}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p51, new cjs.Rectangle(0,0,550,670), null);
 
@@ -1323,7 +1315,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,1,33);
 	this.instance.setTransform(75,40);
 	this.instance.alpha = 0.148;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0.301},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:1},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({alpha:0.449},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:1},0).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,150,80);
@@ -1366,6 +1358,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.instance = new lib.hand();
+	this.instance.parent = this;
+	this.instance.setTransform(74.9,86,0.187,0.187,135);
+
 	this.s43 = new lib.btnTr();
 	this.s43.name = "s43";
 	this.s43.parent = this;
@@ -1414,11 +1410,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.s29.setTransform(358,105,0.856,1.984,0,0,0,1.9,0.3);
 	new cjs.ButtonHelper(this.s29, 0, 1, 2, false, new lib.btnTr(), 3);
 
-	this.instance = new lib._053();
-	this.instance.parent = this;
-	this.instance.setTransform(0,0,1.087,1.032);
+	this.instance_1 = new lib._053();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(0,0,1.087,1.032);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.s29},{t:this.s15},{t:this.s24},{t:this.s13},{t:this.s40},{t:this.s41},{t:this.s42},{t:this.s43}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.s29},{t:this.s15},{t:this.s24},{t:this.s13},{t:this.s40},{t:this.s41},{t:this.s42},{t:this.s43},{t:this.instance}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p53, new cjs.Rectangle(0,0,550,670), null);
 
@@ -1446,6 +1442,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.instance = new lib.hand();
+	this.instance.parent = this;
+	this.instance.setTransform(73.9,149,0.187,0.187,135);
+
 	this.s29 = new lib.btnTr();
 	this.s29.name = "s29";
 	this.s29.parent = this;
@@ -1518,11 +1518,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.s37.setTransform(64,383,0.771,1.307,0,0,0,1.8,0.3);
 	new cjs.ButtonHelper(this.s37, 0, 1, 2, false, new lib.btnTr(), 3);
 
-	this.instance = new lib._052();
-	this.instance.parent = this;
-	this.instance.setTransform(0,0,1.091,1.032);
+	this.instance_1 = new lib._052();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(0,0,1.091,1.032);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.s37},{t:this.s36},{t:this.s35},{t:this.s10},{t:this.s39},{t:this.s38},{t:this.s34},{t:this.s33},{t:this.s32},{t:this.s31},{t:this.s30},{t:this.s29}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.s37},{t:this.s36},{t:this.s35},{t:this.s10},{t:this.s39},{t:this.s38},{t:this.s34},{t:this.s33},{t:this.s32},{t:this.s31},{t:this.s30},{t:this.s29},{t:this.instance}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p52, new cjs.Rectangle(0,0,550,670), null);
 
@@ -1551,6 +1551,14 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 
 	// Layer_1
+	this.instance = new lib.hand();
+	this.instance.parent = this;
+	this.instance.setTransform(67.9,324,0.187,0.187,135);
+
+	this.instance_1 = new lib.hand();
+	this.instance_1.parent = this;
+	this.instance_1.setTransform(99.9,104,0.187,0.187,135);
+
 	this.s24 = new lib.btnTr();
 	this.s24.name = "s24";
 	this.s24.parent = this;
@@ -1695,11 +1703,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.s1.setTransform(380.6,114.5,0.467,0.593,0,0,0,1.6,0.1);
 	new cjs.ButtonHelper(this.s1, 0, 1, 2, false, new lib.btnTr(), 3);
 
-	this.instance = new lib._050();
-	this.instance.parent = this;
-	this.instance.setTransform(0,0,1.089,1.031);
+	this.instance_2 = new lib._050();
+	this.instance_2.parent = this;
+	this.instance_2.setTransform(0,0,1.089,1.031);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.s1},{t:this.s2},{t:this.s3},{t:this.s4},{t:this.s5},{t:this.s6},{t:this.s7},{t:this.s8},{t:this.s9},{t:this.s10},{t:this.s11},{t:this.s12},{t:this.s13},{t:this.s14},{t:this.s15},{t:this.s16},{t:this.s17},{t:this.s18},{t:this.s19},{t:this.s20},{t:this.s21},{t:this.s22},{t:this.s23},{t:this.s24}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.s1},{t:this.s2},{t:this.s3},{t:this.s4},{t:this.s5},{t:this.s6},{t:this.s7},{t:this.s8},{t:this.s9},{t:this.s10},{t:this.s11},{t:this.s12},{t:this.s13},{t:this.s14},{t:this.s15},{t:this.s16},{t:this.s17},{t:this.s18},{t:this.s19},{t:this.s20},{t:this.s21},{t:this.s22},{t:this.s23},{t:this.s24},{t:this.instance_1},{t:this.instance}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p50, new cjs.Rectangle(0,0,550,670), null);
 
@@ -1829,24 +1837,24 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 			for(var i = 0 ; i< slash.length ;i++){
 		       slash[i].x=337.40; 
 		       }
-			TweenMax.to(cnts[0],3,{x:280, ease:Power3.easeOut});
-			TweenMax.to(cnts[1],3,{x:180, ease:Power3.easeOut});
-			TweenMax.to(cnts[2],3,{x:80, ease:Power3.easeOut});
-			TweenMax.to(cnts[3],3,{x:280, ease:Power3.easeOut});
-			TweenMax.to(cnts[4],3,{x:180, ease:Power3.easeOut});
-			TweenMax.to(cnts[5],3,{x:80, ease:Power3.easeOut});
-			TweenMax.to(cnts[6],3,{x:280, ease:Power3.easeOut});
-			TweenMax.to(cnts[7],3,{x:246, ease:Power3.easeOut});
-			TweenMax.to(cnts[8],3,{x:146, ease:Power3.easeOut});
-			TweenMax.to(cnts[9],3,{x:280, ease:Power3.easeOut});
-			TweenMax.to(cnts[10],3,{x:180, ease:Power3.easeOut});
-			TweenMax.to(cnts[11],3,{x:80, ease:Power3.easeOut});
-			TweenMax.to(cnts[12],3,{x:280, ease:Power3.easeOut});
-			TweenMax.to(cnts[13],3,{x:180, ease:Power3.easeOut});
-			TweenMax.to(cnts[14],3,{x:80, ease:Power3.easeOut});
-			TweenMax.to(cnts[15],3,{x:280, ease:Power3.easeOut});
-			TweenMax.to(cnts[16],3,{x:180, ease:Power3.easeOut});
-			TweenMax.to(cnts[17],3,{x:80, ease:Power3.easeOut});
+			TweenMax.to(cnts[0],1,{x:280, ease:Power3.easeOut});
+			TweenMax.to(cnts[1],1,{x:180, ease:Power3.easeOut});
+			TweenMax.to(cnts[2],1,{x:80, ease:Power3.easeOut});
+			TweenMax.to(cnts[3],1,{x:280, ease:Power3.easeOut});
+			TweenMax.to(cnts[4],1,{x:180, ease:Power3.easeOut});
+			TweenMax.to(cnts[5],1,{x:80, ease:Power3.easeOut});
+			TweenMax.to(cnts[6],1,{x:280, ease:Power3.easeOut});
+			TweenMax.to(cnts[7],1,{x:246, ease:Power3.easeOut});
+			TweenMax.to(cnts[8],1,{x:146, ease:Power3.easeOut});
+			TweenMax.to(cnts[9],1,{x:280, ease:Power3.easeOut});
+			TweenMax.to(cnts[10],1,{x:180, ease:Power3.easeOut});
+			TweenMax.to(cnts[11],1,{x:80, ease:Power3.easeOut});
+			TweenMax.to(cnts[12],1,{x:280, ease:Power3.easeOut});
+			TweenMax.to(cnts[13],1,{x:180, ease:Power3.easeOut});
+			TweenMax.to(cnts[14],1,{x:80, ease:Power3.easeOut});
+			TweenMax.to(cnts[15],1,{x:280, ease:Power3.easeOut});
+			TweenMax.to(cnts[16],1,{x:180, ease:Power3.easeOut});
+			TweenMax.to(cnts[17],1,{x:80, ease:Power3.easeOut});
 			
 			
 			
@@ -2213,38 +2221,28 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.rep = new lib.btnchkTr();
 	this.rep.name = "rep";
 	this.rep.parent = this;
-	this.rep.setTransform(527.6,541.4,0.811,0.659,0,0,0,22.6,66.5);
+	this.rep.setTransform(527.6,450.4,0.811,0.659,0,0,0,22.6,66.5);
 	new cjs.ButtonHelper(this.rep, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.repre = new lib.btnchkTr();
 	this.repre.name = "repre";
 	this.repre.parent = this;
-	this.repre.setTransform(527.6,453.1,0.811,0.659,0,0,0,22.6,66.5);
+	this.repre.setTransform(527.6,362.1,0.811,0.659,0,0,0,22.6,66.5);
 	new cjs.ButtonHelper(this.repre, 0, 1, 2, false, new lib.btnchkTr(), 3);
-
-	this.verif = new lib.btnchkTr();
-	this.verif.name = "verif";
-	this.verif.parent = this;
-	this.verif.setTransform(527.6,365.5,0.811,0.659,0,0,0,22.6,66.5);
-	new cjs.ButtonHelper(this.verif, 0, 1, 2, false, new lib.btnchkTr(), 3);
 
 	this.instance = new lib.Bitmap3();
 	this.instance.parent = this;
-	this.instance.setTransform(509,497,0.811,0.659);
+	this.instance.setTransform(509,406,0.811,0.659);
 
 	this.instance_1 = new lib.Bitmap2();
 	this.instance_1.parent = this;
-	this.instance_1.setTransform(509,410,0.811,0.659);
+	this.instance_1.setTransform(509,319,0.811,0.659);
 
-	this.instance_2 = new lib.Bitmap1();
+	this.instance_2 = new lib._0461();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(509,322,0.811,0.659);
+	this.instance_2.setTransform(0,0,1.091,1.032);
 
-	this.instance_3 = new lib._0461();
-	this.instance_3.parent = this;
-	this.instance_3.setTransform(0,0,1.091,1.032);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.repre},{t:this.rep}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p46, new cjs.Rectangle(0,0,550,670), null);
 
@@ -2254,11 +2252,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
-		window.moveTo(0,0);
-		window.resizeTo(screen.width,screen.height);
-		
-		this.cadre.alpha=0.1;
-		
 		var abeille = [this.mc1,this.mc2,this.mc3,this.mc4,this.mc5];
 		var that = this;
 		stage.enableMouseOver(10);
@@ -2314,7 +2307,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 			
 			TweenMax.to(this.pinceau , 7,{x:475,ease:Elastic.easeOut});
 		
-		this.cadre.alpha = 0.05;
+		
 		
 		this.btn1.on("click", n1.bind(this));
 		var container = new createjs.Container();
@@ -2367,11 +2360,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.btn2.setTransform(499.7,548.5,0.917,0.419,0,0,0,150.3,40);
 	new cjs.ButtonHelper(this.btn2, 0, 1, 2, false, new lib.btnTr(), 3);
 
-	this.cadre = new lib.rempRmc_1();
-	this.cadre.name = "cadre";
-	this.cadre.parent = this;
-	this.cadre.setTransform(6.2,355.4,2.2,3.25,0,0,0,0.1,0.1);
-
 	this.instance_1 = new lib.hand();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(525.4,149.4,0.166,0.166,0,-135,-135);
@@ -2421,10 +2409,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.085,1.032);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF0000").s().p("AiMCvIAAgXQAwgDAygHIAAAXIgWAAIAAgKIgLAAIAAAKIghAAIAAgPIgKAAIAAAZgAitCvIAAgWIAXgBIAAAXgAjNCvIAAgWIAWAAIAAAWgAjtCvIAAgXIAVABIAAAWgAnnCvIAAgKIgLAAIAAgVIAWAAIAAAfgAgfCbIAAgOIAVgEIAAASgAjtCQIAHAAIgHAHgAAACQIAAgJIgHABQAzgIA2gOIAAAKIggAAIAAAKIgsAAIAAAKgAjYByIAWAAIAAAAIgWASgACuBdIAAgCIBBgWIAAANIghAAIAAALgAD5BIIAAgHIAIgCIAPgGIAAAPgAEbA+IAAgJIAVgJIAAASgAE7A0IAAgKIgFAAIAbgMIAAAWgAhsAqIAAgLIgKAAIAAgVIAWAAIAAAbIgHAFgAGcAKIAAgOIA2gaIAAAAIAAAVIggAAIAAATgAhAgJIAAgKIALAAIAAgLIAWAAIAAAVgAHSgeIAAAAIAPgHQgHgPgIgMIAAgHIgEAAIgGgJIAAgBIAKAAIAAgLIAXAAIAAAfIgVAAIAGAKIAZAAIAAAVgAHSgegAgfgeIAAgVIAfAAIAAAUIgBABgAAAgzIAAgUIAhAAIAAATIgDABgAArg9IAAgKIgKAAIAAgVIAVAAIAAAbIgHAEgAAhhHgABChRIAAggIAKAAIAAALIALAAIAAASIgEADgAGnh7IAAgKIgLAAIAAgKIggAAIAAgVIAgAAIAAAVIALAAIAAgLIAWAAIAAAfgACjh7IAAgfIAWAAIAAALIAKAAIAAAKIgKAAIAAAEIgQAGgADOiPIgLAAIAAgLIALAAIAAgKIALAAIAAAKIALAAIAAgKIALAAIAAgLIAKAAIAAALIALAAIAAAOIgeAHIgNAAIAAADIgLAEgADDiPgAFbiXIAAgYIAWAAIAAAVIgLAAIAAAFIgLgCgAEQivIAVAAIAAAVIgVACgAFIiaIgYgBIAAgUIAhAAIAAAVg");
+	this.shape.graphics.f("#FF0000").s().p("AiMCvIAAgXQAwgDAygHIAAAXIgWAAIAAgKIgLAAIAAAKIghAAIAAgPIgKAAIAAAZgAitCvIAAgWIAXgBIAAAXgAjNCvIAAgWIAWAAIAAAWgAjtCvIAAgXIAVABIAAAWgAnnCvIAAgKIgLAAIAAgVIAWAAIAAAfgAgfCbIAAgOIAVgEIAAASgAjtCQIAHAAIgHAHgAAACQIAAgJIgHABQAzgIA2gOIAAAKIggAAIAAAKIgsAAIAAAKgAjYByIAWAAIAAAAIgWASgACuBdIAAgCIBBgWIAAANIghAAIAAALgAD5BIIAAgHIAIgCIAPgGIAAAPgAEbA+IAAgJIAVgJIAAASgAE7A0IAAgKIgFAAIAbgMIAAAWgAhsAqIAAgLIgKAAIAAgVIAWAAIAAAbIgHAFgAGcAKIAAgOIA2gaIAAAAIAAAVIggAAIAAATgAhAgJIAAgKIALAAIAAgLIAWAAIAAAVgAHSgeIAAAAIAPgHQgHgPgIgMIAAgHIgEAAIgGgJIAAgBIAKAAIAAgLIAXAAIAAAfIgVAAIAGAKIAZAAIAAAVgAHSgegAgfgeIAAgVIAfAAIAAAUIgBABgAgfgegAAAgzIAAgUIAhAAIAAATIgDABgAArg9IAAgKIgKAAIAAgVIAVAAIAAAbIgHAEgAAhhHgABChRIAAggIAKAAIAAALIALAAIAAASIgEADgAGnh7IAAgKIgLAAIAAgKIggAAIAAgVIAgAAIAAAVIALAAIAAgLIAWAAIAAAfgACjh7IAAgfIAWAAIAAALIAKAAIAAAKIgKAAIAAAEIgQAGgADOiPIgLAAIAAgLIALAAIAAgKIALAAIAAAKIALAAIAAgKIALAAIAAgLIAKAAIAAALIALAAIAAAOIgeAHIgNAAIAAADIgLAEgADDiPgAFbiXIAAgYIAWAAIAAAVIgLAAIAAAFIgLgCgAEQivIAVAAIAAAVIgVACgAFIiaIgYgBIAAgUIAhAAIAAAVg");
 	this.shape.setTransform(409,248.8);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.mc1},{t:this.mc2},{t:this.mc3},{t:this.mc4},{t:this.mc5},{t:this.pinceau},{t:this.btn1},{t:this.instance_2},{t:this.instance_1},{t:this.cadre},{t:this.btn2},{t:this.instance},{t:this.palette}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.mc1},{t:this.mc2},{t:this.mc3},{t:this.mc4},{t:this.mc5},{t:this.pinceau},{t:this.btn1},{t:this.instance_2},{t:this.instance_1},{t:this.btn2},{t:this.instance},{t:this.palette}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.p45, new cjs.Rectangle(0,0,1079.4,670), null);
 
@@ -3145,7 +3133,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.091,1.032);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqbTTIT/AAAqLzIIT/AA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqLzIIT/AAAqbTTIT/AA");
 	this.shape.setTransform(271.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.txt4},{t:this.txt5},{t:this.btxt6},{t:this.txt6},{t:this.btxt2},{t:this.txt2},{t:this.btxt3},{t:this.txt3}]}).wait(1));
@@ -3337,7 +3325,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 	this.instance_3.setTransform(0,0,1.089,1.034);
 
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqbTTIT/AAAqLzIIT/AA");
+	this.shape.graphics.f().s("#AFB1B4").ss(2.8,1,1).p("EghJgTSIUAAAEghFATTIUAAAANKTTIUAAAAqLzIIT/AAAqbTTIT/AA");
 	this.shape.setTransform(271.3,466.4);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.instance_3},{t:this.btxt1},{t:this.btxt4},{t:this.btxt5},{t:this.clign},{t:this.clv},{t:this.clavL},{t:this.instance_2},{t:this.instance_1},{t:this.instance},{t:this.verif},{t:this.repre},{t:this.rep},{t:this.txt1},{t:this.txt4},{t:this.txt5},{t:this.btxt6},{t:this.txt6},{t:this.btxt2},{t:this.txt2},{t:this.btxt3},{t:this.txt3}]}).wait(1));
@@ -3351,6 +3339,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,45,133);
 
 	// timeline functions:
 	this.frame_0 = function() {
+		window.moveTo(0,0);
+		window.resizeTo(screen.width,screen.height);
+		
 		stage.enableMouseOver(10);
 		stage.mouseMoveOutside = true;
 		
@@ -3405,50 +3396,7 @@ lib.properties = {
 	color: "#996666",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_.png", id:"index_atlas_"},
-		{src:"sounds/s1.mp3", id:"s1"},
-{src:"sounds/s2.mp3", id:"s2"},
-{src:"sounds/s3.mp3", id:"s3"},
-{src:"sounds/s4.mp3", id:"s4"},
-{src:"sounds/s5.mp3", id:"s5"},
-{src:"sounds/s6.mp3",id:"s6"},
-{src:"sounds/s7.mp3", id:"s7"},
-{src:"sounds/s8.mp3", id:"s8"},
-{src:"sounds/s9.mp3", id:"s9"},
-{src:"sounds/s10.mp3", id:"s10"},
-{src:"sounds/s11.mp3", id:"s11"},
-{src:"sounds/s12.mp3", id:"s12"},
-{src:"sounds/s13.mp3", id:"s13"},
-{src:"sounds/s14.mp3", id:"s14"},
-{src:"sounds/s15.mp3", id:"s15"},
-{src:"sounds/s16.mp3", id:"s16"},
-{src:"sounds/s17.mp3", id:"s17"},
-{src:"sounds/s18.mp3", id:"s18"},
-{src:"sounds/s19.mp3", id:"s19"},
-{src:"sounds/s20.mp3", id:"s20"},
-{src:"sounds/s21.mp3", id:"s21"},
-{src:"sounds/s22.mp3", id:"s22"},
-{src:"sounds/s23.mp3", id:"s23"},
-{src:"sounds/s24.mp3", id:"s24"},
-{src:"sounds/s25.mp3", id:"s25"},
-{src:"sounds/s26.mp3", id:"s26"},
-{src:"sounds/s27.mp3", id:"s27"},
-{src:"sounds/s28.mp3", id:"s28"},
-{src:"sounds/s29.mp3", id:"s29"},
-{src:"sounds/s30.mp3", id:"s30"},
-{src:"sounds/s31.mp3", id:"s31"},
-{src:"sounds/s32.mp3", id:"s32"},
-{src:"sounds/s33.mp3", id:"s33"},
-{src:"sounds/s34.mp3", id:"s34"},
-{src:"sounds/s35.mp3", id:"s35"},
-{src:"sounds/s36.mp3", id:"s36"},
-{src:"sounds/s37.mp3", id:"s37"},
-{src:"sounds/s38.mp3", id:"s38"},
-{src:"sounds/s39.mp3", id:"s39"},
-{src:"sounds/s40.mp3", id:"s40"},
-{src:"sounds/s41.mp3", id:"s41"},
-{src:"sounds/s42.mp3", id:"s42"},
-{src:"sounds/s43.mp3", id:"s43"}
+		{src:"images/index_atlas_.png", id:"index_atlas_"}
 	],
 	preloads: []
 };

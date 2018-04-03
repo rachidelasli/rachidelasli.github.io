@@ -10,8 +10,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>index</title>
+<title>حرف الهاء</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -34,6 +38,60 @@ function init() {
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
+	createjs.Sound.initializeDefaultPlugins();
+var assetsPath = "./sounds/";
+	var sounds = [{src:"sprite_h.ogg", data: { audioSprite: [
+{id:"s9001", startTime:0, duration:1831}, // vrai
+{id:"s9002", startTime:1832, duration:1671}, //essaie 2
+
+{id:"s1", startTime:3513, duration:402},   
+{id:"s2", startTime:3916, duration:397},
+{id:"s3", startTime:4312, duration: 434},
+{id:"s4", startTime:4746, duration: 691},
+{id:"s5", startTime:5438, duration: 641},
+{id:"s6", startTime:6079, duration: 672},
+{id:"s7", startTime:6750, duration: 489},
+{id:"s8", startTime:7239, duration: 418},
+{id:"s9", startTime:7657, duration: 395},
+{id:"s10", startTime:8053, duration: 1114},
+{id:"s11", startTime:9167, duration: 1058},
+{id:"s12", startTime:10225, duration: 1274},
+{id:"s13", startTime:11499, duration: 1179},
+{id:"s14", startTime:12678, duration: 714},
+{id:"s15", startTime:13392, duration: 1060},
+{id:"s16", startTime:14452, duration: 1175},
+{id:"s17", startTime:15627, duration: 1219},
+{id:"s18", startTime:16845, duration: 1071},
+{id:"s19", startTime:17916, duration: 971},
+{id:"s20", startTime:18887, duration: 1280},
+{id:"s21", startTime:20167, duration: 1203},
+{id:"s22", startTime:21370, duration: 839},
+{id:"s23", startTime:22209, duration: 984},
+{id:"s24", startTime:23193, duration: 864},
+{id:"s25", startTime:24057, duration: 864},
+{id:"s26", startTime:24921, duration: 888},
+{id:"s27", startTime:25809, duration: 960},
+{id:"s28", startTime:26769, duration: 1008},
+{id:"s29", startTime:27777, duration: 1344},
+{id:"s30", startTime:29121, duration: 1104},
+{id:"s31", startTime:30225, duration: 1320},
+{id:"s32", startTime:31545, duration: 960},
+{id:"s33", startTime:32505, duration: 1128},
+{id:"s34", startTime:33633, duration: 1272},
+{id:"s35", startTime:34905, duration: 1296},
+{id:"s36", startTime:36201, duration: 3840},
+{id:"s37", startTime:40041, duration: 3408},
+{id:"s38", startTime:43449, duration: 3624},
+{id:"s39", startTime:47073, duration: 4152},
+{id:"s40", startTime:51225, duration: 7824}
+	]}}];
+createjs.Sound.alternateExtensions = ["mp3"];
+createjs.Sound.on("fileload", hFileLoad);
+createjs.Sound.registerSounds(sounds, assetsPath);
+
+function hFileLoad(event) {
+
+}
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
@@ -110,7 +168,7 @@ function playSound(id, loop) {
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
+<body onload="init();" style="margin:0px;background-color:lightgoldenrodyellow;">
 	<div id="animation_container" style="background-color:rgba(153, 102, 102, 1.00); width:560px; height:680px">
 		<canvas id="canvas" width="560" height="680" style="position: absolute; display: none; background-color:rgba(153, 102, 102, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:680px; position: absolute; left: 0px; top: 0px; display: none;">

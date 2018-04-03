@@ -10,8 +10,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<title>index</title>
+<title>حرف الهمزة</title>
 <!-- write your code here -->
 <style>
   #animation_container, #_preload_div_ {
@@ -34,6 +38,77 @@ function init() {
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
+	createjs.Sound.initializeDefaultPlugins();
+var assetsPath = "./sounds/";
+	var sounds = [{src:"sprite_a.ogg", data: { audioSprite: [
+{id:"s9001", startTime:0, duration:1831}, // vrai
+{id:"s9002", startTime:1831, duration:1669}, //essaie 2
+
+{id:"s1", startTime:3500, duration:357},   
+{id:"s2", startTime:3856, duration:318},
+{id:"s3", startTime:4174, duration: 318},
+{id:"s4", startTime:4492, duration: 726},
+{id:"s5", startTime:5218, duration: 787},
+{id:"s6", startTime:6004, duration: 768},
+{id:"s7", startTime:6773, duration: 480},
+{id:"s8", startTime:7253, duration: 480},
+{id:"s9", startTime:7733, duration: 460},
+{id:"s10", startTime:8193, duration: 736},
+{id:"s11", startTime:8929, duration: 1043},
+{id:"s12", startTime:9972, duration: 807},
+{id:"s13", startTime:10780, duration: 1103},
+{id:"s14", startTime:11883, duration: 1050},
+{id:"s15", startTime:12933, duration: 912},
+{id:"s16", startTime:13845, duration: 1344},
+{id:"s17", startTime:15189, duration: 1128},
+{id:"s18", startTime:16317, duration: 768},
+{id:"s19", startTime:17085, duration: 1272},
+{id:"s20", startTime:18357, duration: 960},
+{id:"s21", startTime:19317, duration: 816},
+{id:"s22", startTime:20133, duration: 768},
+{id:"s23", startTime:20901, duration: 1200},
+{id:"s24", startTime:22101, duration: 1584},
+{id:"s25", startTime:23685, duration: 1272},
+{id:"s26", startTime:24957, duration: 1176},
+{id:"s27", startTime:26133, duration: 1416},
+{id:"s28", startTime:27549, duration: 1488},
+{id:"s29", startTime:29037, duration: 1128},
+{id:"s30", startTime:30165, duration: 1440},
+{id:"s31", startTime:31605, duration: 1488},
+{id:"s32", startTime:33093, duration: 1224},
+{id:"s33", startTime:34317, duration: 1656},
+{id:"s34", startTime:35973, duration: 2592},
+{id:"s35", startTime:38565, duration: 1992},
+{id:"s36", startTime:40557, duration: 2808},
+{id:"s37", startTime:43365, duration: 2160},
+{id:"s38", startTime:45525, duration: 3912},
+{id:"s39", startTime:49437, duration: 4416},
+{id:"s40", startTime:53853, duration: 2136},
+{id:"s41", startTime:55989, duration: 816},
+{id:"s42", startTime:56805, duration: 1008},
+{id:"s43", startTime:57813, duration: 912},
+{id:"s44", startTime:58725, duration: 888},
+{id:"s45", startTime:59613, duration: 840},
+{id:"s46", startTime:60453, duration: 1104},
+{id:"s47", startTime:61557, duration: 1272},
+{id:"s48", startTime:62829, duration: 1296},
+{id:"s49", startTime:64125, duration: 1176},
+{id:"s50", startTime:65301, duration: 1200},
+{id:"s51", startTime:66501, duration: 1416},
+{id:"s52", startTime:67917, duration: 1008},
+{id:"s53", startTime:68925, duration: 1320},
+{id:"s54", startTime:70245, duration: 1080},
+{id:"s55", startTime:71325, duration: 1440},
+{id:"s56", startTime:72765, duration: 1584},
+{id:"s57", startTime:74349, duration: 1032}
+	]}}];
+createjs.Sound.alternateExtensions = ["mp3"];
+createjs.Sound.on("fileload", hFileLoad);
+createjs.Sound.registerSounds(sounds, assetsPath);
+
+function hFileLoad(event) {
+
+}
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
@@ -112,7 +187,7 @@ function playSound(id, loop) {
 </script>
 <!-- write your code here -->
 </head>
-<body onload="init();" style="margin:0px;">
+<body onload="init();" style="margin:0px;background-color:lavenderblush;">
 	<div id="animation_container" style="background-color:rgba(153, 102, 102, 1.00); width:560px; height:680px">
 		<canvas id="canvas" width="560" height="680" style="position: absolute; display: none; background-color:rgba(153, 102, 102, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:560px; height:680px; position: absolute; left: 0px; top: 0px; display: none;">
