@@ -86,45 +86,20 @@
             var t = document.getElementById("result").getAttributeNode("value");
             n2 = t.value;
             var t = document.getElementById("result").getAttributeNode("value");
-            /*
-            if (this.op=="+"){
-                var r=n1+n2;
-                t.value=r;
-            }
-            if (this.op=="/"){
-                var r=n1/n2;
-                t.value=r;
-            }
-            if (this.op=="-"){
-                var r=n1-n2;
-                t.value=r;
-            }
-            if (this.op=="x"){
-                var r=n1*n2;
-                t.value=r;
-            }
-             */
-            switch(this.op)  {
-                case "+":
-                t.value=n1+n2;
-                    break;
-                case "-":
-                t.value=n1-n2;
-                    break;
-                    case "x":
-                t.value=n1*n2;
-                    break;
-                    case "/":
-                t.value=n1/n2;
-                    break;
             
-                default:
-                    break; 
-
+            switch(this.op)  {
+                case "+": t.value=n1+n2;
+                    break;
+                case "-":t.value=n1-n2;
+                    break;
+                    case "x":t.value=n1*n2;
+                    break;
+                    case "/": t.value=n1/n2;
+                    break;
+             default: break; }
         }
-}
 
-       
+       function visit(){ window.open("https://www.facebook.com/didi.rachid","_blank") }
 
         
        
@@ -132,8 +107,12 @@
     </script>
 </head>
 <body>
-       
-<table >
+    <div class="container">
+        
+    
+    <div class="btn btn-success btn-lg" onclick="visit()" >تصميم رشيد العسلي</div>   
+<div class="milieu">
+    <table >
     
     <tr><td colspan="3"><input type="text" id="result" style="cursor:text" value="0" disabled ></td></tr>
     
@@ -150,8 +129,9 @@
     <tr><td><input type="button" id="d0" value="0" onclick="setzero()"></td><td><input type="button" value="=" onclick="egal()"></td><td><input type="button" value="c" onclick="maz()"></td></tr>
     
 </table>
+</div>
     
-    
+</div> 
     
 
  

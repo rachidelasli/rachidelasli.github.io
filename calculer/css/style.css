@@ -1,7 +1,12 @@
 div{
-   
-    border: 2px solid black;
+    text-align: center;
+   margin: 20px;
+  
 }
+div.div{
+    text-align: center;
+}
+
 #g
 {
     padding: 20px;
