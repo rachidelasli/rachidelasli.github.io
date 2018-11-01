@@ -56,29 +56,30 @@
         }
         
         function calculer(id){
-            this.calc=true;
+            
             var t = document.getElementById("result").getAttributeNode("value");
             var x = document.getElementById(id).getAttributeNode("id");
              this.op=x.value;
+            
              if (this.op == "+"){
                  n1 = t.value;
                  this.op="+";
-                
+                 this.calc=true;
              }
              else if (this.op == "-"){
                  n1 = t.value;
                  this.op="-";
-                 
+                 this.calc=true;
              }
              else if (this.op == "x"){
                  n1 = t.value;
                  this.op="x";
-                 
+                 this.calc=true;
              }
              else if (this.op == "/"){
                  n1 = t.value;
                  this.op="/";
-                 
+                 this.calc=true;
              }
 
         }
@@ -88,13 +89,13 @@
             var t = document.getElementById("result").getAttributeNode("value");
             
             switch(this.op)  {
-                case "+": t.value=n1+n2;
+                case "+": t.value= parseFloat(n1) + parseFloat(n2);
                     break;
-                case "-":t.value=n1-n2;
+                case "-":t.value= n1 - n2;
                     break;
-                    case "x":t.value=n1*n2;
+                    case "x":t.value= n1 * n2;
                     break;
-                    case "/": t.value=n1/n2;
+                    case "/": t.value= n1/n2;
                     break;
              default: break; }
         }
