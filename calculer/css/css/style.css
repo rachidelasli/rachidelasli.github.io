@@ -1,0 +1,34 @@
+div{
+    text-align: center;
+   margin: 20px;
+  
+}
+div.div{
+    text-align: center;
+}
+
+#g
+{
+    padding: 20px;
+    border: 5px solid gold;
+}
+
+table{
+    border: 5px solid orange;
+    background-color: blanchedalmond;
+    font-size: 22pt;
+}
+td{
+    padding: 5px;
+    text-align: center;
+    
+}
+input{
+    width: 100%;
+    cursor: pointer;
+}
+
+#result{
+    border: 5px solid orange;
+    text-align: right; 
+}
