@@ -456,14 +456,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 		
 		for(var i=0 ;i<btns.length;i++){
 			btns[i].cursor="pointer";
-			//
-			btns[i].alph=0;
-			//
 			btns[i].on("mouseover",msover.bind(this));
 			btns[i].on("mouseout",msout.bind(this));
 		}
 		function msover(e){
-			e.currentTarget.alpha=0.8;
+			e.currentTarget.alpha=0;
 		}
 		function msout(e){
 			e.currentTarget.alpha=1;
