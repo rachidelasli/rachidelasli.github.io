@@ -458,6 +458,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 		this.prp.alpha=0;
 		this.idx.alpha=0;
 		this.gop4.alpha=0;
+		//this.ori.alpha=0;
 		//////////
 		for(var i=0 ;i<btns.length;i++){
 			btns[i].cursor="pointer";
@@ -491,7 +492,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 			}
 		function p2(){
 			np=2;
-			nav.sv.visible=true;nav.hm.visible=true;nav.pr.visible=true;
+			/////
+			nav.sv.visible=false;nav.pr.visible=false;
+			/////
+			nav.hm.visible=true;
+			
 			pags.removeAllChildren();pags.addChild(pg[2]);
 			}
 		function p3(){
