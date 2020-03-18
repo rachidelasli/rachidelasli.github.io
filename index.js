@@ -453,11 +453,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 		var pg = [new lib.p0(),new lib.p1(),new lib.p2(),new lib.p3(),new lib.p4()];
 		var btns = [this.prp,this.ori,this.idx,this.gop4,this.gop5,this.gop9,this.gop18,this.gop27,this.gop35
 		,this.gop45,this.gop54,this.gop62,this.gop74];
-		//modifter
-		this.prp.alpha=0;
-		////////
+		
 		for(var i=0 ;i<btns.length;i++){
 			btns[i].cursor="pointer";
+			///
+			btns[i].alpha=0.2;
+			////
 			btns[i].on("mouseover",msover.bind(this));
 			btns[i].on("mouseout",msout.bind(this));
 		}
