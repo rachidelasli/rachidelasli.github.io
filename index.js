@@ -453,7 +453,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 		var pg = [new lib.p0(),new lib.p1(),new lib.p2(),new lib.p3(),new lib.p4()];
 		var btns = [this.prp,this.ori,this.idx,this.gop4,this.gop5,this.gop9,this.gop18,this.gop27,this.gop35
 		,this.gop45,this.gop54,this.gop62,this.gop74];
+		
+		///////////add
 		this.prp.alpha=0;
+		this.idx.alpha=0;
+		this.gop4.alpha=0;
+		//////////
 		for(var i=0 ;i<btns.length;i++){
 			btns[i].cursor="pointer";
 			btns[i].on("mouseover",msover.bind(this));
@@ -470,8 +475,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 		var pags = this.parent.parent.getChildByName('pags');
 		var navs = this.parent.parent.getChildByName('navs');
 		var nav = navs.getChildByName('nav');
-		    
-		nav.sv.visible=true;nav.hm.visible=false;nav.pr.visible=false;
+		
+		//////////////modifier  
+		nav.sv.visible=false;
+		///////////
+		nav.hm.visible=false;nav.pr.visible=false;
 		
 		this.prp.on("click", p1.bind(this));
 		this.ori.on("click", p2.bind(this));
