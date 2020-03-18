@@ -455,7 +455,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,80,80);
 		,this.gop45,this.gop54,this.gop62,this.gop74];
 		
 		for(var i=0 ;i<btns.length;i++){
-			//btns[i].cursor="pointer";
+			btns[i].cursor="pointer";
+			//
+			btns[i].alph=0;
+			//
 			btns[i].on("mouseover",msover.bind(this));
 			btns[i].on("mouseout",msout.bind(this));
 		}
