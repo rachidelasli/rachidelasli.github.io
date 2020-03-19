@@ -1,0 +1,9 @@
+
+ git rm -r --cached nameFolder
+
+ 
+ git commit -m 'remove folder'
+
+
+git push origin master
+
