@@ -1,4 +1,7 @@
 
+ 
+ git add .
+ 
  git rm -r --cached nameFolder
 
  
