@@ -1,0 +1,2 @@
+var H5P=H5P||{};H5P.Summary=H5P.Summary||{};H5P.Summary.StopWatch=(function(){function StopWatch(){this.duration=0;}
+StopWatch.prototype.start=function(){this.startTime=Date.now();return this;};StopWatch.prototype.stop=function(){this.duration=this.duration+Date.now()-this.startTime;return this.passedTime();};StopWatch.prototype.reset=function(){this.duration=0;};StopWatch.prototype.passedTime=function(){return Math.round(this.duration/10)/100;};return StopWatch;})();

@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.h5p.org	TRUE	/	FALSE	1999999999	SSESS03b31266e1db973b1f9926379b555971	KgOBNPg-ItdNGYvGmqg7qwD2sEAKThk5PZDxobmC0WI
+.h5p.org	TRUE	/	FALSE	1999999999	__cfduid	d9dff71bb53f2a85ec3917675e2de34e61589460251
+h5p.org	TRUE	/	FALSE	1999999999	SameSite	Lax
+
