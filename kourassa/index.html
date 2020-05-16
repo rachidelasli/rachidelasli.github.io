@@ -1,80 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="propeller" content="556a400b6ea8a9c11e9ac6fb2bee208c">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>صفحة تحميل الكراسة</title>
+    <link rel="stylesheet" href="/FontAwsome-5.13.0/css/all.min.css">
     <style>
-        body{
-            background: gainsboro;
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: rosybrown;
+            margin: 1vh;
+             direction: rtl;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1vh;
+        }
+
+        .container>div {
+            background-color: cornflowerblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid chocolate;
+            border-radius: 5px;
+            text-align: center;
+
+            padding: 5px;
+            font-size: 14pt;
+
+        }
+
+        .container>div:nth-child(1) {
+            background-color: #222;
+            color: cornsilk;
+            height: 13vh;
+        }
+
+        .container>div:nth-child(2) {
+            background-color: rgba(250,250,250,.3);
+            color: black;
+            height: 17vh;
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        img{
+            border-radius: 10px;
+            transition: all .2s ease-in;
+        }
+        img:hover{
+            transform: scale(0.98);
             
         }
-    .container{
-        width: 80%;
-        font-size: 20px;
-        margin: 10px auto;
-        text-align: center;
-    }
-    .div-table{
-        width: 80%;
-        margin: 10px auto;
-    }
 
+        .container>div:nth-child(3) {
+            background-color: rgba(250,250,250,.3);
+            color: black;
+            height: 17vh;
+            font-weight: bolder;
+            font-size: 25px;
+        }
 
-    table,tr,td{
-        border-collapse: collapse;
-        border: 3px solid black;
-        background: beige;
-        padding: 10px;
-        
-    }
-    .div-1{
-        font-size: 22px;
-        font-weight: bold;
-        color:dodgerblue;
-    }
-    .div-2{
-        margin: 10px ;
-    }
+        .container>div:nth-child(4) {
+            background-color: rgba(250,250,250,.3);
+            color: black;
+            height: 27vh;
+        }
 
-    .p1{
-        font-size: 22px;
-        font-weight: bold;
-        color:crimson;
-    }
+        .container>div:nth-child(5) {
+            background-color: #222;
+            color: cornsilk;
+            height: 20vh;
+        }
+
+       .web a {
+            background-color: khaki;
+            padding: 2px;
+            font-size: 14pt;
+        }
+
+        .face{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .face i{
+            color:#3578E5;
+            background-color: white;
+            border-radius: 50%;
+            border: 1px white solid;
+            margin-right:6px ;
+            padding: 1px;
+            font-size: 20px;
+        }
+        .face  a {
+            background-color: khaki;
+            padding: 2px;
+            font-size: 14pt;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-    <div class="div-1"> صفحة تحميل تطبيق كراستي الرقمية في القراءة للمستوى الأول إبتدائي</div>
-    <br>
-    <div class="div-table">
-    <table align="center">
-        <tr><td> <p class="p1">تحميل البرنامج للحاسوب <br>   windows-32  نسخة</p>
-        <p>  اذا حدث خطأ في عملية التثبيت نقوم بالتأكد من إعدادات لغة النظام كما يلي* </p>
-        <p>paneau de configuration->modifier les format...->  administration-> <br>
-            modifier paramètres régionaux->select arabe->ok->redémarrer pc</p>
-        </td>
-        <td><a href="https://drive.google.com/file/d/1Xc6EjDCVQCijgkn84Vj8AvvwWDJTvBMf/view?usp=sharing" target="_blank" ><img src="download.png" alt="" width="200" height="80" ></a></td>
-        </tr>
-            <tr><td><p class="p1">تحميل البرنامج للهاتف apk <br>    نسخة Android</p>
-            <p> بعد تحميل الملف  يتم نقله الى الهاتف أو اللوحة اللمسية ثم تثبيته  </p>
-            </td>
-             <td><a href="https://drive.google.com/file/d/1jC707DZv0-jSI6JxyFY1D7Dasg7v1nKt/view?usp=sharing" target="_blank" ><img src="download.png" alt="" width="200" height="80"></a></td>       
-    </table>
-</div>
-    <div class="div-2">لاستخدام الكراسة بدون تنزيل بطريقة مباشرة على الرابط<br>
-    <a href="https://rachidelasli.github.io" target="_blank" rel="noopener noreferrer">https://rachidelasli.github.io</a>
-    <div>ملحوظة:العمل بدون تثبيت على الموقع أعلاه يتطلب صبيب انترنيت أقوى في أول زيارة
-        <br> F5إذا لم يعمل قم بتحديث الصفحة أو اضغط على المفتاح 
+        <div class="div-title"> صفحة تحميل تطبيق كراستي الرقمية في القراءة للمستوى الأول إبتدائي</div>
+
+        <div class="pc">
+            <p class="p1" >تحميل البرنامج للحاسوب windows-32 </p>
+            <a href="https://drive.google.com/file/d/1Xc6EjDCVQCijgkn84Vj8AvvwWDJTvBMf/view?usp=sharing"
+                target="_blank"><img src="download.png" alt="" width="150" height="50"></a></td>
+        </div>
+
+        <div class="apk">
+            <p class="p1" style="direction: rtl;">تحميل نسخة الهاتف : Android-apk </p>
+<p>
+            <a href="https://drive.google.com/file/d/1jC707DZv0-jSI6JxyFY1D7Dasg7v1nKt/view?usp=sharing"
+                target="_blank"><img src="download.png" alt="" width="150" height="50"></a>
+        </p>
+            </div>
+
+
+
+        <div class="web">
+            لاستخدام الكراسة على المتصفح بدون تنزيل بطريقة مباشرة على الرابط
+
+            <a href="https://rachidelasli.github.io" target="_blank"
+                rel="noopener noreferrer">https://rachidelasli.github.io</a>
+            <p>
+                ملحوظة : إذا لم يتم تشغيل الكراسة بالرابط المباشر أعلاه على المتصفح  قم بتحديث الصفحة لأن تشغيله في المرة الأولى يتطلب بعض الوقت. 
+            
+            </p>
+        </div>
+        <div class="footer">
+            <p>الأستاذ : رشيد العسلي</p>
+            <p>م/م اهديل - مديرية شيشاوة</p>
+            <div class="face">
+                <p>rachidelasli77@gmail.com</p> <p><i class="fa fa-envelope "></i></p>
+            </div>
+               <div class="face">
+                
+                <p><a href="https://www.facebook.com/didi.rachid" target="_blank"
+                rel="noopener noreferrer">https://www.facebook.com/didi.rachid</a></p> 
+
+                <p><i class="fab fa-facebook "></i></p>
+                </div>
+        </div>
+
     </div>
-    <p>الاستاذ : رشيد العسلي<br>
-    م/م اهديل - مديرية شيشاوة <br>
-    e-mail :  rachidelasli77@gmail.com
-    </p>
-    
-</div>
 </body>
+
 </html>
