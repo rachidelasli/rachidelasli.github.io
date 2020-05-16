@@ -6,8 +6,8 @@
 }
 html.h5p-iframe,html.h5p-iframe>body{font-family:Sans-Serif;width:100%;height:100%;margin:0px;padding:0px; }
 html.h5p-iframe{height:90vh;width:80%; border:2px blue solid}
-html.h5p-iframe>body{width: 100%;height:100%;;border:2px red solid}
-.h5p-semi-fullscreen,.h5p-fullscreen,html.h5p-iframe .h5p-container{overflow:hidden}
+html.h5p-iframe>body{width: 60%;height:100%;;border:2px red solid}
+/*.h5p-semi-fullscreen,.h5p-fullscreen,html.h5p-iframe .h5p-container{overflow:hidden}*/
 .h5p-content{position:relative;background:#fefefe;border:1px solid #eee;border-bottom:none;box-sizing:border-box;-moz-box-sizing:border-box}
 .h5p-noselect{-khtml-user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none;user-select:none}
 html.h5p-iframe .h5p-content{font-size:16px;line-height:1.5em;width:100%;height:auto}
@@ -33,9 +33,9 @@ div.h5p-fullscreen{width:100%;height:100%}
 .h5p-iframe-wrapper.h5p-semi-fullscreen{width:auto;height:auto;background:#000;position:fixed;top:0;left:0;right:0;bottom:0;z-index:100001}
 .h5p-iframe-wrapper.h5p-semi-fullscreen .buttons{position:absolute;top:0;right:0;z-index:20}
 .h5p-iframe-wrapper iframe.h5p-iframe{width:10px;min-width:100%;*width:100%;height:100%;z-index:10;overflow:hidden;border:0;display:block}
-.h5p-content ul.h5p-actions{box-sizing:border-box;-moz-box-sizing:border-box;overflow:hidden;list-style:none;padding:0 10px;margin:0;height:25px;font-size:12px;background:#b93131;display:none;border-top:1px solid #eee;border-bottom:1px solid #eee;clear:both;font-family:Sans-Serif}
-.h5p-fullscreen .h5p-actions,.h5p-semi-fullscreen .h5p-actions{display:none}
-.h5p-actions>.h5p-button{float:left;display: none;cursor:pointer;margin:0 .5em 0 0;background:0 0;padding:0 .75em 0 .25em;vertical-align:top;color:#999;text-decoration:none;outline:none;line-height:22px}
+.h5p-content ul.h5p-actions{box-sizing:border-box;-moz-box-sizing:border-box;overflow:hidden;list-style:none;padding:0 10px;margin:0;height:25px;font-size:12px;background:#b93131;display:block;border-top:1px solid #eee;border-bottom:1px solid #eee;clear:both;font-family:Sans-Serif}
+.h5p-fullscreen .h5p-actions,.h5p-semi-fullscreen .h5p-actions{display:block}
+.h5p-actions>.h5p-button{float:left ; cursor:pointer;margin:0 .5em 0 0;background:0 0;padding:0 .75em 0 .25em;vertical-align:top;color:#999;text-decoration:none;outline:none;line-height:22px}
 .h5p-actions>.h5p-button:hover{color:#666}
 .h5p-actions>.h5p-button:active,.h5p-actions>.h5p-button:focus,.h5p-actions .h5p-link:active,.h5p-actions .h5p-link:focus{color:#000}
 .h5p-actions>.h5p-button:focus,.h5p-actions .h5p-link:focus{outline-style:solid;outline-width:thin;outline-offset:-2px;outline-color:#9ecaed}
