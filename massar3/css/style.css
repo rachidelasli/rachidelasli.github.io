@@ -256,11 +256,24 @@ header span {
     line-height: 35px;
     text-align: start;
 }
+.caret{
+    position:absolute;
+    z-index: 7000;
+    color: #ddd;
+    top: 22px;
+    left:20px;
+    font-size: 30px;
+    display: none;
+    padding: 0px;
+}
 .langList div:hover{
    background-color: #267ba8;
 }
 
 .toogleLang{
+    display: block;
+}
+.toogleCaret{
     display: block;
 }
 

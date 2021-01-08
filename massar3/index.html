@@ -16,7 +16,7 @@
         <div class="err01">
             <div class="errTitle bg-danger">رسالة خطأ</div>
             <div class="errBody">
-                <h5>لقد حدث خطأ ، المرجو المحاولة لاحقا .</h5>
+                لقد حدث خطأ ، المرجو المحاولة لاحقا .
                 <div class="errOk">
                     <div class="btn btn-secondary" onclick="showErr()">OK</div>
                 </div>
@@ -126,6 +126,7 @@
             <div class="lang" onclick="showLang()">
                 AR
                 <span><i class="fa fa-caret-down"></i></span>
+                <div class="caret" id="caret"><i class="fa fa-caret-up"></i></div>
                 <div class="langList" id="langList">
                     <div>français</div>
                     <div>العربية</div>
@@ -230,6 +231,8 @@
             list.classList.remove("toogleList");
             user0.classList.remove("toogleUser0");
             langList.classList.remove("toogleLang");
+            caret.classList.remove("toogleCaret");
+            menu.classList.remove("toogleMenu");
         }
 
         var list = document.getElementById("list");
@@ -238,6 +241,8 @@
             apps.classList.remove("toogleApps");
             user0.classList.remove("toogleUser0");
             langList.classList.remove("toogleLang");
+            caret.classList.remove("toogleCaret");
+            menu.classList.remove("toogleMenu");
         }
 
         var sidebar = document.getElementById("sidebar");
@@ -247,6 +252,8 @@
             list.classList.remove("toogleList");
             user0.classList.remove("toogleUser0");
             langList.classList.remove("toogleLang");
+            caret.classList.remove("toogleCaret");
+            menu.classList.remove("toogleMenu");
         }
 
         var user0 = document.getElementById("user0");
@@ -255,14 +262,29 @@
             apps.classList.remove("toogleApps");
             list.classList.remove("toogleList");
             langList.classList.remove("toogleLang");
+            caret.classList.remove("toogleCaret");
+            menu.classList.remove("toogleMenu");
         }
 
         var langList = document.querySelector("#langList");
+        var caret = document.querySelector("#caret");
         function showLang() {
             langList.classList.toggle("toogleLang");
+            caret.classList.toggle("toogleCaret");
             user0.classList.remove("toogleUser0");
             apps.classList.remove("toogleApps");
             list.classList.remove("toogleList");
+            menu.classList.remove("toogleMenu");
+        }
+
+        var menu = document.querySelector("#menu");
+        function showMenu() {
+            menu.classList.toggle("toogleMenu");
+            apps.classList.remove("toogleApps");
+            list.classList.remove("toogleList");
+            user0.classList.remove("toogleUser0");
+            langList.classList.remove("toogleLang");
+            caret.classList.remove("toogleCaret");
         }
 
         var overlay = document.getElementById("overlay");
@@ -271,6 +293,10 @@
             user0.classList.remove("toogleUser0");
             apps.classList.remove("toogleApps");
             list.classList.remove("toogleList");
+            langList.classList.remove("toogleLang");
+            caret.classList.remove("toogleCaret");
+            menu.classList.remove("toogleMenu");
+
         }
 
 
@@ -307,10 +333,7 @@
             sp2.classList.remove("showDown2");
             div2.classList.remove("showBorder");
         }
-        var menu = document.querySelector("#menu");
-        function showMenu() {
-            menu.classList.toggle("toogleMenu");
-        }
+      
 
         
 
