@@ -33,7 +33,7 @@
 
                     <div class="apps-icon">
                         <div class="insat">
-                            <div><i class="fa fa-assistive-listening-systems"></i></div>
+                            <div><i class="fa fa-assistive-listening-systems fa-flip-horizontal"></i></div>
                             <div>Insat</div>
                         </div>
                         <div class="Mowakaba">
@@ -41,15 +41,15 @@
                             <div>Mowakaba</div>
                         </div>
                         <div class="MassiRH">
-                            <div><i class="fa fa-user"></i></div>
+                            <div><i class="fa fa-users-cog"></i></div>
                             <div>MassiRH</div>
                         </div>
                         <div class="GRESA">
-                            <i class="fa fa-calendar-alt"></i>
+                            <i class="far fa-calendar-alt"></i>
                             GRESA
                         </div>
                         <div class="Haraka"><a href="http://haraka.men.gov.ma/haraka/" target="_blank">
-                                <i class="fa fa-paperclip"></i><br>
+                                <i class="fas fa-paperclip"></i><br>
                                 Haraka</a></div>
                         <div class="Taysir">
                             <i class="fa fa-user"></i><br>
@@ -60,23 +60,23 @@
                             SRH
                         </div>
                         <div class="ESISE">
-                            <i class="fa fa-igloo"></i><br>
+                            <i class="fa fa-chart-bar"></i><br>
                             ESISE
                         </div>
                         <div class="CarteScolaire">
-                            <i class="fa fa-user"></i><br>
+                            <i class="far fa-credit-card"></i><br>
                             Carte Scolaire
                         </div>
                         <div class="ExportateurSI">
-                            <i class="fa fa-user"></i><br>
+                            <i class="fa fa-chart-bar"></i><br>
                             Exportateur SI
                         </div>
                         <div class="Doclow">
-                            <i class="fa fa-envelope"></i><br>
+                            <i class="far fa-envelope"></i><br>
                             Doclow
                         </div>
                         <div class="SuiviBudget">
-                            <i class="fa fa-user"></i><br>
+                            <i class="far fa-calendar-alt"></i><br>
                             Suivi Budget
                         </div>
                         <div class="Tabligh">
@@ -123,9 +123,13 @@
                     </div>
                 </div>
             </div>
-            <div class="lang">
-                AR<span><i class="fa fa-caret-down"></i>
-                </span>
+            <div class="lang" onclick="showLang()">
+                AR
+                <span><i class="fa fa-caret-down"></i></span>
+                <div class="langList" id="langList">
+                    <div>français</div>
+                    <div>العربية</div>
+                </div>
             </div>
         </div>
     </header>
@@ -135,7 +139,26 @@
 
         <div class="sidebar" id="sidebar">
 
-            <div class="div1"><i class="fa fa-th"></i> التقييم <span><i class="fa fa-caret-down"></i></span></div>
+            <div class="div1" onclick="showMenu()">
+                <i class="fa fa-th"></i> 
+                التقييم 
+                <span><i class="fa fa-caret-down"></i>
+                </span>
+                <div class="menu" id="menu">
+                    <div>
+                        <div class="p1"><i class="fa fa-edit"></i></div>
+                        <div class="p2">التقييم</div>
+                    </div>
+                    <div>
+                        <div class="p1"><i class="fa fa-edit"></i></div>
+                        <div class="p2">الدعم الاجتماعي و التربوي</div>
+                    </div>
+                    <div>
+                        <div class="p1"><i class="fa fa-user"></i></div>
+                        <div class="p2">الحياة المدرسية</div>
+                    </div>
+                </div>
+            </div>
 
             <div class="div2" id="div2" onclick="showDiv22()">
                 <i class="fa fa-edit"></i>
@@ -169,20 +192,22 @@
 
         <div id="section" class="section">
             <div class="div0">
-                <div class="div01"> القائمة الرئيسية <i class="far fa-save"></i></div>
+                <div class="div01"> القائمة الرئيسية 
+                    <i class="far fa-save"></i>
+                </div>
                 <div class="div02">
 
                     <div class="j">
-                        <div class="t"><i class="fa fa-edit"></i> التقييم</div>
-                        <div>...</div>
+                        <div class="t"><i class="fa fa-edit"></i> <i class="fa fa-th-large"></i> الـتـقـيـيـم</div>
+                        <div>.</div>
                     </div>
                     <div class="j">
-                        <div class="t"><i class="fa fa-edit"></i> الدعم الاجتماعي و التربوي</div>
-                        <div>....</div>
+                        <div class="t"><i class="fa fa-th-large"></i> الدعم الاجتماعي و التربوي</div>
+                        <div>.</div>
                     </div>
                     <div class="j">
-                        <div class="t"><i class="fa fa-edit"></i> الحياة المدرسية</div>
-                        <div>.....</div>
+                        <div class="t"><i class="fa fa-th-large"></i> الحياة المدرسية</div>
+                        <div>.</div>
                     </div>
                 </div>
 
@@ -196,14 +221,56 @@
 
 
     <script>
+
+      
+
         var apps = document.getElementById("apps");
         function showApps() {
             apps.classList.toggle("toogleApps");
+            list.classList.remove("toogleList");
+            user0.classList.remove("toogleUser0");
+            langList.classList.remove("toogleLang");
+        }
+
+        var list = document.getElementById("list");
+        function showList() {
+            list.classList.toggle("toogleList");
+            apps.classList.remove("toogleApps");
+            user0.classList.remove("toogleUser0");
+            langList.classList.remove("toogleLang");
         }
 
         var sidebar = document.getElementById("sidebar");
         function showSide() {
             sidebar.classList.toggle("toogleSide");
+            apps.classList.remove("toogleApps");
+            list.classList.remove("toogleList");
+            user0.classList.remove("toogleUser0");
+            langList.classList.remove("toogleLang");
+        }
+
+        var user0 = document.getElementById("user0");
+        function showUser0() {
+            user0.classList.toggle("toogleUser0");
+            apps.classList.remove("toogleApps");
+            list.classList.remove("toogleList");
+            langList.classList.remove("toogleLang");
+        }
+
+        var langList = document.querySelector("#langList");
+        function showLang() {
+            langList.classList.toggle("toogleLang");
+            user0.classList.remove("toogleUser0");
+            apps.classList.remove("toogleApps");
+            list.classList.remove("toogleList");
+        }
+
+        var overlay = document.getElementById("overlay");
+        function showErr() {
+            overlay.classList.toggle("toogleErr");
+            user0.classList.remove("toogleUser0");
+            apps.classList.remove("toogleApps");
+            list.classList.remove("toogleList");
         }
 
 
@@ -222,6 +289,11 @@
             sp1.classList.toggle("hideLeft2");
             sp2.classList.toggle("showDown2");
             div2.classList.toggle("showBorder");
+
+            div33.classList.remove("toogleDiv33");
+            sp3.classList.remove("hideLeft2");
+            sp4.classList.remove("showDown2");
+            div3.classList.remove("showBorder");
         }
 
         function showDiv33() {
@@ -229,22 +301,18 @@
             sp3.classList.toggle("hideLeft2");
             sp4.classList.toggle("showDown2");
             div3.classList.toggle("showBorder");
+
+            div22.classList.remove("toogleDiv22");
+            sp1.classList.remove("hideLeft2");
+            sp2.classList.remove("showDown2");
+            div2.classList.remove("showBorder");
+        }
+        var menu = document.querySelector("#menu");
+        function showMenu() {
+            menu.classList.toggle("toogleMenu");
         }
 
-        var user0 = document.getElementById("user0");
-        function showUser0() {
-            user0.classList.toggle("toogleUser0");
-        }
-
-        var overlay = document.getElementById("overlay");
-        function showErr() {
-            overlay.classList.toggle("toogleErr");
-        }
-
-        var list = document.getElementById("list");
-        function showList() {
-            list.classList.toggle("toogleList");
-        }
+        
 
     </script>
 </body>

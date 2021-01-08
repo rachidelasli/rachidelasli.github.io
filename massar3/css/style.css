@@ -3,6 +3,7 @@
     margin: 0;
     padding:0;
     user-select: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 .overlay{
     display: none;
@@ -181,7 +182,7 @@ header span {
     width: 100px;
     height: 100px;
     text-align: center;
-    padding: 10px;
+    padding:20px 10px;
     line-height: 20px;
 }
 .apps-icon > div:hover{
@@ -189,7 +190,7 @@ header span {
 }
 
 .apps-icon i {
-    font-size: 50px;
+    font-size: 35px;
 }
 .apps-icon a{
     color:#fff;
@@ -211,22 +212,57 @@ header span {
     position: absolute;
     color: #111;
     z-index: 50;
-    background-color: #ccc;
+    background-color: #eee;
     padding: 0 4px;
     left:0px;
     top:50px;
     height: 0px;
     overflow: hidden;
+    transition: 0.5s;
+    border-left: 0.5px solid #ccc;
+    border-right: 0.5px solid #ccc;
 }
 .toogleList{
-    height: auto;
+    height: 390px;
 }
 .list div{
-    border-bottom: 1px solid gray;
     height: 30px;
     line-height: 30px;
     padding:0 18px;
-    
+}
+.list div:hover{
+    background-color: #ccc;
+}
+.lang{
+    position: relative;
+}
+
+.langList{
+    position: absolute;
+    color: #111;
+    z-index: 4000;
+    background-color: #eee;
+    padding:5px 0px;
+    left:20px;
+    top:50px;
+    display: none;
+    overflow: hidden;
+    border-left: 0.5px solid #ccc;
+    border-right: 0.5px solid #ccc;
+    border-radius: 0px 0px 4px 4px;
+}
+.langList div{
+    padding: 0px 30px ;
+    height: 35px;
+    line-height: 35px;
+    text-align: start;
+}
+.langList div:hover{
+   background-color: #267ba8;
+}
+
+.toogleLang{
+    display: block;
 }
 
 
@@ -262,22 +298,70 @@ header span {
     min-height: 92.3vh;
 }
 
-.div1 , .div2 , .div3{
+.div1 ,.div2 , .div3{
     display: block;
     width: 100%;
     padding: 0px 10px;
     cursor: pointer;
     height: 40px;
-    line-height: 40px;
+    line-height: 40px;  
+}
+
+.div1{
+    width: 95%;
+    margin: 5px;
+    border:0.5px solid #0d568a;
+    height: 30px;
+    line-height: 30px; 
     
+}
+
+
+.menu{
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    width: 280px;
+    padding: 5px 5px 0px;
+    z-index: 8000;
+    border-radius: 4px;
+    display: none;
+    
+}
+
+.menu > div{
+    display: flex;
+    margin-bottom: 5px;
+    
+}
+.menu > div > div{
+    height: 50px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.menu .p1{
+    border-radius: 0px 4px 4px 0px;
+    width: 30%;
+    text-align: center;
+    background-color:#0483c7
+}
+.menu .p2{
+    width: 80%;
+    background-color:#24a9f1;
+    border-radius: 4px 0px 0px 4px;
+    padding: 5px 20px 5px 5px;
+}
+
+.toogleMenu{
+    display: block;
 }
 
 .div22 >div , .div33>div{
     display: block;
     width: 100%;
     padding: 5px 15px;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 
  span {
@@ -322,6 +406,7 @@ header span {
     color: #fff;
     cursor: pointer;
 }
+
 /*******/
  
 /*********/
@@ -335,7 +420,7 @@ header span {
 .section .div0{
     margin:25px auto 50px;
     background-color: #fff;
-    width: 96%;
+    width: 99%;
     border: solid 0.1px rgb(233, 232, 232);
     border-top:solid #0083c9 3px;
     text-align: right;
@@ -345,12 +430,13 @@ header span {
 
 .div0 .div01{
     display: block;
-    border-bottom: solid 0.1px #bbb;;
-    padding: 10px;
+    border-bottom: solid 0.1px #f1f1f1;
+    font-size: 18px;
+    padding: 2px 10px;
 }
 .div0 .div01 i{
     float: left;
-    color: #888;
+    color: #bbb;
 }
 
 .div0 .div02{
@@ -362,14 +448,14 @@ header span {
 }
 .div0 .div02 > .j{
     border: 1px solid #f39c12 ;
-    font-size: 15px;
+    font-size: 18px;
     color: #fff;
     border-radius: 6px;
 }
 
 .div0 .div02 .t  {
     background-color: #f39c12;
-    padding: 3px 10px;
+    padding: 5px 10px;
     color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
