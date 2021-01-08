@@ -32,15 +32,15 @@ opacity: 0.8;
 }
 .errTitle{
     color:white;
-    padding: 10px;
-    font-size: x-large;
+    padding: 5px 20px;
+    font-size: 22px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 .errBody{
    padding: 10px;
    background-color: white;
-   opacity: 1;
+   font-size: 17px;
    border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
@@ -256,11 +256,11 @@ header span {
     background-color: #ddd;
     padding:5px 0px;
     left:20px;
-    top:50px;
+    top:46px;
     display: none;
     overflow: hidden;
-    border-left: 0.5px solid #aaa;
-    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #999;
+    border-radius: 5px 5px 5px 5px;
 }
 .langList div{
     padding: 0px 30px ;
@@ -272,9 +272,9 @@ header span {
     position:absolute;
     z-index: 7000;
     color: #ddd;
-    top: 22px;
-    left:20px;
-    font-size: 30px;
+    top: 18px;
+    left:25px;
+    font-size: 22px;
     display: none;
     padding: 0px;
 }
