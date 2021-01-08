@@ -1,0 +1,9 @@
+git init
+
+heroku git:remote -a nameApp
+
+git add --all
+
+git commit -am "commit 1"
+
+git push heroku master

@@ -116,7 +116,7 @@
                 <img src="img/rachid2.jpg" alt="">
                 <div class="user0" id="user0">
                     <div class="user01"><img id="img2" src="img/rachid2.jpg" alt=""> <br> رشيد العسلي -</div>
-                    <div class="user02"><i class="fa fa-edit"></i></div>
+                    <div class="user02"><div><i class="fa fa-edit"></i> <span>11</span></div></div>
                     <div class="user03">
                         <div class="bt">الملف الشخصي <i class="fa fa-user"></i></div>
                         <div class="bt">خروج <i class="fa fa-power-off"></i></div>
@@ -246,6 +246,7 @@
         }
 
         var sidebar = document.getElementById("sidebar");
+        var section = document.getElementById("section");
         function showSide() {
             sidebar.classList.toggle("toogleSide");
             apps.classList.remove("toogleApps");

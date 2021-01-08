@@ -128,6 +128,18 @@ header span {
     line-height: 35px;
     border-radius: 0px 0px 7px 7px;
 }
+.user02 i{
+    
+}
+.user02 span{
+    background-color: white;
+    width: 80px;
+    color: white;
+    height: 18px;
+    line-height: 18px;
+    margin: 9px ;
+    transform: translateX(75px);
+}
 .user03{
     display: flex;
     padding:5px 10px;
@@ -297,11 +309,12 @@ header span {
     text-decoration: none;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
-    width:0px;  
+    width:0px; 
     overflow: hidden;
     transition: all 0.2s;
     padding: 0px;  
 }
+
 
 
 .toogleSide{
@@ -488,7 +501,7 @@ header span {
 
 @media screen and (max-width: 500px){
     .apps-icon{
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 3px;
     }
     .hdil .shdil{
@@ -506,5 +519,6 @@ header span {
     .header2 > div , .header1 > div {
         padding:0px 10px;
     }
+    
 }
 
