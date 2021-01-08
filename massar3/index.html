@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Overlay</title>
+    <title>Massar3</title>
 </head>
 
 <body>
+    <div class="overlay" id="overlay">
+        <div class="err0">..</div>
+        <div class="err01">
+            <div class="errTitle bg-danger">رسالة خطأ</div>
+            <div class="errBody">
+                <h5>لقد حدث خطأ ، المرجو المحاولة لاحقا .</h5>
+                <div class="errOk">
+                    <div class="btn btn-secondary" onclick="showErr()">OK</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="header1">
             <div class="btn-side" onclick="showSide()"><i class="fa fa-bars"></i></div>
@@ -34,42 +46,69 @@
                         </div>
                         <div class="GRESA">
                             <i class="fa fa-calendar-alt"></i>
-                            GRESA</div>
+                            GRESA
+                        </div>
                         <div class="Haraka"><a href="http://haraka.men.gov.ma/haraka/" target="_blank">
                                 <i class="fa fa-paperclip"></i><br>
                                 Haraka</a></div>
                         <div class="Taysir">
                             <i class="fa fa-user"></i><br>
-                            Taysir</div>
+                            Taysir
+                        </div>
                         <div class="SRH">
                             <i class="fa fa-user"></i><br>
-                            SRH</div>
+                            SRH
+                        </div>
                         <div class="ESISE">
                             <i class="fa fa-igloo"></i><br>
-                            ESISE</div>
+                            ESISE
+                        </div>
                         <div class="CarteScolaire">
                             <i class="fa fa-user"></i><br>
-                            Carte Scolaire</div>
+                            Carte Scolaire
+                        </div>
                         <div class="ExportateurSI">
                             <i class="fa fa-user"></i><br>
-                            Exportateur SI</div>
+                            Exportateur SI
+                        </div>
                         <div class="Doclow">
                             <i class="fa fa-envelope"></i><br>
-                            Doclow</div>
+                            Doclow
+                        </div>
                         <div class="SuiviBudget">
                             <i class="fa fa-user"></i><br>
-                            Suivi Budget</div>
+                            Suivi Budget
+                        </div>
                         <div class="Tabligh">
                             <i class="fa fa-user"></i><br>
-                            Tabligh</div>
+                            Tabligh
+                        </div>
                     </div>
                 </div>
 
             </div>
-            <div class="home"><i class="fa fa-home"></i></div>
-            <div class="hdil">اهديل<span><i class="fa fa-cogs"></i></span></div>
-            <div class="annee">2020/2021 <span><i class="fa fa-caret-down"></i>
-                </span></div>
+            <div class="home" onclick="showErr()"><i class="fa fa-home"></i></div>
+            <div class="hdil" onclick="showErr()"> <span><i class="fa fa-cogs"></i></span> <span class="shdil">اهديل</span></div>
+                <div class="annee" onclick="showList()">
+                    
+                    <span class="anneeS1"><i class="fa fa-caret-down"></i></span>
+                    <span class="anneeS2">2020/2021</span>
+                    <div class="list" id="list">
+                        <div>2008/2009</div>
+                        <div>2009/2010</div>
+                        <div>2010/2011</div>
+                        <div>2011/2012</div>
+                        <div>2012/2013</div>
+                        <div>2013/2014</div>
+                        <div>2014/2015</div>
+                        <div>2015/2016</div>
+                        <div>2016/2017</div>
+                        <div>2017/2018</div>
+                        <div>2018/2019</div>
+                        <div>2019/2020</div>
+                        <div>2020/2021</div>
+                    </div>
+                </div>
         </div>
 
         <div class="header2">
@@ -85,17 +124,19 @@
                 </div>
             </div>
             <div class="lang">
-                العربية<span><i class="fa fa-caret-down"></i>
+                AR<span><i class="fa fa-caret-down"></i>
                 </span>
             </div>
         </div>
     </header>
+
 
     <div class="content" id="content">
 
         <div class="sidebar" id="sidebar">
 
             <div class="div1"><i class="fa fa-th"></i> التقييم <span><i class="fa fa-caret-down"></i></span></div>
+
             <div class="div2" id="div2" onclick="showDiv22()">
                 <i class="fa fa-edit"></i>
                 نقط المراقبة المستمرة
@@ -110,6 +151,7 @@
                 <div><i class="fa fa-edit"></i> تتبع مسك النقط </div>
                 <div><i class="fa fa-edit"></i> مطبوع نقط المراقبة المستمرة </div>
             </div>
+
             <div class="div3" id="div3" onclick="showDiv33()"><i class="fa fa-edit"></i> الغياب
                 <span class="sp3" id="sp3"><i class="fa fa-angle-left"></i></span>
                 <span class="sp4" id="sp4"><i class="fa fa-angle-down"></i></span>
@@ -162,8 +204,10 @@
         var sidebar = document.getElementById("sidebar");
         function showSide() {
             sidebar.classList.toggle("toogleSide");
-           
         }
+
+
+
         var div33 = document.getElementById("div33");
         var div22 = document.getElementById("div22");
         var sp1 = document.getElementById("sp1");
@@ -172,6 +216,7 @@
         var sp4 = document.getElementById("sp4");
         var div2 = document.getElementById("div2");
         var div3 = document.getElementById("div3");
+
         function showDiv22() {
             div22.classList.toggle("toogleDiv22");
             sp1.classList.toggle("hideLeft2");
@@ -179,8 +224,6 @@
             div2.classList.toggle("showBorder");
         }
 
-
-        
         function showDiv33() {
             div33.classList.toggle("toogleDiv33");
             sp3.classList.toggle("hideLeft2");
@@ -191,9 +234,17 @@
         var user0 = document.getElementById("user0");
         function showUser0() {
             user0.classList.toggle("toogleUser0");
-           
         }
 
+        var overlay = document.getElementById("overlay");
+        function showErr() {
+            overlay.classList.toggle("toogleErr");
+        }
+
+        var list = document.getElementById("list");
+        function showList() {
+            list.classList.toggle("toogleList");
+        }
 
     </script>
 </body>

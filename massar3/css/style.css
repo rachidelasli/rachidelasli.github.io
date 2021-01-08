@@ -2,7 +2,61 @@
     box-sizing: border-box;
     margin: 0;
     padding:0;
+    user-select: none;
 }
+.overlay{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 5000;
+}
+.err0{
+position: absolute;
+
+height: 100%;
+width: 100%;
+z-index: 900;
+background-color: gray;
+opacity: 0.8;
+}
+.err01{
+    width: 50%;
+ position: absolute;
+ z-index: 901;
+ top:30%; left:50%;
+ transform: translate(-50%,-50%);
+ text-align: start;
+ border-radius: 8px;
+}
+.errTitle{
+    color:white;
+    padding: 10px;
+    font-size: x-large;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.errBody{
+   padding: 10px;
+   background-color: white;
+   opacity: 1;
+   border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.errOk{
+    text-align: end;
+    margin-top: 20px;
+    padding: 0px 40px;
+}
+
+.errOk > div{
+    padding: 5px 30px;
+}
+
+.toogleErr{
+    display:block;
+}
+
 header{
   background-color:#0083c9; /*#01233c*/
   display: flex; 
@@ -45,7 +99,6 @@ header span {
 }
 .user{
     position: relative;
-    
 }
 .user0{
     position: absolute;
@@ -102,6 +155,8 @@ header span {
 .apps{
     position: absolute;
     background-color: #eee;
+    border: solid 1px rgb(199, 196, 196);
+    box-shadow: 1px 1px 5px gray;
     right:0px;
     font-size: 14px; 
     display: none;
@@ -145,6 +200,32 @@ header span {
 
 .toogleApps{
     display: block;
+    
+}
+
+.annee{
+    position: relative;
+}
+
+.list{
+    position: absolute;
+    color: #111;
+    z-index: 50;
+    background-color: #ccc;
+    padding: 0 4px;
+    left:0px;
+    top:50px;
+    height: 0px;
+    overflow: hidden;
+}
+.toogleList{
+    height: auto;
+}
+.list div{
+    border-bottom: 1px solid gray;
+    height: 30px;
+    line-height: 30px;
+    padding:0 18px;
     
 }
 
@@ -199,10 +280,8 @@ header span {
     
 }
 
-
-
  span {
-    float: inline-end;
+   float: left;
 }
 
 .div22 ,.div33  {
@@ -309,16 +388,25 @@ header span {
     
 }
 
-@media screen and (max-width: 875px){
+@media screen and (max-width: 500px){
     .apps-icon{
         grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 3px;
     }
-    .hdil , .annee{
+    .hdil .shdil{
         display:none;
     }
 
     .div0 .div02{
        grid-template-columns: 1fr; 
+    }
+
+    .err01{
+        width: 90%;
+    }
+
+    .header2 > div , .header1 > div {
+        padding:0px 10px;
     }
 }
 
