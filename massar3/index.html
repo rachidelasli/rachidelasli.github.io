@@ -2,6 +2,7 @@
 <html lang="en" dir="rtl">
 
 <head>
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome/css/all.css">
@@ -45,7 +46,7 @@
                             <div>MassiRH</div>
                         </div>
                         <div class="GRESA">
-                           <div><i class="far fa-calendar-alt"></i></div> 
+                            <div><i class="far fa-calendar-alt"></i></div>
                             <div> GRESA </div>
                         </div>
                         <div class="Haraka"><a href="http://haraka.men.gov.ma/haraka/" target="_blank">
@@ -88,27 +89,28 @@
 
             </div>
             <div class="home" onclick="showErr()"><i class="fa fa-home"></i></div>
-            <div class="hdil" onclick="showErr()"> <span><i class="fa fa-cogs"></i></span> <span class="shdil">اهديل</span></div>
-                <div class="annee" onclick="showList()">
-                    
-                    <span class="anneeS1"><i class="fa fa-caret-down"></i></span>
-                    <span class="anneeS2">2020/2021</span>
-                    <div class="list" id="list">
-                        <div>2008/2009</div>
-                        <div>2009/2010</div>
-                        <div>2010/2011</div>
-                        <div>2011/2012</div>
-                        <div>2012/2013</div>
-                        <div>2013/2014</div>
-                        <div>2014/2015</div>
-                        <div>2015/2016</div>
-                        <div>2016/2017</div>
-                        <div>2017/2018</div>
-                        <div>2018/2019</div>
-                        <div>2019/2020</div>
-                        <div>2020/2021</div>
-                    </div>
+            <div class="hdil" onclick="showErr()"> <span><i class="fa fa-cogs"></i></span> <span
+                    class="shdil">اهديل</span></div>
+            <div class="annee" onclick="showList()">
+
+                <span class="anneeS1"><i class="fa fa-caret-down"></i></span>
+                <span class="anneeS2">2020/2021</span>
+                <div class="list" id="list">
+                    <div>2008/2009</div>
+                    <div>2009/2010</div>
+                    <div>2010/2011</div>
+                    <div>2011/2012</div>
+                    <div>2012/2013</div>
+                    <div>2013/2014</div>
+                    <div>2014/2015</div>
+                    <div>2015/2016</div>
+                    <div>2016/2017</div>
+                    <div>2017/2018</div>
+                    <div>2018/2019</div>
+                    <div>2019/2020</div>
+                    <div>2020/2021</div>
                 </div>
+            </div>
         </div>
 
         <div class="header2">
@@ -116,7 +118,9 @@
                 <img src="img/rachid2.jpg" alt="">
                 <div class="user0" id="user0">
                     <div class="user01"><img id="img2" src="img/rachid2.jpg" alt=""> <br> رشيد العسلي -</div>
-                    <div class="user02"><div><i class="fa fa-edit"></i> <span>11</span></div></div>
+                    <div class="user02">
+                        <div><i class="fa fa-edit"></i> <span>11</span></div>
+                    </div>
                     <div class="user03">
                         <div class="bt">الملف الشخصي <i class="fa fa-user"></i></div>
                         <div class="bt">خروج <i class="fa fa-power-off"></i></div>
@@ -141,8 +145,8 @@
         <div class="sidebar" id="sidebar">
 
             <div class="div1" onclick="showMenu()">
-                <i class="fa fa-th"></i> 
-                التقييم 
+                <i class="fa fa-th"></i>
+                التقييم
                 <span><i class="fa fa-caret-down"></i>
                 </span>
                 <div class="menu" id="menu">
@@ -193,7 +197,7 @@
 
         <div id="section" class="section">
             <div class="div0">
-                <div class="div01"> القائمة الرئيسية 
+                <div class="div01"> القائمة الرئيسية
                     <i class="far fa-save"></i>
                 </div>
                 <div class="div02">
@@ -214,16 +218,20 @@
 
 
             </div>
-            <div class="footer">Copyright &copy; 2021</div>
+
+              <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor alias aspernatur maxime repellendus ratione qui, non odio. Quia quam rerum autem, doloribus, necessitatibus sed perspiciatis minima at recusandae expedita impedit excepturi tenetur! Ducimus enim unde culpa adipisci expedita a hic vitae blanditiis consectetur quisquam architecto, eaque eos eum perferendis quidem provident impedit maiores repellat omnis voluptatem? Ea, incidunt, totam ipsa necessitatibus alias eius eligendi obcaecati aliquam possimus nisi, accusamus eaque debitis! Dolor hic veniam optio labore accusantium quia assumenda fugit, dignissimos pariatur laborum numquam! Minus esse impedit temporibus magnam dolore, repudiandae laborum ut vel aut incidunt iure dicta, at inventore, voluptates aliquid. A saepe ut ducimus molestias nostrum rerum libero nemo asperiores fugiat vero nihil incidunt beatae enim soluta dolorem quis facilis ex, iure, ipsum odit rem? Et, nobis unde. Illo blanditiis perspiciatis dolorum autem eveniet veniam maxime ipsum tempora doloribus soluta consequatur mollitia provident modi, laborum ratione quaerat sint, dolorem pariatur totam delectus amet ad praesentium! Temporibus quidem ex provident aliquid molestiae assumenda officia neque, si
+              </p>
+
         </div>
 
 
     </div>
-
+    <div class="footer">Copyright &copy; 2021</div>
 
     <script>
 
-      
+
 
         var apps = document.getElementById("apps");
         function showApps() {
@@ -233,6 +241,7 @@
             langList.classList.remove("toogleLang");
             caret.classList.remove("toogleCaret");
             menu.classList.remove("toogleMenu");
+            sidebar.classList.remove("toogleSide");
         }
 
         var list = document.getElementById("list");
@@ -243,6 +252,7 @@
             langList.classList.remove("toogleLang");
             caret.classList.remove("toogleCaret");
             menu.classList.remove("toogleMenu");
+            sidebar.classList.remove("toogleSide");
         }
 
         var sidebar = document.getElementById("sidebar");
@@ -265,6 +275,7 @@
             langList.classList.remove("toogleLang");
             caret.classList.remove("toogleCaret");
             menu.classList.remove("toogleMenu");
+            sidebar.classList.remove("toogleSide");
         }
 
         var langList = document.querySelector("#langList");
@@ -276,6 +287,7 @@
             apps.classList.remove("toogleApps");
             list.classList.remove("toogleList");
             menu.classList.remove("toogleMenu");
+            sidebar.classList.remove("toogleSide");
         }
 
         var menu = document.querySelector("#menu");
@@ -334,9 +346,9 @@
             sp2.classList.remove("showDown2");
             div2.classList.remove("showBorder");
         }
-      
 
-        
+
+
 
     </script>
 </body>
