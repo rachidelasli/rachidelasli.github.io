@@ -303,7 +303,7 @@ header span {
 .sidebar{
     background-color:#01233c ;
     color: #eee;
-    padding: 20px;
+    padding: 10px 0px;
     text-align: justify;
     min-height: 92.3vh;
     text-decoration: none;
@@ -312,7 +312,7 @@ header span {
     width:0px; 
     overflow: hidden;
     transition: all 0.2s;
-    padding: 0px;  
+      
 }
 
 
@@ -322,6 +322,8 @@ header span {
     width: 220px;
     min-height: 92.3vh;
 }
+
+
 
 .div1 ,.div2 , .div3{
     display: block;
@@ -333,6 +335,7 @@ header span {
 }
 
 .div1{
+    
     width: 95%;
     margin: 5px;
     border:0.5px solid #0d568a;
@@ -340,7 +343,6 @@ header span {
     line-height: 30px; 
     
 }
-
 
 .menu{
     position: absolute;
@@ -437,13 +439,13 @@ header span {
 /*********/
 
 .section{
-    padding: 5px;
+    padding: 10px;
     background-color: #e1e1e1;
     position: relative;
-    
+    margin-bottom: 50px;
 }
 .section .div0{
-    margin:25px auto 50px;
+    margin:25px auto;
     background-color: #fff;
     width: 99%;
     border: solid 0.1px rgb(233, 232, 232);
@@ -487,6 +489,11 @@ header span {
     
 }
 
+body{
+    position: relative;
+    background-color: #e1e1e1;
+}
+
 .footer{
     background-color: #fff;
     text-align: center;
@@ -495,14 +502,15 @@ header span {
     left: 0px;
     bottom: 0px;
     width: 100%;
-    border-top: 0.3px solid #bbb;
-    
+    border-top: 1px solid #999;
+    z-index: -1;
 }
 
 @media screen and (max-width: 500px){
     .apps-icon{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 3px;
+        padding: 3px;
     }
     .hdil .shdil{
         display:none;
