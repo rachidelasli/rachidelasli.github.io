@@ -325,6 +325,7 @@ header span {
 
 
 
+
 .div1 ,.div2 , .div3{
     display: block;
     width: 100%;
@@ -384,7 +385,7 @@ header span {
     display: block;
 }
 
-.div22 >div , .div33>div{
+.div22>div , .div33>div{
     display: block;
     width: 100%;
     padding: 5px 15px;
@@ -396,6 +397,8 @@ header span {
 }
 
 .div22 ,.div33  {
+    display: block;
+    width: 100%;
     background-color:#0d3d5f ;
     padding: auto ;
     height: 0px;
@@ -429,7 +432,7 @@ header span {
 }
 
 
-.sidebar > div > div:hover{
+.sidebar > div >div > div:hover{
     color: #fff;
     cursor: pointer;
 }
@@ -527,6 +530,7 @@ body{
     .header2 > div , .header1 > div {
         padding:0px 10px;
     }
+
     
 }
 
