@@ -18,8 +18,8 @@ position: absolute;
 height: 100%;
 width: 100%;
 z-index: 900;
-background-color: gray;
-opacity: 0.8;
+background-color: black;
+opacity: 0.7;
 }
 .err01{
     width: 50%;
@@ -28,30 +28,29 @@ opacity: 0.8;
  top:30%; left:50%;
  transform: translate(-50%,-50%);
  text-align: start;
- border-radius: 8px;
+ 
 }
 .errTitle{
     color:white;
     padding: 5px 20px;
     font-size: 22px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+  
 }
 .errBody{
-   padding: 10px;
+   padding: 10px 10px 0px;
    background-color: white;
    font-size: 16px;
-   border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+  
 }
 .errOk{
     text-align: end;
     margin-top: 20px;
-    padding: 0px 40px;
+    padding: 5px;
+    border-top: 1px solid #eee;
 }
 
 .errOk > div{
-    padding: 5px 30px;
+    padding: 5px 20px;
 }
 
 .toogleErr{
