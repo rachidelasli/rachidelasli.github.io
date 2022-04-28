@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Overlay</title>
+</head>
+
+<body>
+    <header>
+        <div class="header1">
+            <div class="btn-side" onclick="showSide()"><i class="fa fa-bars"></i></div>
+            <div class="btn-apps" id="btn-apps" onclick="showApps()">
+                <i class="fa fa-th"></i>
+                <div class="apps" id="apps">
+                    <div class="apps-title">تطبيقاتي</div>
+
+                    <div class="apps-icon">
+                        <div class="insat">
+                            <div><i class="fa fa-assistive-listening-systems"></i></div>
+                            <div>Insat</div>
+                        </div>
+                        <div class="Mowakaba">
+                            <div><i class="fa fa-bacon"></i></div>
+                            <div>Mowakaba</div>
+                        </div>
+                        <div class="MassiRH">
+                            <div><i class="fa fa-user"></i></div>
+                            <div>MassiRH</div>
+                        </div>
+                        <div class="GRESA">
+                            <i class="fa fa-calendar-alt"></i>
+                            GRESA</div>
+                        <div class="Haraka"><a href="http://haraka.men.gov.ma/haraka/" target="_blank">
+                                <i class="fa fa-paperclip"></i><br>
+                                Haraka</a></div>
+                        <div class="Taysir">
+                            <i class="fa fa-user"></i><br>
+                            Taysir</div>
+                        <div class="SRH">
+                            <i class="fa fa-user"></i><br>
+                            SRH</div>
+                        <div class="ESISE">
+                            <i class="fa fa-igloo"></i><br>
+                            ESISE</div>
+                        <div class="CarteScolaire">
+                            <i class="fa fa-user"></i><br>
+                            Carte Scolaire</div>
+                        <div class="ExportateurSI">
+                            <i class="fa fa-user"></i><br>
+                            Exportateur SI</div>
+                        <div class="Doclow">
+                            <i class="fa fa-envelope"></i><br>
+                            Doclow</div>
+                        <div class="SuiviBudget">
+                            <i class="fa fa-user"></i><br>
+                            Suivi Budget</div>
+                        <div class="Tabligh">
+                            <i class="fa fa-user"></i><br>
+                            Tabligh</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="home"><i class="fa fa-home"></i></div>
+            <div class="hdil">اهديل<span><i class="fa fa-cogs"></i></span></div>
+            <div class="annee">2020/2021 <span><i class="fa fa-caret-down"></i>
+                </span></div>
+        </div>
+
+        <div class="header2">
+            <div class="user" onclick="showUser0()">
+                <img src="img/rachid.jpg" alt="">
+                <div class="user0" id="user0">
+                    <div class="user01"><img id="img2" src="img/rachid.jpg" alt=""> <br> رشيد العسلي -</div>
+                    <div class="user02"><i class="fa fa-edit"></i></div>
+                    <div class="user03">
+                        <div class="bt">الملف الشخصي <i class="fa fa-user"></i></div>
+                        <div class="bt">خروج <i class="fa fa-power-off"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lang">
+                العربية<span><i class="fa fa-caret-down"></i>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content" id="content">
+
+        <div class="sidebar" id="sidebar">
+
+            <div class="div1"><i class="fa fa-th"></i> التقييم <span><i class="fa fa-caret-down"></i></span></div>
+            <div class="div2" id="div2" onclick="showDiv22()">
+                <i class="fa fa-edit"></i>
+                نقط المراقبة المستمرة
+                <span class="sp1" id="sp1"><i class="fa fa-angle-left"></i></span>
+                <span class="sp2" id="sp2"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <div class="div22" id="div22">
+                <div><i class="fa fa-edit"></i> مسك النقط حسب المادة</div>
+                <div><i class="fa fa-edit"></i> مسك النقط حسب التلميذ</div>
+                <div><i class="fa fa-edit"></i> تصدير و استراد النقط</div>
+                <div><i class="fa fa-edit"></i> مسك النقط حسب المادة</div>
+                <div><i class="fa fa-edit"></i> تتبع مسك النقط </div>
+                <div><i class="fa fa-edit"></i> مطبوع نقط المراقبة المستمرة </div>
+            </div>
+            <div class="div3" id="div3" onclick="showDiv33()"><i class="fa fa-edit"></i> الغياب
+                <span class="sp3" id="sp3"><i class="fa fa-angle-left"></i></span>
+                <span class="sp4" id="sp4"><i class="fa fa-angle-down"></i></span>
+            </div>
+            <div class="div33" id="div33">
+                <div><i class="fa fa-edit"></i> الغياب الشهري حسب القسم</div>
+                <div><i class="fa fa-edit"></i> تصدير و استيراد الغياب الشهري حسب القسم</div>
+                <div><i class="fa fa-edit"></i> مجمل الغيابات الشهرية حسب القسم</div>
+                <div><i class="fa fa-edit"></i> مجمل الغيابات السنوية حسب القسم</div>
+                <div><i class="fa fa-edit"></i> مجمل الغيابات السنوية حسب المؤسسة </div>
+
+            </div>
+        </div>
+
+
+        <div id="section" class="section">
+            <div class="div0">
+                <div class="div01"> القائمة الرئيسية <i class="far fa-save"></i></div>
+                <div class="div02">
+
+                    <div class="j">
+                        <div class="t"><i class="fa fa-edit"></i> التقييم</div>
+                        <div>...</div>
+                    </div>
+                    <div class="j">
+                        <div class="t"><i class="fa fa-edit"></i> الدعم الاجتماعي و التربوي</div>
+                        <div>....</div>
+                    </div>
+                    <div class="j">
+                        <div class="t"><i class="fa fa-edit"></i> الحياة المدرسية</div>
+                        <div>.....</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="footer">Copyright &copy; 2021</div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        var apps = document.getElementById("apps");
+        function showApps() {
+            apps.classList.toggle("toogleApps");
+        }
+
+        var sidebar = document.getElementById("sidebar");
+        function showSide() {
+            sidebar.classList.toggle("toogleSide");
+           
+        }
+        var div33 = document.getElementById("div33");
+        var div22 = document.getElementById("div22");
+        var sp1 = document.getElementById("sp1");
+        var sp2 = document.getElementById("sp2");
+        var sp3 = document.getElementById("sp3");
+        var sp4 = document.getElementById("sp4");
+        var div2 = document.getElementById("div2");
+        var div3 = document.getElementById("div3");
+        function showDiv22() {
+            div22.classList.toggle("toogleDiv22");
+            sp1.classList.toggle("hideLeft2");
+            sp2.classList.toggle("showDown2");
+            div2.classList.toggle("showBorder");
+        }
+
+
+        
+        function showDiv33() {
+            div33.classList.toggle("toogleDiv33");
+            sp3.classList.toggle("hideLeft2");
+            sp4.classList.toggle("showDown2");
+            div3.classList.toggle("showBorder");
+        }
+
+        var user0 = document.getElementById("user0");
+        function showUser0() {
+            user0.classList.toggle("toogleUser0");
+           
+        }
+
+
+    </script>
+</body>
+
+</html>
