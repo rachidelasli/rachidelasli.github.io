@@ -1,0 +1,31 @@
+{
+  "name": "اختيار تلميذ عشوائي",
+  "short_name": "تلميذ عشوائي",
+  "description": "تطبيق لاختيار تلميذ عشوائي من الأفواج",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#7c3aed",
+  "theme_color": "#7c3aed",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "categories": ["education", "utilities"],
+  "lang": "ar",
+  "dir": "rtl",
+  "prefer_related_applications": false
+}
